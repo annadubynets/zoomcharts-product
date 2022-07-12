@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-export NODE_PATH='/Users/annadubynets/Development/zoomcharts-product/env/lib/node_modules'
-export NPM_CONFIG_PREFIX='/Users/annadubynets/Development/zoomcharts-product/env'
-export npm_config_prefix='/Users/annadubynets/Development/zoomcharts-product/env'
-exec 'env/bin/node' "$@"
