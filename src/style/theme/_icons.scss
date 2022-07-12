@@ -26,6 +26,11 @@ $font-icons-family-name: "IconsFont";
 }
 
 $icon-name-arrow-down: "\E001"; 
+$icon-name-check: "\E002"; 
+$icon-name-finance: "\E003"; 
+$icon-name-logistics: "\E004"; 
+$icon-name-manufacturing: "\E005"; 
+$icon-name-sales: "\E006"; 
 
 
 @function icon-char($filename) {
@@ -33,6 +38,21 @@ $icon-name-arrow-down: "\E001";
 
 	@if $filename == arrow-down {
 		$char: "\E001";
+	}
+	@if $filename == check {
+		$char: "\E002";
+	}
+	@if $filename == finance {
+		$char: "\E003";
+	}
+	@if $filename == logistics {
+		$char: "\E004";
+	}
+	@if $filename == manufacturing {
+		$char: "\E005";
+	}
+	@if $filename == sales {
+		$char: "\E006";
 	}
 
 	@return $char;
@@ -51,4 +71,19 @@ $icon-name-arrow-down: "\E001";
 
 .icon-arrow-down {
 	@include icon(arrow-down);
+}
+.icon-check {
+	@include icon(check);
+}
+.icon-finance {
+	@include icon(finance);
+}
+.icon-logistics {
+	@include icon(logistics);
+}
+.icon-manufacturing {
+	@include icon(manufacturing);
+}
+.icon-sales {
+	@include icon(sales);
 }

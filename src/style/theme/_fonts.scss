@@ -1,53 +1,26 @@
 @font-face {
-    font-family: 'HK Grotesk';
-    src: url('../fonts/HKGrotesk-Medium.eot');
-    src: url('../fonts/HKGrotesk-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/HKGrotesk-Medium.woff2') format('woff2'), url('../fonts/HKGrotesk-Medium.woff') format('woff'), url('../fonts/HKGrotesk-Medium.ttf') format('truetype'), url('../fonts/HKGrotesk-Medium.svg#HKGrotesk-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'HK Grotesk';
-    src: url('../fonts/HKGrotesk-Bold.eot');
-    src: url('../fonts/HKGrotesk-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/HKGrotesk-Bold.woff2') format('woff2'), url('../fonts/HKGrotesk-Bold.woff') format('woff'), url('../fonts/HKGrotesk-Bold.ttf') format('truetype'), url('../fonts/HKGrotesk-Bold.svg#HKGrotesk-Bold') format('svg');
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Bold.woff2') format('woff2'), url('../fonts/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans-Bold.ttf') format('truetype'), url('../fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'HK Grotesk';
-    src: url('../fonts/HKGrotesk-Italic.eot');
-    src: url('../fonts/HKGrotesk-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/HKGrotesk-Italic.woff2') format('woff2'), url('../fonts/HKGrotesk-Italic.woff') format('woff'), url('../fonts/HKGrotesk-Italic.ttf') format('truetype'), url('../fonts/HKGrotesk-Italic.svg#HKGrotesk-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'HK Grotesk';
-    src: url('../fonts/HKGrotesk-Regular.eot');
-    src: url('../fonts/HKGrotesk-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/HKGrotesk-Regular.woff2') format('woff2'), url('../fonts/HKGrotesk-Regular.woff') format('woff'), url('../fonts/HKGrotesk-Regular.ttf') format('truetype'), url('../fonts/HKGrotesk-Regular.svg#HKGrotesk-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'HK Grotesk';
-    src: url('../fonts/HKGrotesk-SemiBold.eot');
-    src: url('../fonts/HKGrotesk-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/HKGrotesk-SemiBold.woff2') format('woff2'), url('../fonts/HKGrotesk-SemiBold.woff') format('woff'), url('../fonts/HKGrotesk-SemiBold.ttf') format('truetype'), url('../fonts/HKGrotesk-SemiBold.svg#HKGrotesk-SemiBold') format('svg');
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-SemiBold.eot');
+    src: url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-SemiBold.woff2') format('woff2'), url('../fonts/OpenSans-SemiBold.woff') format('woff'), url('../fonts/OpenSans-SemiBold.ttf') format('truetype'), url('../fonts/OpenSans-SemiBold.svg#OpenSans-SemiBold') format('svg');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Manrope-Bold';
-    src: url('../fonts/Manrope-Bold.eot');
-    src: url('../fonts/Manrope-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Manrope-Bold.svg#Manrope-Bold') format('svg'), url('../fonts/Manrope-Bold.ttf') format('truetype'), url('../fonts/Manrope-Bold.woff') format('woff'), url('../fonts/Manrope-Bold.woff2') format('woff2');
-    font-weight: bold;
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular.woff2') format('woff2'), url('../fonts/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans-Regular.ttf') format('truetype'), url('../fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }

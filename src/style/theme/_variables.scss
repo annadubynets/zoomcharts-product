@@ -1,3 +1,24 @@
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: "HK Grotesk" !default;
+$font-family-sans-serif: "Open Sans" !default;
+$light-blue: #F4F6FA;
+$gray: #808C9A;
+$black-100: #000000;
+$black: #001935;
+// font sizes
+$h1-font-size: 45px;
+$h2-font-size: 35px;
+$h3-font-size: 24px;
+$h4-font-size: 20px;
+$headings-line-height: 1.1;
+$headings-font-family: "Open Sans";
+$headings-font-weight: 600;
+$font-sizes: ( 1: 24px, 2: 20px, 3: 18px, 4: 16px, 5: 15px, 6: 14px);
+//buttons 
+$btn-font-size: .938rem;
+$btn-font-weight: 600;
+$btn-border-radius: .313rem;
+$btn-padding-y: .938rem;
+$btn-padding-x: 1.125rem;
+$border-radius: .313rem;
+$border-radius-sm: .938rem;

@@ -1,0 +1,39 @@
+.bg-light {
+    background-color: $light-blue!important;
+}
+
+.bg-dark {
+    background-color: $black-100!important;
+}
+
+.text-secondary {
+    color: $gray!important;
+}
+
+.py-70px {
+    padding: 70px 0;
+}
+
+.py-90px {
+    padding: 90px 0;
+}
+
+.pt-60px {
+    padding-top: 60px;
+}
+
+.pb-90px {
+    padding-bottom: 90px;
+}
+
+.rounded-1 {
+    border-radius: $border-radius!important;
+}
+
+.rounded-2 {
+    border-radius: $border-radius-sm!important;
+}
+
+.border-secondary {
+    border-color: #DFDFDF!important;
+}

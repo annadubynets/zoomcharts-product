@@ -17,11 +17,9 @@ var path = {
         fontIcons: "./src/font_icons/icons/*.svg",
         img: [
             "./src/img/**/*.*",
-            "node_modules/slick-carousel/slick/ajax-loader.gif",
         ],
         fonts: [
             "./src/fonts/**/*.*",
-            "node_modules/slick-carousel/slick/fonts/**/*.*",
         ]
     },
     watch: {
@@ -76,7 +74,7 @@ gulp.task("webserver", function() {
  */
 gulp.task("html:build", function() {
     return gulp
-        .src(path.src.html) 
+        .src(path.src.html)
         .pipe(plumber())
         .pipe(rigger())
         .pipe(gulp.dest(path.build.html))
@@ -86,7 +84,7 @@ gulp.task("html:build", function() {
 /**
  * Builds the svg icons to font
  */
- gulp.task('fonticons:build', function() {
+gulp.task('fonticons:build', function() {
     const fontName = 'IconsFont';
     return gulp.src([path.src.fontIcons])
         .pipe(iconfontCss({
@@ -110,7 +108,7 @@ gulp.task("html:build", function() {
  */
 gulp.task("css:build", function() {
     return gulp
-        .src(path.src.style) 
+        .src(path.src.style)
         .pipe(sourcemaps.init())
         .pipe(plumber())
         .pipe(sass({
