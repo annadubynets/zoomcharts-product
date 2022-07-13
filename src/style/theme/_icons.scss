@@ -27,10 +27,17 @@ $font-icons-family-name: "IconsFont";
 
 $icon-name-arrow-down: "\E001"; 
 $icon-name-check: "\E002"; 
-$icon-name-finance: "\E003"; 
-$icon-name-logistics: "\E004"; 
-$icon-name-manufacturing: "\E005"; 
-$icon-name-sales: "\E006"; 
+$icon-name-facebook: "\E003"; 
+$icon-name-finance: "\E004"; 
+$icon-name-instagram: "\E005"; 
+$icon-name-linkedin: "\E006"; 
+$icon-name-logistics: "\E007"; 
+$icon-name-manufacturing: "\E008"; 
+$icon-name-sales: "\E009"; 
+$icon-name-thumb-down: "\E00A"; 
+$icon-name-thumb-up: "\E00B"; 
+$icon-name-twitter: "\E00C"; 
+$icon-name-youtube: "\E00D"; 
 
 
 @function icon-char($filename) {
@@ -42,17 +49,38 @@ $icon-name-sales: "\E006";
 	@if $filename == check {
 		$char: "\E002";
 	}
-	@if $filename == finance {
+	@if $filename == facebook {
 		$char: "\E003";
 	}
-	@if $filename == logistics {
+	@if $filename == finance {
 		$char: "\E004";
 	}
-	@if $filename == manufacturing {
+	@if $filename == instagram {
 		$char: "\E005";
 	}
-	@if $filename == sales {
+	@if $filename == linkedin {
 		$char: "\E006";
+	}
+	@if $filename == logistics {
+		$char: "\E007";
+	}
+	@if $filename == manufacturing {
+		$char: "\E008";
+	}
+	@if $filename == sales {
+		$char: "\E009";
+	}
+	@if $filename == thumb-down {
+		$char: "\E00A";
+	}
+	@if $filename == thumb-up {
+		$char: "\E00B";
+	}
+	@if $filename == twitter {
+		$char: "\E00C";
+	}
+	@if $filename == youtube {
+		$char: "\E00D";
 	}
 
 	@return $char;
@@ -75,8 +103,17 @@ $icon-name-sales: "\E006";
 .icon-check {
 	@include icon(check);
 }
+.icon-facebook {
+	@include icon(facebook);
+}
 .icon-finance {
 	@include icon(finance);
+}
+.icon-instagram {
+	@include icon(instagram);
+}
+.icon-linkedin {
+	@include icon(linkedin);
 }
 .icon-logistics {
 	@include icon(logistics);
@@ -86,4 +123,16 @@ $icon-name-sales: "\E006";
 }
 .icon-sales {
 	@include icon(sales);
+}
+.icon-thumb-down {
+	@include icon(thumb-down);
+}
+.icon-thumb-up {
+	@include icon(thumb-up);
+}
+.icon-twitter {
+	@include icon(twitter);
+}
+.icon-youtube {
+	@include icon(youtube);
 }
