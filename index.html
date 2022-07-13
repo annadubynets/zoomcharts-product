@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoomcharts Product</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body class="index">
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand align-self-center me-4" href="./index.html">
+                    <img src="img/logo.svg" alt="logo" class="when-not-scrolled">
+                </a>
+                <button class="navbar-toggler border-0 collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-collapsed font-size-30">
+                        <img src="images/icon-menu-dark.svg" alt="Menu" class="when-not-scrolled">
+                        <img src="images/icon-menu.svg" alt="Menu" class="when-scrolled">
+                    </span>
+                    <span class="toggler-expanded font-size-30">
+                        <img src="images/icon-close-white.svg" alt="Close" class="me-1">
+                    </span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarCollapse">
+                    <!-- Navigation -->
+                    <ul class="navbar-nav ms-lg-auto ms-0 align-items-center">
+                        <li class="nav-item">
+                            <a href="#" title="For Power BI" class="nav-link">For Power BI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" title="Products" class="nav-link">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" title="Services" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" alt="Resources" title="Resources" class="nav-link">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" alt="Help" title="Help" class="nav-link">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" alt="Company" title="Company" class="nav-link">Company</a>
+                        </li>
+    
+                        <li class="menu-divider">&nbsp;</li>
+                        <li class="nav-item">
+                            <a href="#" title="ZoomCharts Buy now" class="nav-link smaller">Buy now</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" role="button" alt="Try for FREE" title="Try for FREE" class="btn btn-warning">
+                                Try for FREE
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link smaller">Sign in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-7 pb-4">
+                    <div class="d-flex">
+                        <img src="img/drill-down-timeline-pro.svg" alt="drill down timeline pro">
+                        <h1 class="fw-600 ps-3">Drill Down Timeline PRO
+                            <span class="d-block fw-normal fs-1">
+                                for Microsoft Power BI <img src="img/pbi-certitied.svg" alt="PBI Certified">
+                            </span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <p class="fw-bold fs-5">Explore time-based data using columns or measures.</p>
+                    <ul class="list-items">
+                        <li>Choose between multiple chart types and customize them fully to your liking.</li>
+                        <li>Explore data intuitively by combining on-chart interactions with cross-chart filtering.</li>
+                        <li>Have full control over your data using DAX calculated measures.</li>
+                    </ul>
+                    <a href="#" class="btn btn-warning me-4">Get it now</a>
+                    <a href="#" class="btn btn-outline-dark">ZoomCharts Assistance</a>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <img src="img/hero-img.png" alt="Explore time-based data using columns or measures." class="rounded-2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-60px pb-90px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="mb-2">Timeline interactions</h2>
+                    <p class="pb-4 mb-1">See all the possible ways you can explore this visual</p>
+                </div>
+                <div class="col-lg-12">
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-5" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-drill-down-tab" data-bs-toggle="pill" data-bs-target="#v-pills-drill-down" type="button" role="tab" aria-controls="v-pills-drill-down" aria-selected="true">Drill down</button>
+                            <button class="nav-link" id="v-pills-down-to-timespan-tab" data-bs-toggle="pill" data-bs-target="#v-pills-down-to-timespan" type="button" role="tab" aria-controls="v-pills-down-to-timespan" aria-selected="false">Drill down to timespan</button>
+                            <button class="nav-link" id="v-pills-zoom-out-tab" data-bs-toggle="pill" data-bs-target="#v-pills-zoom-out" type="button" role="tab" aria-controls="v-pills-zoom-out" aria-selected="false">Zoom out</button>
+                            <button class="nav-link" id="v-pills-go-back-tab" data-bs-toggle="pill" data-bs-target="#v-pills-go-back" type="button" role="tab" aria-controls="v-pills-go-back" aria-selected="false">Go back</button>
+                            <button class="nav-link" id="v-pills-scroll-back-tab" data-bs-toggle="pill" data-bs-target="#v-pills-scroll-back" type="button" role="tab" aria-controls="v-pills-scroll-back" aria-selected="false">Scroll back (time)</button>
+                            <button class="nav-link" id="v-pills-scroll-forward-tab" data-bs-toggle="pill" data-bs-target="#v-pills-scroll-forward" type="button" role="tab" aria-controls="v-pills-scroll-forward" aria-selected="false">Scroll forward (time)</button>
+                            <button class="nav-link" id="v-pills-finetune-zoom-tab" data-bs-toggle="pill" data-bs-target="#v-pills-finetune-zoom" type="button" role="tab" aria-controls="v-pills-finetune-zoom" aria-selected="false">Finetune zoom</button>
+                            <button class="nav-link" id="v-pills-select-time-period-tab" data-bs-toggle="pill" data-bs-target="#v-pills-select-time-period" type="button" role="tab" aria-controls="v-pills-select-time-period" aria-selected="false">Select time period</button>
+                            <button class="nav-link" id="v-pills-change-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-change-selection" type="button" role="tab" aria-controls="v-pills-change-selection" aria-selected="false">Change selection</button>
+                            <button class="nav-link" id="v-pills-remove-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-remove-selection" type="button" role="tab" aria-controls="v-pills-remove-selection" aria-selected="false">Remove selection</button>
+                            <button class="nav-link" id="v-pills-drill-down-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-drill-down-selection" type="button" role="tab" aria-controls="v-pills-drill-down-selection" aria-selected="false">Drill down to selection</button>
+                            <button class="nav-link" id="v-pills-change-time-tab" data-bs-toggle="pill" data-bs-target="#v-pills-change-time" type="button" role="tab" aria-controls="v-pills-change-time" aria-selected="false">Change time grain</button>
+                        </div>
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-down-to-timespan" role="tabpanel" aria-labelledby="v-pills-down-to-timespan-tab">
+                                <img src="img/key-img.png" alt="" class="w-100">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-down-to-timespan" role="tabpanel" aria-labelledby="v-pills-down-to-timespan-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-zoom-out" role="tabpanel" aria-labelledby="v-pills-zoom-out-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-go-back" role="tabpanel" aria-labelledby="v-pills-go-back-tab">...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="use-cases bg-light pt-60px pb-90px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="mb-2">Use cases</h2>
+                    <p class="mb-5">Visualize a sequence of events for marketing, finance, sales, and manufacturing data.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <icon class="icon-sales"></icon>
+                    <h4 class="mb-3 mt-1">Sales</h4>
+                    <p>Measure web traffic and your audience reach. See and compare lead volume and sales revenue dynamics.</p>
+                </div>
+                <div class="col-lg-3">
+                    <icon class="icon-finance"></icon>
+                    <h4 class="mb-3 mt-1">Finance</h4>
+                    <p>Visualize economic data. Get a clear look at stock exchange indices, capital ratios, and transaction volumes.</p>
+                </div>
+                <div class="col-lg-3">
+                    <icon class="icon-logistics"></icon>
+                    <h4 class="mb-3 mt-1">Logistics</h4>
+                    <p>Monitor inventory movement and turnover, keep a track on loading time. Gauge out fleet maintenance costs.</p>
+                </div>
+                <div class="col-lg-3">
+                    <icon class="icon-manufacturing"></icon>
+                    <h4 class="mb-3 mt-1">Manufacturing</h4>
+                    <p>Oversee and analyze quality metrics. Keep up with uptime and downtime, production output and cost.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="keys py-90px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center pb-3">
+                    <h2 class="mb-5">Key features</h2>
+                </div>
+            </div>
+            <div class="row pb-90px">
+                <div class="col-lg-5 align-self-center">
+                    <h3 class="mb-3">DAX Calculated Measure support</h3>
+                    <p>Experience on-chart interactions and cross-chart filtering. Explore data joyfully on both mouse and touch input devices. Different devices – same experience.</p>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <img src="img/key-img.png" alt="DAX Calculated Measure support" class="rounded-2 w-100">
+                </div>
+            </div>
+            <div class="row pb-90px">
+                <div class="col-lg-6">
+                    <img src="img/key-img.png" alt="Customization" class="rounded-2 w-100">
+                </div>
+                <div class="col-lg-5 offset-lg-1 align-self-center">
+                    <h3 class="mb-3">Customization</h3>
+                    <p>Ensure compelling data storytelling and maximum user friendliness through vast customization options. Add navigation arrows. Switch the start day of the week (Monday/Sunday). Use line and column charts.</p>
+                </div>
+            </div>
+            <div class="row pb-90px">
+                <div class="col-lg-5 align-self-center">
+                    <h3 class="mb-3">Customize up to 25 series</h3>
+                    <p>Don’t worry about constrictions. Input up to 25 series and explore large amounts of data. Default series configurator lets you efficiently customize all series at once.</p>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <img src="img/key-img.png" alt="Customize up to 25 series" class="rounded-2 w-100">
+                </div>
+            </div>
+            <div class="row pb-90px">
+                <div class="col-lg-6">
+                    <img src="img/key-img.png" alt="Conditional formatting" class="rounded-2 w-100">
+                </div>
+                <div class="col-lg-5 offset-lg-1 align-self-center">
+                    <h3 class="mb-3">Conditional formatting</h3>
+                    <p>Use color-based formatting to better compare and analyze your data. Make the chart automatically highlight certain values that are out of bounds. Use different formatting modes – gradients, stepped values, and more.</p>
+                </div>
+            </div>
+            <div class="row pb-90px">
+                <div class="col-lg-5 align-self-center">
+                    <h3 class="mb-3">Thresholds</h3>
+                    <p>Demonstrate milestones or targets using thresholds. Add line and area thresholds, customize their every aspect.</p>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <img src="img/key-img.png" alt="Thresholds" class="rounded-2 w-100">
+                </div>
+            </div>
+            <div class="row pb-90px">
+                <div class="col-lg-6">
+                    <img src="img/key-img.png" alt="Legends field" class="rounded-2 w-100">
+                </div>
+                <div class="col-lg-5 offset-lg-1 align-self-center">
+                    <h3 class="mb-3">Legends field</h3>
+                    <p>Add and customize the legends field. Pick different markers, customize the fonts and colors to help your users follow and read your report.</p>
+                </div>
+            </div>
+            <div class="row pb-90px">
+                <div class="col-lg-5 align-self-center">
+                    <h3 class="mb-3">Tooltip customization and field support</h3>
+                    <p>Make your reports more user-friendly than ever before by customizing tooltips. Hide series with no data in the tooltip. Customize displayed text for empty tooltips. Use both native and custom ZoomCharts tooltips.</p>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <img src="img/key-img.png" alt="Tooltip customization and field support" class="rounded-2 w-100">
+                </div>
+            </div>
+            <div class="row pb-90px">
+                <div class="col-lg-6">
+                    <img src="img/key-img.png" alt="Value aggregation" class="rounded-2 w-100">
+                </div>
+                <div class="col-lg-5 offset-lg-1 align-self-center">
+                    <h3 class="mb-3">Value aggregation</h3>
+                    <p>Upon selecting multiple units for certain series, choose how the visual aggregates the values – sum, average, max, min, first, last, count.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 align-self-center">
+                    <h3 class="mb-3">Multi-touch device friendly</h3>
+                    <p>Experience on-chart interactions and cross-chart filtering. Explore data joyfully on both mouse and touch input devices. Different devices – same experience.</p>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <img src="img/key-img.png" alt="Multi-touch device friendly" class="rounded-2 w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light pt-60px pb-90px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="mb-4 pb-1">These visuals in your report would fit perfectly with Drill Down Timeline PRO:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="rounded-1 border border-secondary d-flex px-3 py-4 align-items-center">
+                        <img src="img/drill-down-timeseries-pro.svg" alt="Drill Down TimeSeries PRO" class="img-size">
+                        <h4 class="mb-0 ps-3">Drill Down TimeSeries PRO</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="rounded-1 border border-secondary d-flex px-3 py-4 align-items-center">
+                        <img src="img/drill-down-map-pro.svg" alt="Drill Down Map PRO" class="img-size">
+                        <h4 class="mb-0 ps-3">Drill Down Map PRO</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="rounded-1 border border-secondary d-flex px-3 py-4 align-items-center">
+                        <img src="img/drill-down-waterfall-pro.svg" alt="Drill Down Waterfall PRO" class="img-size">
+                        <h4 class="mb-0 ps-3">Drill Down Waterfall PRO</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark py-70px">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="text-white mb-3">Try it yourself</h2>
+                    <p class="text-white mb-4 pb-1">We have prepared some free interactive examples for you. See what your reports might be missing.</p>
+                    <a href="#" class="btn btn-outline-light">Go to Power BI Dashboard and Report examples</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="assistance">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="mb-3">ZoomCharts Assistance</h1>
+                    <p class="fs-3 mb-5 pb-2">Contact our experts with any question about Power BI and ZoomCharts for Free NOW!</p>
+                    <div class="d-inline">
+                        <a href="#" class="btn btn-warning">Open chat</a>
+                        <a href="#" class="btn btn-outline-dark">Schedule a meeting</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-90px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="mb-2">Find out more about ZoomCharts </h2>
+                    <p class="mb-5 pb-1">We frequently release informational materials to help our clients </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-between pb-2">
+                        <p class="text-secondary">Feb 14, 2022</p>
+                        <p class="text-secondary">Blog post</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/smartworks-coworking.png" class="card-img-top rounded-1" alt="Attention-Grabbing Headline">
+                        <div class="card-body">
+                            <h4 class="mb-2">Attention-Grabbing Headline</h4>
+                            <p class="card-text mb-3 pb-1">Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio.</p>
+                            <a href="#" class="btn btn-outline-dark">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-between pb-2">
+                        <p class="text-secondary">Jan 14, 2022</p>
+                        <p class="text-secondary">Blog post</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/blog.png" class="card-img-top rounded-1" alt="Attention-Grabbing Headline">
+                        <div class="card-body">
+                            <h4 class="mb-2">Attention-Grabbing Headline</h4>
+                            <p class="card-text mb-3 pb-1">Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio.</p>
+                            <a href="#" class="btn btn-outline-dark">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-between pb-2">
+                        <p class="text-secondary">Dec 14, 2022</p>
+                        <p class="text-secondary">Webinar recording</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/sales-report.png" class="card-img-top rounded-1" alt="Attention-Grabbing Headline">
+                        <div class="card-body">
+                            <h4 class="mb-2">Attention-Grabbing Headline</h4>
+                            <p class="card-text mb-3 pb-1">Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio.</p>
+                            <a href="#" class="btn btn-outline-dark">Watch the recording</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-90px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="mb-2">Frequently asked questions</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-12 pb-90px">
+                    <div class="accordion accordion-flush pt-4" id="accordionFlush">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        What is considered as a User? 
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+                                <div class="accordion-body">"User" is any named employee of the Company that has purchased Drill Down visuals license, acting either as a creator (creating Power BI Report or Power BI Dashboard or Power BI Apps) or viewer (accessing in any form a
+                                    Company owned Power BI Report, Power BI Dashboard or Power BI App or any parts of it).</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Which plan do I need to select to use Drill Down Visuals in Premium Capacity?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlush">
+                                <div class="accordion-body">You need to choose Premium Edition or Report Server Edition license to use Drill Down visuals in Premium Capacity. There are also unlimited user capacity-based licenses available - <a href="https://zoomcharts.com/en/microsoft-power-bi-custom-visuals/request-a-quote/"
+                                        class="request-link">request a quote.</a></div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Which plan do I need to select to use Drill Down Visuals in a Report Server?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
+                                <div class="accordion-body">You need to choose Report Server Edition license to use Drill Down visuals in a Report Server. There are also unlimited user capacity-based licenses available - <a href="https://zoomcharts.com/en/microsoft-power-bi-custom-visuals/request-a-quote/"
+                                        class="request-link">request a quote.</a></div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                        Which plan do I need to select to use Drill Down Visuals in a Power BI Embedded?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlush">
+                                <div class="accordion-body">You need to choose Premium Edition or Report Server Edition license to use Drill Down visuals in a Power BI Embedded. There are also unlimited user capacity-based licenses available - <a href="https://zoomcharts.com/en/microsoft-power-bi-custom-visuals/request-a-quote/"
+                                        class="request-link">request a quote.</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 text-center d-flex justify-content-between align-items-center">
+                    <p>Was this helpful?</p>
+                    <a href="#" class="btn btn-outline-dark">Yes<icon class="icon-thumb-up ps-2"></icon></a>
+                    <a href="#" class="btn btn-outline-dark">No<icon class="icon-thumb-down ps-2"></icon></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="bg-light pt-60px pb-5">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="mb-4 pb-1">Products</h4>
+                        <ul>
+                            <li><a href="#">Drill Down Network Pro</a></li>
+                            <li><a href="#">Drill Down Waterfall Pro</a></li>
+                            <li><a href="#">Drill Down Graph Pro</a></li>
+                            <li><a href="#">Drill Down Timeline Pro</a></li>
+                            <li><a href="#">Drill Down Combo Bar PRO</a></li>
+                            <li><a href="#">Drill Down Donut Pro</a></li>
+                            <li><a href="#">Drill Down Pie Pro</a></li>
+                            <li><a href="#">Drill TimeSeries Pro</a></li>
+                            <li><a href="#">Drill Combo Pro</a></li>
+                            <li><a href="#">Drill Map Pro</a></li>
+                            <li><a href="#">All Visuals</a></li>
+                            <li><a href="#">Buy Now</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="mb-4 pb-1">Services</h4>
+                        <ul>
+                            <li><a href="#">Report Overhaul</a></li>
+                            <li><a href="#">Features Development</a></li>
+                            <li><a href="#">Visuals Development</a></li>
+                            <li><a href="#">Report Creation</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="mb-4 pb-1">Resources</h4>
+                        <ul>
+                            <li><a href="#">Report Examples</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Webinars</a></li>
+                            <li><a href="#">ZoomCharts Academy</a></li>
+                            <li><a href="#">Visuals Gallery</a></li>
+                            <li><a href="#">Subscribe to News</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="mb-4 pb-1">Help</h4>
+                        <ul>
+                            <li><a href="#">ZoomCharts Assistance</a></li>
+                            <li><a href="#">Contact Sales</a></li>
+                            <li><a href="#">Contact Support</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="mb-4 pb-1">Company</h4>
+                        <ul>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">Enterprise</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="#">Rate ZoomCharts Visuals</a></li>
+                            <li><a href="#">Join Visual Testers</a></li>
+                            <li><a href="#">Log in</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p class="text-capitalize">Contact our experts with any question about Power BI and ZoomCharts for Free NOW!</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="#" class="btn btn-warning">Go to Assistance Page</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                                <a href="#" class="pe-3 text-decoration-none text-dark">
+                                    <icon class="icon-linkedin"></icon>
+                                </a>
+                                <a href="#" class="pe-3 text-decoration-none text-dark">
+                                    <icon class="icon-facebook"></icon>
+                                </a>
+                                <a href="#" class="pe-3 text-decoration-none text-dark">
+                                    <icon class="icon-twitter"></icon>
+                                </a>
+                                <a href="#" class="pe-3 text-decoration-none text-dark">
+                                    <icon class="icon-youtube"></icon>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <icon class="icon-instagram"></icon>
+                                </a>
+                            </div>
+                            <p>info@zoomcharts.com</p>
+                            <p>+44 333 555 2505</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark py-4">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p class="text-white">© 2022, Data Visualization Software Lab</p>
+                    </div>
+                    <div>
+                        <ul class="d-flex mb-0">
+                            <li class="mb-0 pe-3"><a href="#" class="text-white">Global</a></li>
+                            <li class="mb-0 px-3"><a href="#" class="text-white">EULA</a></li>
+                            <li class="mb-0 ps-3"><a href="#" class="text-white">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="/js/main.js"></script>
+
+</html>
