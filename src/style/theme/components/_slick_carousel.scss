@@ -1,0 +1,45 @@
+@import 'slick-carousel/slick/slick';
+$slick-font-path: "../fonts/" !default;
+$slick-loader-path: "../img/" !default;
+@import 'slick-carousel/slick/slick-theme';
+
+.slide-wrapper {
+    padding: 16px;
+}
+
+@media (max-width: 576px) {
+    .slick-list {
+        padding: 0 20% 0 0 !important;
+    }
+}
+
+.slick-prev,
+.slick-next {
+    &:before {
+        content: ' ';
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.slick-prev {
+    left: -40px;
+    &:before {
+        background-image: url('../img/arrow_prev.svg');
+        [dir="rtl"] & {
+            background-image: url('../img/arrow_next.svg');
+        }
+    }
+}
+
+.slick-next {
+    right: -25px;
+    &:before {
+        background-image: url('../img/arrow_next.svg');
+        [dir="rtl"] & {
+            background-image: url('../img/arrow_prev.svg');
+        }
+    }
+}

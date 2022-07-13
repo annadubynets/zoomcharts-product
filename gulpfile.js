@@ -17,9 +17,11 @@ var path = {
         fontIcons: "./src/font_icons/icons/*.svg",
         img: [
             "./src/img/**/*.*",
+            "node_modules/slick-carousel/slick/ajax-loader.gif",
         ],
         fonts: [
             "./src/fonts/**/*.*",
+            "node_modules/slick-carousel/slick/fonts/**/*.*",
         ]
     },
     watch: {
