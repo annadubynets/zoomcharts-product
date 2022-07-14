@@ -6,10 +6,12 @@
 @import "theme/components/navbar";
 @import "theme/components/accordion";
 @import "theme/components/list";
+@import "theme/components/dropdown";
+@import "theme/components/buttons";
 @import "theme/components/slick_carousel";
 .hero {
     background-color: $light-blue;
-    padding-top: 240px;
+    padding-top: 146px;
     padding-bottom: 70px;
 }
 
@@ -72,6 +74,20 @@
     }
 }
 
+.divider-left {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: #DFE3EC;
+        width: 1px;
+        height: auto;
+        left: -1px;
+    }
+}
+
 .footer {
     .separator {
         border-bottom: 1px solid #DFE3EC;
@@ -79,7 +95,7 @@
     ul {
         padding-left: 0;
         li {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             a {
                 color: $black!important;
                 &.link-white {

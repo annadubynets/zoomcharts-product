@@ -1,4 +1,5 @@
 .btn-warning {
+    padding: 14px 35px;
     &:hover {
         text-decoration: underline;
         background-color: $yellow;
@@ -7,15 +8,20 @@
 }
 
 .btn-outline-dark {
+    padding: 14px 35px;
     &:hover {
         text-decoration: underline;
         background-color: $white;
         border-color: $black-100;
         color: $black;
     }
+    &.btn-padding {
+        padding: 4px 20px;
+    }
 }
 
 .btn-outline-light {
+    padding: 14px 35px;
     &:hover {
         text-decoration: underline;
         color: $white;

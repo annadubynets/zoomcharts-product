@@ -15,12 +15,30 @@
                 padding: 10px 15px;
                 color: rgb(85, 85, 85);
                 font-weight: normal;
+                &.show {
+                    color: $black;
+                    background-color: transparent;
+                    .label {
+                        position: relative;
+                        &::before {
+                            content: "";
+                            display: block;
+                            height: 2px;
+                            width: 100%;
+                            background-color: $yellow;
+                            transition: 0.5s;
+                            position: absolute;
+                            bottom: -5px;
+                            left: 0;
+                        }
+                    }
+                }
                 @media (max-width: 991px) {
                     padding: 30px 0;
                 }
                 @media (min-width: 992px) {
                     &:hover {
-                        background-color: rgba(0, 0, 0, .1);
+                        background-color: transparent;
                     }
                 }
                 &.smaller {
@@ -30,9 +48,9 @@
                 }
             }
             &.menu-divider {
-                border-left: 1px dashed rgba(0, 0, 0, .2);
-                margin-left: 16px;
-                margin-right: 12px;
+                border-left: 1px solid #DFE3EC;
+                margin-left: 10px;
+                margin-right: 10px;
             }
         }
         .navbar-toggler {
@@ -126,22 +144,33 @@
             }
         }
         .full-screen-dropdown {
+            .dropdown-toggle {
+                &::after {
+                    border: none;
+                    display: inline;
+                    @include icon-styles;
+                    content: icon-char(arrow-down);
+                    font-size: 7px;
+                    color: $black;
+                }
+            }
             .dropdown-menu {
                 top: 0px;
+                padding: 0;
                 @media (min-width: 992px) {
                     display: block;
                 }
                 visibility: hidden;
                 &.show {
                     visibility: visible;
-                    top: 88px;
+                    top: 82px;
+                    border-top: 1px solid #DFE3EC;
                 }
                 transition: top 0.35s;
                 position: fixed;
                 left: 0px;
                 right: 0px;
                 z-index: -1;
-                padding-top: 66px;
                 border: 0;
                 border-radius: 0;
                 @media (max-width: 991px) {
@@ -149,6 +178,20 @@
                     top: 0;
                     padding-top: 0;
                     background-color: transparent;
+                }
+                ul {
+                    li {
+                        margin-bottom: 0;
+                    }
+                }
+                .dropdown-link {
+                    color: $blue;
+                    text-decoration: none;
+                    span {
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
                 }
             }
             .icon {

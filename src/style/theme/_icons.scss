@@ -33,13 +33,15 @@ $icon-name-instagram: "\E005";
 $icon-name-linkedin: "\E006"; 
 $icon-name-logistics: "\E007"; 
 $icon-name-manufacturing: "\E008"; 
-$icon-name-next: "\E009"; 
-$icon-name-prev: "\E00A"; 
-$icon-name-sales: "\E00B"; 
-$icon-name-thumb-down: "\E00C"; 
-$icon-name-thumb-up: "\E00D"; 
-$icon-name-twitter: "\E00E"; 
-$icon-name-youtube: "\E00F"; 
+$icon-name-navbar-arrow: "\E009"; 
+$icon-name-next: "\E00A"; 
+$icon-name-prev: "\E00B"; 
+$icon-name-sales: "\E00C"; 
+$icon-name-search: "\E00D"; 
+$icon-name-thumb-down: "\E00E"; 
+$icon-name-thumb-up: "\E00F"; 
+$icon-name-twitter: "\E010"; 
+$icon-name-youtube: "\E011"; 
 
 
 @function icon-char($filename) {
@@ -69,26 +71,32 @@ $icon-name-youtube: "\E00F";
 	@if $filename == manufacturing {
 		$char: "\E008";
 	}
-	@if $filename == next {
+	@if $filename == navbar-arrow {
 		$char: "\E009";
 	}
-	@if $filename == prev {
+	@if $filename == next {
 		$char: "\E00A";
 	}
-	@if $filename == sales {
+	@if $filename == prev {
 		$char: "\E00B";
 	}
-	@if $filename == thumb-down {
+	@if $filename == sales {
 		$char: "\E00C";
 	}
-	@if $filename == thumb-up {
+	@if $filename == search {
 		$char: "\E00D";
 	}
-	@if $filename == twitter {
+	@if $filename == thumb-down {
 		$char: "\E00E";
 	}
-	@if $filename == youtube {
+	@if $filename == thumb-up {
 		$char: "\E00F";
+	}
+	@if $filename == twitter {
+		$char: "\E010";
+	}
+	@if $filename == youtube {
+		$char: "\E011";
 	}
 
 	@return $char;
@@ -129,6 +137,9 @@ $icon-name-youtube: "\E00F";
 .icon-manufacturing {
 	@include icon(manufacturing);
 }
+.icon-navbar-arrow {
+	@include icon(navbar-arrow);
+}
 .icon-next {
 	@include icon(next);
 }
@@ -137,6 +148,9 @@ $icon-name-youtube: "\E00F";
 }
 .icon-sales {
 	@include icon(sales);
+}
+.icon-search {
+	@include icon(search);
 }
 .icon-thumb-down {
 	@include icon(thumb-down);

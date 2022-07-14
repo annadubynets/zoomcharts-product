@@ -3,6 +3,7 @@
 $font-family-sans-serif: "Open Sans" !default;
 $light-blue: #F4F6FA;
 $yellow: #F2C811;
+$blue: #0B57D0;
 $gray: #808C9A;
 $black-100: #000000;
 $black: #001935;
@@ -14,7 +15,7 @@ $h4-font-size: 20px;
 $headings-line-height: 1.1;
 $headings-font-family: "Open Sans";
 $headings-font-weight: 600;
-$font-sizes: ( 1: 24px, 2: 20px, 3: 18px, 4: 16px, 5: 15px, 6: 14px);
+$font-sizes: ( 1: 24px, 2: 20px, 3: 18px, 4: 16px, 5: 15px, 6: 14px, 7: 9px);
 //buttons 
 $btn-font-size: .938rem;
 $btn-font-weight: 600;
@@ -25,3 +26,4 @@ $border-radius: .313rem;
 $border-radius-sm: .938rem;
 // accordion 
 $accordion-button-color: $black;
+$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1140px);

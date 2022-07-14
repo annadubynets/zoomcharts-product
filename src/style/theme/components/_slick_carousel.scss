@@ -12,6 +12,11 @@ $slick-loader-path: "../img/" !default;
     }
 }
 
+.slick-next.slick-disabled:before,
+.slick-prev.slick-disabled:before {
+    opacity: 1;
+}
+
 .slick-slide {
     margin-right: 20px;
 }
@@ -33,7 +38,7 @@ $slick-loader-path: "../img/" !default;
         display: inline;
         @include icon-styles;
         content: icon-char(prev);
-        font-size: .75rem;
+        font-size: 1.5rem;
         color: $black;
         background-image: none;
     }
@@ -45,7 +50,7 @@ $slick-loader-path: "../img/" !default;
         display: inline;
         @include icon-styles;
         content: icon-char(next);
-        font-size: .75rem;
+        font-size: 1.5rem;
         color: $black;
         background-image: none;
     }

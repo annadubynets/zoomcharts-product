@@ -17,7 +17,7 @@
         display: block;
         @include icon-styles;
         content: icon-char(arrow-down);
-        font-size: .75rem;
+        font-size: .563rem;
         color: $black;
         background-image: none!important;
     }
@@ -27,7 +27,7 @@
     display: inline;
     @include icon-styles;
     content: icon-char(arrow-down);
-    font-size: .75rem;
+    font-size: .563rem;
     color: $black;
 }
 
