@@ -14,6 +14,8 @@ $('.objects-carousel').slick({
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
+                infinite: true,
+                arrows: true
             }
         },
         {

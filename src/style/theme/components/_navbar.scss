@@ -4,9 +4,6 @@
         padding: 15px 0;
         background: white;
         transition: all 0.35s;
-        .navbar-brand-img {
-            height: 23px;
-        }
         .navbar-nav>li {
             margin-left: 1px;
             margin-right: 1px;
@@ -321,8 +318,10 @@
     
     .nav-pills {
         .nav-link {
+            font-size: .938rem;
             color: $black;
             text-align: start;
+            padding: .625rem 1rem;
             &.active {
                 font-weight: 600;
                 color: $black;
