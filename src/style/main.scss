@@ -1,98 +1,49 @@
 @import 'theme/theme';
 @import 'theme/fonts';
 @import 'theme/utilities';
+@import 'theme/typography';
 @import 'theme/variables';
 @import "theme/components/navbar";
+@import "theme/components/accordion";
+@import "theme/components/list";
 @import "theme/components/slick_carousel";
-body {
-    font-family: "Open Sans";
-    color: $black;
-}
-
-p {
-    font-size: .938rem;
-    margin-bottom: 0;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-    li {
-        margin-bottom: 15px;
-        a {
-            color: $black;
-            font-size: 15px;
-        }
-    }
-}
-
 .hero {
     background-color: $light-blue;
     padding-top: 240px;
     padding-bottom: 70px;
 }
 
-.list-items {
-    padding-left: 2.5rem;
-    margin-top: 30px;
-    margin-bottom: 35px!important;
-    li {
-        font-weight: normal;
-        font-size: .938rem;
-        color: $black;
-        list-style-type: none;
-        margin-bottom: 20px;
-        &::before {
-            display: inline;
-            @include icon-styles;
-            content: icon-char(check);
-            font-size: .75rem;
-            color: $black;
-            margin-left: -35px;
-            padding-right: 20px;
+.visuals {
+    .img-size {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.interactions {
+    .img-style {
+        width: 845px;
+        height: 470px;
+        @media (max-width: 992px) {
+            width: 100%;
+            height: 195px;
         }
     }
 }
 
-.footer-items {
-    padding-left: 0;
-    li {
-        margin-bottom: 20px;
-        a {
-            color: $black!important;
-        }
-        &::before {
-            display: none;
-        }
-         ::marker {
-            display: none;
-        }
+.visuals-bundle {
+    .bundle-size {
+        width: 66px;
+        height: 66px;
     }
 }
 
-.img-size {
-    width: 50px;
-    height: 50px;
-}
-
-.img-style {
-    width: 845px;
-    height: 470px;
-    @media (max-width: 992px) {
-        width: 100%;
-        height: 195px;
-    }
-}
-
-.bundle-size {
-    width: 66px;
-    height: 66px;
-}
-
-.card {
-    border: none;
-    .card-body {
-        padding: 1rem 0;
+.find {
+    .card {
+        border: none;
+        .card-body {
+            padding: 1rem 0;
+        }
     }
 }
 
@@ -121,80 +72,31 @@ ul {
     }
 }
 
-.accordion-button:not(.collapsed) {
-    color: $black;
-    background-color: transparent;
-    box-shadow: none;
-}
-
-.accordion-button {
-    font-weight: 600;
-    padding: 1.563rem 0;
-    @media (max-width: 992px) {
-        padding: 1.25rem 0;
+.footer {
+    .separator {
+        border-bottom: 1px solid #DFE3EC;
     }
-    &:focus {
-        box-shadow: none;
-    }
-    &::after {
-        display: block;
-        @include icon-styles;
-        content: icon-char(arrow-down);
-        font-size: .75rem;
-        color: $black;
-        background-image: none!important;
-    }
-}
-
-.accordion-button:not(.collapsed)::after {
-    display: inline;
-    @include icon-styles;
-    content: icon-char(arrow-down);
-    font-size: .75rem;
-    color: $black;
-}
-
-.accordion-body {
-    padding: 0 0 1.563rem 0;
-}
-
-.separator {
-    border-bottom: 1px solid #DFE3EC;
-}
-
-.slick-prev {
-    &::before {
-        display: inline;
-        @include icon-styles;
-        content: icon-char(prev);
-        font-size: .75rem;
-        color: $black;
-    }
-}
-
-.slick-next {
-    &::before {
-        display: inline;
-        @include icon-styles;
-        content: icon-char(next);
-        font-size: .75rem;
-        color: $black;
+    ul {
+        padding-left: 0;
+        li {
+            margin-bottom: 20px;
+            a {
+                color: $black!important;
+                &.link-white {
+                    color: $white!important;
+                }
+            }
+            &::before {
+                display: none;
+            }
+             ::marker {
+                display: none;
+            }
+        }
     }
 }
 
 @media (max-width: 992px) {
-    h1 {
-        font-size: 1.563rem!important;
-    }
-    h2 {
-        font-size: 1.563rem!important;
-    }
-    h3 {
-        font-size: 1.5rem!important;
-    }
-    h4 {
-        font-size: 1.25rem!important;
-    }
     .assistance {
         &::before {
             display: none;
@@ -203,9 +105,5 @@ ul {
     }
     .hero {
         padding-top: 105px;
-    }
-    .list-items {
-        margin-top: 20px!important;
-        margin-bottom: 30px!important;
     }
 }

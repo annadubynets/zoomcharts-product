@@ -1,0 +1,36 @@
+.accordion-button:not(.collapsed) {
+    color: $black;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-button {
+    font-weight: 600;
+    padding: 1.563rem 0;
+    @media (max-width: 992px) {
+        padding: 1.25rem 0;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+    &::after {
+        display: block;
+        @include icon-styles;
+        content: icon-char(arrow-down);
+        font-size: .75rem;
+        color: $black;
+        background-image: none!important;
+    }
+}
+
+.accordion-button:not(.collapsed)::after {
+    display: inline;
+    @include icon-styles;
+    content: icon-char(arrow-down);
+    font-size: .75rem;
+    color: $black;
+}
+
+.accordion-body {
+    padding: 0 0 1.563rem 0;
+}

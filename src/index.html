@@ -42,7 +42,7 @@
         </div>
     </section>
 
-    <section class="pt-40px pb-90px">
+    <section class="interactions pt-40px pb-90px">
         <div class="container">
             <div class="row pb-90px">
                 <div class="col-lg-12">
@@ -91,25 +91,55 @@
                     <div class="d-flex flex-lg-row flex-column justify-content-between align-items-lg-start align-items-center">
                         <div class="nav flex-column text-center nav-pills mb-lg-0 mb-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <button class="nav-link active text-lg-start text-center" id="v-pills-drill-down-tab" data-bs-toggle="pill" data-bs-target="#v-pills-drill-down" type="button" role="tab" aria-controls="v-pills-drill-down" aria-selected="true"><span class="label">Drill down</span></button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-down-to-timespan-tab" data-bs-toggle="pill" data-bs-target="#v-pills-down-to-timespan" type="button" role="tab" aria-controls="v-pills-down-to-timespan" aria-selected="false">Drill down to timespan</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-zoom-out-tab" data-bs-toggle="pill" data-bs-target="#v-pills-zoom-out" type="button" role="tab" aria-controls="v-pills-zoom-out" aria-selected="false">Zoom out</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-go-back-tab" data-bs-toggle="pill" data-bs-target="#v-pills-go-back" type="button" role="tab" aria-controls="v-pills-go-back" aria-selected="false">Go back</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-scroll-back-tab" data-bs-toggle="pill" data-bs-target="#v-pills-scroll-back" type="button" role="tab" aria-controls="v-pills-scroll-back" aria-selected="false">Scroll back (time)</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-scroll-forward-tab" data-bs-toggle="pill" data-bs-target="#v-pills-scroll-forward" type="button" role="tab" aria-controls="v-pills-scroll-forward" aria-selected="false">Scroll forward (time)</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-finetune-zoom-tab" data-bs-toggle="pill" data-bs-target="#v-pills-finetune-zoom" type="button" role="tab" aria-controls="v-pills-finetune-zoom" aria-selected="false">Finetune zoom</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-select-time-period-tab" data-bs-toggle="pill" data-bs-target="#v-pills-select-time-period" type="button" role="tab" aria-controls="v-pills-select-time-period" aria-selected="false">Select time period</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-change-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-change-selection" type="button" role="tab" aria-controls="v-pills-change-selection" aria-selected="false">Change selection</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-remove-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-remove-selection" type="button" role="tab" aria-controls="v-pills-remove-selection" aria-selected="false">Remove selection</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-drill-down-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-drill-down-selection" type="button" role="tab" aria-controls="v-pills-drill-down-selection" aria-selected="false">Drill down to selection</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-change-time-tab" data-bs-toggle="pill" data-bs-target="#v-pills-change-time" type="button" role="tab" aria-controls="v-pills-change-time" aria-selected="false">Change time grain</button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-down-to-timespan-tab" data-bs-toggle="pill" data-bs-target="#v-pills-down-to-timespan" type="button" role="tab" aria-controls="v-pills-down-to-timespan" aria-selected="false"><span class="label">Drill down to timespan</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-zoom-out-tab" data-bs-toggle="pill" data-bs-target="#v-pills-zoom-out" type="button" role="tab" aria-controls="v-pills-zoom-out" aria-selected="false"><span class="label">Zoom out</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-go-back-tab" data-bs-toggle="pill" data-bs-target="#v-pills-go-back" type="button" role="tab" aria-controls="v-pills-go-back" aria-selected="false"><span class="label">Go back</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-scroll-back-tab" data-bs-toggle="pill" data-bs-target="#v-pills-scroll-back" type="button" role="tab" aria-controls="v-pills-scroll-back" aria-selected="false"><span class="label">Scroll back (time)</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-scroll-forward-tab" data-bs-toggle="pill" data-bs-target="#v-pills-scroll-forward" type="button" role="tab" aria-controls="v-pills-scroll-forward" aria-selected="false"><span class="label">Scroll forward (time)</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-finetune-zoom-tab" data-bs-toggle="pill" data-bs-target="#v-pills-finetune-zoom" type="button" role="tab" aria-controls="v-pills-finetune-zoom" aria-selected="false"><span class="label">Finetune zoom</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-select-time-period-tab" data-bs-toggle="pill" data-bs-target="#v-pills-select-time-period" type="button" role="tab" aria-controls="v-pills-select-time-period" aria-selected="false"><span class="label">Select time period</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-change-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-change-selection" type="button" role="tab" aria-controls="v-pills-change-selection" aria-selected="false"><span class="label">Change selection</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-remove-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-remove-selection" type="button" role="tab" aria-controls="v-pills-remove-selection" aria-selected="false"><span class="label">Remove selection</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-drill-down-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-drill-down-selection" type="button" role="tab" aria-controls="v-pills-drill-down-selection" aria-selected="false"><span class="label">Drill down to selection</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-change-time-tab" data-bs-toggle="pill" data-bs-target="#v-pills-change-time" type="button" role="tab" aria-controls="v-pills-change-time" aria-selected="false"><span class="label">Change time grain</span></button>
                         </div>
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-down-to-timespan" role="tabpanel" aria-labelledby="v-pills-down-to-timespan-tab">
-                                <img src="img/key-img.png" alt="" class="rounded-2 img-style">
+                                <img src="img/key-img.png" alt="Drill down" class="rounded-2 img-style">
                             </div>
-                            <div class="tab-pane fade" id="v-pills-down-to-timespan" role="tabpanel" aria-labelledby="v-pills-down-to-timespan-tab">...</div>
-                            <div class="tab-pane fade" id="v-pills-zoom-out" role="tabpanel" aria-labelledby="v-pills-zoom-out-tab">...</div>
-                            <div class="tab-pane fade" id="v-pills-go-back" role="tabpanel" aria-labelledby="v-pills-go-back-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-down-to-timespan" role="tabpanel" aria-labelledby="v-pills-down-to-timespan-tab">
+                                <img src="img/key-img.png" alt="Drill down to timespan" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-zoom-out" role="tabpanel" aria-labelledby="v-pills-zoom-out-tab">
+                                <img src="img/key-img.png" alt="Zoom out" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-go-back" role="tabpanel" aria-labelledby="v-pills-go-back-tab">
+                                <img src="img/key-img.png" alt="Go back" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-scroll-back" role="tabpanel" aria-labelledby="v-pills-scroll-back-tab">
+                                <img src="img/key-img.png" alt="Scroll back (time)" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-scroll-forward" role="tabpanel" aria-labelledby="v-pills-scroll-forward-tab">
+                                <img src="img/key-img.png" alt="Scroll forward (time)" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-finetune-zoom" role="tabpanel" aria-labelledby="v-pills-finetune-zoom-tab">
+                                <img src="img/key-img.png" alt="Finetune zoom" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-select-time-period" role="tabpanel" aria-labelledby="v-pills-select-time-period-tab">
+                                <img src="img/key-img.png" alt="Select time period" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-change-selection" role="tabpanel" aria-labelledby="v-pills-change-selection-tab">
+                                <img src="img/key-img.png" alt="Change selection" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-remove-selection" role="tabpanel" aria-labelledby="v-pills-remove-selection-tab">
+                                <img src="img/key-img.png" alt="Remove selection" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-drill-down-selection" role="tabpanel" aria-labelledby="v-pills-drill-down-selection-tab">
+                                <img src="img/key-img.png" alt="Drill down to selection" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-change-time" role="tabpanel" aria-labelledby="v-pills-change-time-tab">
+                                <img src="img/key-img.png" alt="Change time grain" class="rounded-2 img-style">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -241,7 +271,7 @@
         </div>
     </section>
 
-    <section class="bg-light pt-60px pb-90px">
+    <section class="visuals bg-light pt-60px pb-90px">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-lg-start text-center">
@@ -252,19 +282,19 @@
                 <div class="col-lg-4 mb-lg-0 mb-3">
                     <div class="rounded-1 border border-secondary d-flex px-3 py-lg-4 py-3 align-items-center">
                         <img src="img/drill-down-timeseries-pro.svg" alt="Drill Down TimeSeries PRO" class="img-size">
-                        <h4 class="mb-0 ps-3">Drill Down TimeSeries PRO</h4>
+                        <a href="#" class="link mb-0 ps-3">Drill Down TimeSeries PRO</a>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-lg-0 mb-3">
                     <div class="rounded-1 border border-secondary d-flex px-3 py-lg-4 py-3 align-items-center">
                         <img src="img/drill-down-map-pro.svg" alt="Drill Down Map PRO" class="img-size">
-                        <h4 class="mb-0 ps-3">Drill Down Map PRO</h4>
+                        <a href="#" class="link mb-0 ps-3">Drill Down Map PRO</a>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-lg-0 mb-3">
                     <div class="rounded-1 border border-secondary d-flex px-3 py-lg-4 py-3 align-items-center">
                         <img src="img/drill-down-waterfall-pro.svg" alt="Drill Down Waterfall PRO" class="img-size">
-                        <h4 class="mb-0 ps-3">Drill Down Waterfall PRO</h4>
+                        <a href="#" class="link mb-0 ps-3">Drill Down Waterfall PRO</a>
                     </div>
                 </div>
             </div>
@@ -283,11 +313,11 @@
         </div>
     </section>
 
-    <section class="py-90px">
+    <section class="visuals-bundle py-90px">
         <div class="container">
             <div class="row pb-5 mb-2">
                 <div class="col-lg-12 text-center">
-                    <h1 class="mb-3">ZoomCharts Drill Down Visuals bundle </h1>
+                    <h1 class="mb-3">ZoomCharts Drill Down Visuals bundle</h1>
                     <p class="fs-3">Note, that when you get one of our visuals, you automatically get the full bundle.</p>
                 </div>
             </div>
@@ -346,11 +376,11 @@
         </div>
     </section>
 
-    <section class="py-90px">
+    <section class="find py-90px">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="mb-2">Find out more about ZoomCharts </h2>
+                    <h2 class="mb-2">Find out more about ZoomCharts</h2>
                     <p class="mb-5 pb-1">We frequently release informational materials to help our clients </p>
                 </div>
             </div>
@@ -365,7 +395,7 @@
                         <div class="card-body">
                             <h4 class="mb-2">Attention-Grabbing Headline</h4>
                             <p class="card-text">Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio.</p>
-                            <div class="pt-3 mt-1">
+                            <div class="pt-3 mt-3">
                                 <a href="#" class="btn btn-outline-dark d-lg-inline d-block">Learn More</a>
                             </div>
                         </div>
@@ -381,7 +411,7 @@
                         <div class="card-body">
                             <h4 class="mb-2">Attention-Grabbing Headline</h4>
                             <p class="card-text">Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio.</p>
-                            <div class="pt-3 mt-1">
+                            <div class="pt-3 mt-3">
                                 <a href="#" class="btn btn-outline-dark d-lg-inline d-block">Learn More</a>
                             </div>
                         </div>
@@ -397,7 +427,7 @@
                         <div class="card-body">
                             <h4 class="mb-2">Attention-Grabbing Headline</h4>
                             <p class="card-text">Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio.</p>
-                            <div class="pt-3 mt-1">
+                            <div class="pt-3 mt-3">
                                 <a href="#" class="btn btn-outline-dark d-lg-inline d-block">Watch the recording</a>
                             </div>
                         </div>
@@ -407,7 +437,7 @@
         </div>
     </section>
 
-    <section class="bg-dark">
+    <section class="banner bg-dark">
         <div class="container">
             <div class="row pt-120px pb-140px">
                 <div class="col-lg-12 position-relative h-500">
@@ -482,8 +512,8 @@
                 <div class="col-lg-4 text-center d-flex flex-lg-row flex-column justify-content-between align-items-center">
                     <p class="mb-lg-0 mb-3">Was this helpful?</p>
                     <div>
-                        <a href="#" class="btn btn-outline-dark">Yes<icon class="icon-thumb-up ps-2"></icon></a>
-                        <a href="#" class="btn btn-outline-dark">No<icon class="icon-thumb-down ps-2"></icon></a>
+                        <a href="#" class="btn btn-outline-dark me-4">Yes<icon class="icon-thumb-up fs-1 ps-2"></icon></a>
+                        <a href="#" class="btn btn-outline-dark">No<icon class="icon-thumb-down fs-1 ps-2"></icon></a>
                     </div>
                 </div>
             </div>

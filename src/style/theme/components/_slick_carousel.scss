@@ -2,7 +2,6 @@
 $slick-font-path: "../fonts/" !default;
 $slick-loader-path: "../img/" !default;
 @import 'slick-carousel/slick/slick-theme';
-
 .slide-wrapper {
     padding: 16px;
 }
@@ -11,6 +10,10 @@ $slick-loader-path: "../img/" !default;
     .slick-list {
         padding: 0 20% 0 0 !important;
     }
+}
+
+.slick-slide {
+    margin-right: 20px;
 }
 
 .slick-prev,
@@ -26,20 +29,24 @@ $slick-loader-path: "../img/" !default;
 
 .slick-prev {
     left: -40px;
-    &:before {
-        background-image: url('../img/arrow_prev.svg');
-        [dir="rtl"] & {
-            background-image: url('../img/arrow_next.svg');
-        }
+    &::before {
+        display: inline;
+        @include icon-styles;
+        content: icon-char(prev);
+        font-size: .75rem;
+        color: $black;
+        background-image: none;
     }
 }
 
 .slick-next {
     right: -25px;
-    &:before {
-        background-image: url('../img/arrow_next.svg');
-        [dir="rtl"] & {
-            background-image: url('../img/arrow_prev.svg');
-        }
+    &::before {
+        display: inline;
+        @include icon-styles;
+        content: icon-char(next);
+        font-size: .75rem;
+        color: $black;
+        background-image: none;
     }
 }

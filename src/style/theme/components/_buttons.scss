@@ -1,0 +1,25 @@
+.btn-warning {
+    &:hover {
+        text-decoration: underline;
+        background-color: $yellow;
+        border-color: $yellow;
+    }
+}
+
+.btn-outline-dark {
+    &:hover {
+        text-decoration: underline;
+        background-color: $white;
+        border-color: $black-100;
+        color: $black;
+    }
+}
+
+.btn-outline-light {
+    &:hover {
+        text-decoration: underline;
+        color: $white;
+        background-color: $black-100;
+        border-color: $white;
+    }
+}
