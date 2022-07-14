@@ -28,7 +28,7 @@ ul {
 
 .hero {
     background-color: $light-blue;
-    padding-top: 140px;
+    padding-top: 240px;
     padding-bottom: 70px;
 }
 
@@ -43,14 +43,13 @@ ul {
         list-style-type: none;
         margin-bottom: 20px;
         &::before {
-            content: '';
-            display: inline-block;
-            width: 15px;
-            height: 15px;
-            border-radius: 50px;
-            background-color: $black;
+            display: inline;
+            @include icon-styles;
+            content: icon-char(check);
+            font-size: .75rem;
+            color: $black;
             margin-left: -35px;
-            margin-right: 25px;
+            padding-right: 20px;
         }
     }
 }
@@ -76,6 +75,20 @@ ul {
     height: 50px;
 }
 
+.img-style {
+    width: 845px;
+    height: 470px;
+    @media (max-width: 992px) {
+        width: 100%;
+        height: 195px;
+    }
+}
+
+.bundle-size {
+    width: 66px;
+    height: 66px;
+}
+
 .card {
     border: none;
     .card-body {
@@ -83,13 +96,116 @@ ul {
     }
 }
 
+.placeholder-banner {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
 .assistance {
     &::before {
         display: block;
         content: '';
-        background-image: url('../img/assistance-img.png');
+        background-image: url(../img/assistance-img.png);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    color: $black;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-button {
+    font-weight: 600;
+    padding: 1.563rem 0;
+    @media (max-width: 992px) {
+        padding: 1.25rem 0;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+    &::after {
+        display: block;
+        @include icon-styles;
+        content: icon-char(arrow-down);
+        font-size: .75rem;
+        color: $black;
+        background-image: none!important;
+    }
+}
+
+.accordion-button:not(.collapsed)::after {
+    display: inline;
+    @include icon-styles;
+    content: icon-char(arrow-down);
+    font-size: .75rem;
+    color: $black;
+}
+
+.accordion-body {
+    padding: 0 0 1.563rem 0;
+}
+
+.separator {
+    border-bottom: 1px solid #DFE3EC;
+}
+
+.slick-prev {
+    &::before {
+        display: inline;
+        @include icon-styles;
+        content: icon-char(prev);
+        font-size: .75rem;
+        color: $black;
+    }
+}
+
+.slick-next {
+    &::before {
+        display: inline;
+        @include icon-styles;
+        content: icon-char(next);
+        font-size: .75rem;
+        color: $black;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 1.563rem!important;
+    }
+    h2 {
+        font-size: 1.563rem!important;
+    }
+    h3 {
+        font-size: 1.5rem!important;
+    }
+    h4 {
+        font-size: 1.25rem!important;
+    }
+    .assistance {
+        &::before {
+            display: none;
+            background-image: none;
+        }
+    }
+    .hero {
+        padding-top: 105px;
+    }
+    .list-items {
+        margin-top: 20px!important;
+        margin-bottom: 30px!important;
     }
 }

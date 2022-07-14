@@ -18,12 +18,24 @@
     padding: 90px 0;
 }
 
+.pt-40px {
+    padding-top: 40px;
+}
+
 .pt-60px {
     padding-top: 60px;
 }
 
+.pt-120px {
+    padding-top: 120px;
+}
+
 .pb-90px {
     padding-bottom: 90px;
+}
+
+.pb-140px {
+    padding-bottom: 140px;
 }
 
 .rounded-1 {
@@ -36,4 +48,34 @@
 
 .border-secondary {
     border-color: #DFDFDF!important;
+}
+
+.h-500 {
+    height: 500px;
+}
+
+.fw-600 {
+    font-weight: 600!important;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 992px) {
+    .py-90px {
+        padding: 40px 0;
+    }
+    .pt-60px {
+        padding-top: 40px;
+    }
+    .pb-90px {
+        padding-bottom: 30px;
+    }
+    .subtitle {
+        font-size: .938rem;
+    }
+    .fs-1 {
+        font-size: 1rem!important;
+    }
 }
