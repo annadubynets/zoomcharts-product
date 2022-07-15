@@ -41,7 +41,8 @@ $icon-name-search: "\E00D";
 $icon-name-thumb-down: "\E00E"; 
 $icon-name-thumb-up: "\E00F"; 
 $icon-name-twitter: "\E010"; 
-$icon-name-youtube: "\E011"; 
+$icon-name-user: "\E011"; 
+$icon-name-youtube: "\E012"; 
 
 
 @function icon-char($filename) {
@@ -95,8 +96,11 @@ $icon-name-youtube: "\E011";
 	@if $filename == twitter {
 		$char: "\E010";
 	}
-	@if $filename == youtube {
+	@if $filename == user {
 		$char: "\E011";
+	}
+	@if $filename == youtube {
+		$char: "\E012";
 	}
 
 	@return $char;
@@ -160,6 +164,9 @@ $icon-name-youtube: "\E011";
 }
 .icon-twitter {
 	@include icon(twitter);
+}
+.icon-user {
+	@include icon(user);
 }
 .icon-youtube {
 	@include icon(youtube);
