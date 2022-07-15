@@ -11,7 +11,7 @@
 @import "theme/components/slick_carousel";
 .hero {
     background-color: $light-blue;
-    padding-top: 146px;
+    padding-top: 125px;
     padding-bottom: 70px;
     .hero-img {
         width: 79px;
@@ -112,6 +112,9 @@
 }
 
 .footer {
+    .social-icon {
+        font-size: 1.5rem;
+    }
     .separator {
         border-bottom: 1px solid #DFE3EC;
     }

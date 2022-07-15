@@ -6,9 +6,10 @@
 
 .accordion-button {
     font-weight: 600;
+    line-height: 1.563rem;
     padding: 1.563rem 0;
     @media (max-width: 992px) {
-        padding: 1.25rem 0;
+        padding: 1.125rem 0;
     }
     &:focus {
         box-shadow: none;
