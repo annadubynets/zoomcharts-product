@@ -90,7 +90,7 @@
             z-index: 1000;
         }
         .navbar-brand {
-            z-index: 0;
+            z-index: -2;
         }
         .navbar-brand,
         .navbar-toggler {
@@ -284,6 +284,7 @@
             .navbar-brand {
                 img {
                     max-width: 143px;
+                    display: none;
                 }
                 .when-scrolled {
                     display: block;
