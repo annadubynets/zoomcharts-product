@@ -182,9 +182,15 @@
                 min-width: 34rem;
                 &.menu-products {
                     min-width: 52rem;
+                    @media (max-width: 1200px) {
+                        min-width: 100%;
+                    }
                 }
                 @media (min-width: 1200px) {
                     display: block;
+                }
+                @media (max-width: 1200px) {
+                    min-width: 100%;
                 }
                 visibility: hidden;
                 &.show {
