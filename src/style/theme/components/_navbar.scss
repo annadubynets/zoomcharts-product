@@ -127,7 +127,6 @@
                     }
                 }
                 opacity: 0;
-                position: fixed;
                 top: 0;
                 left: 0;
                 right: 0;
@@ -186,21 +185,25 @@
             .dropdown-menu {
                 top: 0px;
                 padding: 0;
+                min-width: 34rem;
+                &.menu-products {
+                    min-width: 52rem;
+                }
                 @media (min-width: 1200px) {
                     display: block;
                 }
                 visibility: hidden;
                 &.show {
                     visibility: visible;
-                    top: 82px;
+                    top: 60px;
                     border-top: 1px solid #DFE3EC;
+                    z-index: 1;
                     @media (max-width: 1200px) {
                         top: 0!important;
                         background-color: $light-blue!important;
                     }
                 }
                 transition: top 0.35s;
-                position: fixed;
                 left: 0px;
                 right: 0px;
                 z-index: -1;
