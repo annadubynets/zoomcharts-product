@@ -1,7 +1,11 @@
     $scrolled-navbar-height: 52px;
     $scrolled-navbar-sm-height: 42px;
     .navbar {
-        padding: 15px 0;
+        padding: 0;
+        &>.nav-wrapper {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
         background: white;
         transition: all 0.35s;
         @media (max-width: 1200px) {
