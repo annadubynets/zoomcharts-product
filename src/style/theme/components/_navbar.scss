@@ -192,6 +192,8 @@
                     top: 60px;
                     border-top: 1px solid #DFE3EC;
                     z-index: 1;
+                    border-bottom-left-radius: 3px;
+                    border-bottom-right-radius: 3px;
                     @media (max-width: 1200px) {
                         top: 0!important;
                         background-color: $light-blue!important;
