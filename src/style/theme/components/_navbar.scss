@@ -4,14 +4,14 @@
         padding: 15px 0;
         background: white;
         transition: all 0.35s;
-        @media (max-width: 991px) {
+        @media (max-width: 1200px) {
             width: 100%;
         }
         .navbar-nav>li {
             margin-left: 1px;
             margin-right: 1px;
             margin-bottom: 0;
-            @media (max-width: 991px) {
+            @media (max-width: 1200px) {
                 margin-left: 15px;
                 margin-right: 15px;
                 margin-bottom: 10px;
@@ -20,7 +20,7 @@
                 padding: 10px 15px;
                 color: rgb(85, 85, 85);
                 font-weight: normal;
-                @media (max-width: 991px) {
+                @media (max-width: 1200px) {
                     background-color: $light-blue;
                     border-radius: 3px;
                 }
@@ -39,16 +39,16 @@
                             position: absolute;
                             bottom: -5px;
                             left: 0;
-                            @media (max-width: 991px) {
+                            @media (max-width: 1200px) {
                                 display: none;
                             }
                         }
                     }
                 }
-                @media (max-width: 991px) {
+                @media (max-width: 1200px) {
                     padding: 30px 0;
                 }
-                @media (min-width: 992px) {
+                @media (min-width: 1200px) {
                     &:hover {
                         background-color: transparent;
                     }
@@ -84,9 +84,11 @@
                 }
             }
         }
-        .navbar-toggler,
-        .navbar-brand {
+        .navbar-toggler {
             z-index: 1000;
+        }
+        .navbar-brand {
+            z-index: 0;
         }
         .navbar-brand,
         .navbar-toggler {
@@ -98,7 +100,7 @@
             }
         }
         .navbar-collapse {
-            @media (max-width: 991px) {
+            @media (max-width: 1200px) {
                 background-color: whitesmoke;
                 &.show,
                 &.collapsing {
@@ -152,7 +154,7 @@
                     margin-right: initial !important;
                     // margin-top: auto;
                     // margin-bottom: auto;
-                    @media (max-width: 991px) {
+                    @media (max-width: 1200px) {
                         width: 100%;
                     }
                 }
@@ -180,7 +182,7 @@
             .dropdown-menu {
                 top: 0px;
                 padding: 0;
-                @media (min-width: 992px) {
+                @media (min-width: 1200px) {
                     display: block;
                 }
                 visibility: hidden;
@@ -188,7 +190,7 @@
                     visibility: visible;
                     top: 82px;
                     border-top: 1px solid #DFE3EC;
-                    @media (max-width: 992px) {
+                    @media (max-width: 1200px) {
                         top: 0!important;
                         background-color: $light-blue!important;
                     }
@@ -200,7 +202,7 @@
                 z-index: -1;
                 border: 0;
                 border-radius: 0;
-                @media (max-width: 991px) {
+                @media (max-width: 1200px) {
                     position: relative;
                     top: 0;
                     padding-top: 0;
@@ -260,7 +262,7 @@
             }
         }
         .navbar-nav {
-            @media (max-width: 991px) {
+            @media (max-width: 1200px) {
                 padding-top: 60px;
             }
         }
@@ -309,12 +311,11 @@
         }
     }
     
-    .navbar .navbar-collapse.collapsing .navbar-nav>li .nav-link,
-    .navbar .navbar-collapse.show .navbar-nav>li .nav-link {
-        background-color: $light-blue;
-    }
-    
-    @media (max-width: 991px) {
+    @media (max-width: 1200px) {
+        .navbar .navbar-collapse.collapsing .navbar-nav>li .nav-link,
+        .navbar .navbar-collapse.show .navbar-nav>li .nav-link {
+            background-color: $light-blue;
+        }
         html.nav-opened {
             overflow: hidden;
             .navbar {

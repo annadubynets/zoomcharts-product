@@ -32,3 +32,17 @@
         border-color: $white;
     }
 }
+
+.btn-light {
+    &:hover {
+        text-decoration: underline;
+        color: $black;
+        background-color: $light-blue;
+    }
+}
+
+.cancel {
+    font-weight: normal;
+    font-size: .938rem;
+    color: $black;
+}
