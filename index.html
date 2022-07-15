@@ -12,8 +12,9 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand align-self-center" href="./index.html">
-                    <img src="img/logo.svg" alt="logo" class="when-not-scrolled">
+                <a class="navbar-brand pt-0 align-self-center" href="./index.html">
+                    <img src="img/logo.svg" alt="logo" class="navbar-brand-img d-lg-block d-none">
+                    <img src="img/logo-mobile.svg" alt="logo" class="navbar-brand-img d-lg-none d-block">
                 </a>
                 <button class="navbar-toggler border-0 collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="toggler-collapsed font-size-30">
@@ -26,20 +27,220 @@
                 <div class="navbar-collapse collapse" id="navbarCollapse">
                     <!-- Navigation -->
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a href="#" title="Products" class="nav-link">Products</a>
+                        <li class="nav-item full-screen-dropdown dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="label">Products</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8 p-5">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <ul>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <img src="../img/drill-down-donut-pro.svg" alt="Drill Down Donut Pro" class="w-30 h-30 me-2"> Drill Down Donut Pro</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <img src="../img/drill-down-pie-pro.svg" alt="Drill Down Pie Pro" class="w-30 h-30 me-2">Drill Down Pie Pro</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <img src="../img/drill-down-timeseries-pro.svg" alt="Drill TimeSeries Pro" class="w-30 h-30 me-2">Drill TimeSeries Pro</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <img src="../img/drill-down-combo-pro.svg" alt="Drill Combo Pro" class="w-30 h-30 me-2">Drill Combo Pro</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <img src="../img/drill-down-map-pro.svg" alt="Drill Map Pro" class="w-30 h-30 me-2">Drill Map Pro</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <ul>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <img src="../img/drill-down-network-pro.svg" alt="Drill Down Network Pro" class="w-30 h-30 me-2">Drill Down Network Pro</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <img src="../img/drill-down-waterfall-pro.svg" alt="Drill Down Waterfall Pro" class="w-30 h-30 me-2">Drill Down Waterfall Pro</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <img src="../img/drill-down-graph-pro.svg" alt="Drill Down Graph Pro" class="w-30 h-30 me-2">Drill Down Graph Pro</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <img src="../img/drill-down-timeline-pro.svg" alt="Drill Down Timeline Pro" class="w-30 h-30 me-2">Drill Down Timeline Pro</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <img src="../img/drill-down-combo-bar-pro.svg" alt="Drill Down Combo Bar PRO" class="w-30 h-30 me-2">Drill Down Combo Bar PRO</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="mt-2 text-decoration-none">All visuals</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 divider-left p-5">
+                                            <img src="../img/key-img.png" alt="Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio." class="w-100 rounded-1 mb-3">
+                                            <p class="mb-2">Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio.</p>
+                                            <a href="#" class="dropdown-link"><span>Learn more</span><icon class="icon-next fs-7 ps-2"></icon></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" title="Services" class="nav-link">Services</a>
+                        <li class="nav-item full-screen-dropdown dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="label">Services</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="servicesNavbarDropdown">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-6 p-5">
+                                            <ul>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Report Overhaul</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Features Development</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Visuals Development</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Report Creation</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 divider-left p-5">
+                                            <img src="../img/key-img.png" alt="Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio." class="w-100 rounded-1 mb-3">
+                                            <p class="mb-2">Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio.</p>
+                                            <a href="#" class="dropdown-link"><span>Learn more</span><icon class="icon-next fs-7 ps-2"></icon></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" alt="Resources" title="Resources" class="nav-link">Resources</a>
+                        <li class="nav-item full-screen-dropdown dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="resourcesNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="label">Resources</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="resourcesNavbarDropdown">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-6 p-5">
+                                            <ul>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Report Examples</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Blog</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Webinars</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">ZoomCharts Academy</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Visuals Gallery</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Subscribe to News</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 divider-left p-5">
+                                            <img src="../img/key-img.png" alt="Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio." class="w-100 rounded-1 mb-3">
+                                            <p class="mb-2">Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio.</p>
+                                            <a href="#" class="dropdown-link"><span>Learn more</span><icon class="icon-next fs-7 ps-2"></icon></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" alt="Help" title="Help" class="nav-link">Help</a>
+                        <li class="nav-item full-screen-dropdown dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="helpNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="label">Help</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="helpNavbarDropdown">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-6 p-5">
+                                            <ul>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">ZoomCharts Assistance</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Contact Sales</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Contact Support</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Documentation</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">FAQ</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 divider-left p-5">
+                                            <img src="../img/key-img.png" alt="Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio." class="w-100 rounded-1 mb-3">
+                                            <p class="mb-2">Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio.</p>
+                                            <a href="#" class="dropdown-link"><span>Learn more</span><icon class="icon-next fs-7 ps-2"></icon></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" alt="Company" title="Company" class="nav-link">Company</a>
+                        <li class="nav-item full-screen-dropdown dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="companyNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="label">Company</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="companyNavbarDropdown">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-6 p-5">
+                                            <ul>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Pricing</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Partners</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Enterprise</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">About Us</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Career</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Rate ZoomCharts Visuals</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Join Visual Testers</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 divider-left p-5">
+                                            <img src="../img/key-img.png" alt="Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio." class="w-100 rounded-1 mb-3">
+                                            <p class="mb-2">Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio.</p>
+                                            <a href="#" class="dropdown-link"><span>Learn more</span><icon class="icon-next fs-7 ps-2"></icon></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
     
                         <li class="menu-divider">&nbsp;</li>
@@ -67,17 +268,17 @@
     <section class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 pb-4">
+                <div class="col-lg-7 py-4">
                     <div class="d-flex">
-                        <img src="img/drill-down-timeline-pro.svg" alt="drill down timeline pro">
-                        <h1 class="fw-600 ps-3">Drill Down <span class="d-lg-inline d-block">Timeline PRO</span>
-                            <span class="d-block fw-normal fs-1">
-                                for Microsoft Power BI <img src="img/pbi-certitied.svg" alt="PBI Certified">
+                        <img src="img/drill-down-timeline-pro.svg" alt="drill down timeline pro" class="hero-img">
+                        <h1 class="fw-600 ps-3 pt-lg-3 pt-0 mb-lg-0 mb-1">Drill Down <span class="d-lg-inline d-block">Timeline PRO</span>
+                            <span class="d-flex fw-normal fs-1">
+                                for Microsoft Power BI <img src="img/pbi-certitied.svg" alt="PBI Certified" class="ms-2 certified-img">
                             </span>
                         </h1>
                     </div>
                 </div>
-                <div class="col-lg-5 d-lg-none d-block mb-lg-0 mb-4">
+                <div class="col-lg-5 d-lg-none d-block mb-lg-0 mb-3">
                     <img src="img/hero-img.png" alt="Explore time-based data using columns or measures." class="rounded-2 w-100">
                 </div>
             </div>
@@ -89,7 +290,7 @@
                         <li>Explore data intuitively by combining on-chart interactions with cross-chart filtering.</li>
                         <li>Have full control over your data using DAX calculated measures.</li>
                     </ul>
-                    <a href="#" class="btn btn-warning me-lg-4 me-0 d-lg-inline d-block mb-lg-0 mb-4">Get it now</a>
+                    <a href="#" class="btn btn-warning me-lg-3 me-0 d-lg-inline d-block mb-lg-0 mb-3">Get it now</a>
                     <a href="#" class="btn btn-outline-dark d-lg-inline d-block">ZoomCharts Assistance</a>
                 </div>
                 <div class="col-lg-6 offset-lg-1 d-lg-block d-none">
@@ -99,14 +300,14 @@
         </div>
     </section>
 
-    <section class="pt-40px pb-90px">
+    <section class="interactions pt-52px pb-100px">
         <div class="container">
-            <div class="row pb-90px">
+            <div class="row pb-95px">
                 <div class="col-lg-12">
                     <div class="objects-carousel">
                         <div>
                             <p class="fs-6 mb-1">IT & T</p>
-                            <div class="d-flex justify-content-around border border-secondary rounded-1 px-2 py-4">
+                            <div class="d-flex justify-content-around border border-secondary rounded-1 px-2 py-lg-4 py-3">
                                 <img src="img/microsoft.svg" alt="Microsoft">
                                 <img src="img/microsoft.svg" alt="Microsoft">
                                 <img src="img/microsoft.svg" alt="Microsoft">
@@ -114,7 +315,7 @@
                         </div>
                         <div>
                             <p class="fs-6 mb-1">Audit / Accounting</p>
-                            <div class="d-flex justify-content-around border border-secondary rounded-1 px-2 py-4">
+                            <div class="d-flex justify-content-around border border-secondary rounded-1 px-2 py-lg-4 py-3">
                                 <img src="img/microsoft.svg" alt="Microsoft">
                                 <img src="img/microsoft.svg" alt="Microsoft">
                                 <img src="img/microsoft.svg" alt="Microsoft">
@@ -122,7 +323,7 @@
                         </div>
                         <div>
                             <p class="fs-6 mb-1">Banking & Finance</p>
-                            <div class="d-flex justify-content-around border border-secondary rounded-1 px-2 py-4">
+                            <div class="d-flex justify-content-around border border-secondary rounded-1 px-2 py-lg-4 py-3">
                                 <img src="img/microsoft.svg" alt="Microsoft">
                                 <img src="img/microsoft.svg" alt="Microsoft">
                                 <img src="img/microsoft.svg" alt="Microsoft">
@@ -130,7 +331,7 @@
                         </div>
                         <div>
                             <p class="fs-6 mb-1">Banking & Finance</p>
-                            <div class="d-flex justify-content-around border border-secondary rounded-1 px-2 py-4">
+                            <div class="d-flex justify-content-around border border-secondary rounded-1 px-2 py-lg-4 py-3">
                                 <img src="img/microsoft.svg" alt="Microsoft">
                                 <img src="img/microsoft.svg" alt="Microsoft">
                                 <img src="img/microsoft.svg" alt="Microsoft">
@@ -141,32 +342,62 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="mb-2">Timeline interactions</h2>
-                    <p class="pb-4 mb-1">See all the possible ways you can explore this visual</p>
+                    <h2 class="mb-lg-3 mb-3">Timeline interactions</h2>
+                    <p class="pb-4 mb-lg-1 mb-0">See all the possible ways you can explore this visual</p>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 px-0">
                     <div class="d-flex flex-lg-row flex-column justify-content-between align-items-lg-start align-items-center">
                         <div class="nav flex-column text-center nav-pills mb-lg-0 mb-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <button class="nav-link active text-lg-start text-center" id="v-pills-drill-down-tab" data-bs-toggle="pill" data-bs-target="#v-pills-drill-down" type="button" role="tab" aria-controls="v-pills-drill-down" aria-selected="true"><span class="label">Drill down</span></button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-down-to-timespan-tab" data-bs-toggle="pill" data-bs-target="#v-pills-down-to-timespan" type="button" role="tab" aria-controls="v-pills-down-to-timespan" aria-selected="false">Drill down to timespan</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-zoom-out-tab" data-bs-toggle="pill" data-bs-target="#v-pills-zoom-out" type="button" role="tab" aria-controls="v-pills-zoom-out" aria-selected="false">Zoom out</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-go-back-tab" data-bs-toggle="pill" data-bs-target="#v-pills-go-back" type="button" role="tab" aria-controls="v-pills-go-back" aria-selected="false">Go back</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-scroll-back-tab" data-bs-toggle="pill" data-bs-target="#v-pills-scroll-back" type="button" role="tab" aria-controls="v-pills-scroll-back" aria-selected="false">Scroll back (time)</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-scroll-forward-tab" data-bs-toggle="pill" data-bs-target="#v-pills-scroll-forward" type="button" role="tab" aria-controls="v-pills-scroll-forward" aria-selected="false">Scroll forward (time)</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-finetune-zoom-tab" data-bs-toggle="pill" data-bs-target="#v-pills-finetune-zoom" type="button" role="tab" aria-controls="v-pills-finetune-zoom" aria-selected="false">Finetune zoom</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-select-time-period-tab" data-bs-toggle="pill" data-bs-target="#v-pills-select-time-period" type="button" role="tab" aria-controls="v-pills-select-time-period" aria-selected="false">Select time period</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-change-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-change-selection" type="button" role="tab" aria-controls="v-pills-change-selection" aria-selected="false">Change selection</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-remove-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-remove-selection" type="button" role="tab" aria-controls="v-pills-remove-selection" aria-selected="false">Remove selection</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-drill-down-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-drill-down-selection" type="button" role="tab" aria-controls="v-pills-drill-down-selection" aria-selected="false">Drill down to selection</button>
-                            <button class="nav-link text-lg-start text-center" id="v-pills-change-time-tab" data-bs-toggle="pill" data-bs-target="#v-pills-change-time" type="button" role="tab" aria-controls="v-pills-change-time" aria-selected="false">Change time grain</button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-down-to-timespan-tab" data-bs-toggle="pill" data-bs-target="#v-pills-down-to-timespan" type="button" role="tab" aria-controls="v-pills-down-to-timespan" aria-selected="false"><span class="label">Drill down to timespan</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-zoom-out-tab" data-bs-toggle="pill" data-bs-target="#v-pills-zoom-out" type="button" role="tab" aria-controls="v-pills-zoom-out" aria-selected="false"><span class="label">Zoom out</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-go-back-tab" data-bs-toggle="pill" data-bs-target="#v-pills-go-back" type="button" role="tab" aria-controls="v-pills-go-back" aria-selected="false"><span class="label">Go back</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-scroll-back-tab" data-bs-toggle="pill" data-bs-target="#v-pills-scroll-back" type="button" role="tab" aria-controls="v-pills-scroll-back" aria-selected="false"><span class="label">Scroll back (time)</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-scroll-forward-tab" data-bs-toggle="pill" data-bs-target="#v-pills-scroll-forward" type="button" role="tab" aria-controls="v-pills-scroll-forward" aria-selected="false"><span class="label">Scroll forward (time)</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-finetune-zoom-tab" data-bs-toggle="pill" data-bs-target="#v-pills-finetune-zoom" type="button" role="tab" aria-controls="v-pills-finetune-zoom" aria-selected="false"><span class="label">Finetune zoom</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-select-time-period-tab" data-bs-toggle="pill" data-bs-target="#v-pills-select-time-period" type="button" role="tab" aria-controls="v-pills-select-time-period" aria-selected="false"><span class="label">Select time period</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-change-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-change-selection" type="button" role="tab" aria-controls="v-pills-change-selection" aria-selected="false"><span class="label">Change selection</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-remove-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-remove-selection" type="button" role="tab" aria-controls="v-pills-remove-selection" aria-selected="false"><span class="label">Remove selection</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-drill-down-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-drill-down-selection" type="button" role="tab" aria-controls="v-pills-drill-down-selection" aria-selected="false"><span class="label">Drill down to selection</span></button>
+                            <button class="nav-link text-lg-start text-center" id="v-pills-change-time-tab" data-bs-toggle="pill" data-bs-target="#v-pills-change-time" type="button" role="tab" aria-controls="v-pills-change-time" aria-selected="false"><span class="label">Change time grain</span></button>
                         </div>
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-down-to-timespan" role="tabpanel" aria-labelledby="v-pills-down-to-timespan-tab">
-                                <img src="img/key-img.png" alt="" class="rounded-2 img-style">
+                                <img src="img/key-img.png" alt="Drill down" class="rounded-2 img-style">
                             </div>
-                            <div class="tab-pane fade" id="v-pills-down-to-timespan" role="tabpanel" aria-labelledby="v-pills-down-to-timespan-tab">...</div>
-                            <div class="tab-pane fade" id="v-pills-zoom-out" role="tabpanel" aria-labelledby="v-pills-zoom-out-tab">...</div>
-                            <div class="tab-pane fade" id="v-pills-go-back" role="tabpanel" aria-labelledby="v-pills-go-back-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-down-to-timespan" role="tabpanel" aria-labelledby="v-pills-down-to-timespan-tab">
+                                <img src="img/key-img.png" alt="Drill down to timespan" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-zoom-out" role="tabpanel" aria-labelledby="v-pills-zoom-out-tab">
+                                <img src="img/key-img.png" alt="Zoom out" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-go-back" role="tabpanel" aria-labelledby="v-pills-go-back-tab">
+                                <img src="img/key-img.png" alt="Go back" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-scroll-back" role="tabpanel" aria-labelledby="v-pills-scroll-back-tab">
+                                <img src="img/key-img.png" alt="Scroll back (time)" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-scroll-forward" role="tabpanel" aria-labelledby="v-pills-scroll-forward-tab">
+                                <img src="img/key-img.png" alt="Scroll forward (time)" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-finetune-zoom" role="tabpanel" aria-labelledby="v-pills-finetune-zoom-tab">
+                                <img src="img/key-img.png" alt="Finetune zoom" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-select-time-period" role="tabpanel" aria-labelledby="v-pills-select-time-period-tab">
+                                <img src="img/key-img.png" alt="Select time period" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-change-selection" role="tabpanel" aria-labelledby="v-pills-change-selection-tab">
+                                <img src="img/key-img.png" alt="Change selection" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-remove-selection" role="tabpanel" aria-labelledby="v-pills-remove-selection-tab">
+                                <img src="img/key-img.png" alt="Remove selection" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-drill-down-selection" role="tabpanel" aria-labelledby="v-pills-drill-down-selection-tab">
+                                <img src="img/key-img.png" alt="Drill down to selection" class="rounded-2 img-style">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-change-time" role="tabpanel" aria-labelledby="v-pills-change-time-tab">
+                                <img src="img/key-img.png" alt="Change time grain" class="rounded-2 img-style">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -174,121 +405,121 @@
         </div>
     </section>
 
-    <section class="use-cases bg-light pt-60px pb-90px">
+    <section class="use-cases bg-light pt-63px pb-90px">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="mb-2">Use cases</h2>
-                    <p class="mb-lg-5 mb-4 pb-lg-0 pb-2">Visualize a sequence of events for marketing, finance, sales, and manufacturing data.</p>
+                    <h2 class="mb-lg-3 mb-2">Use cases</h2>
+                    <p class="mb-lg-5 mb-4 pb-lg-1 pb-1">Visualize a sequence of events for marketing, finance, sales, and manufacturing data.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-3 mb-lg-0 mb-4 pb-lg-0 pb-2">
                     <icon class="icon-sales"></icon>
-                    <h4 class="mb-3 mt-1">Sales</h4>
+                    <h4 class="mb-lg-3 mb-4 mt-2">Sales</h4>
                     <p>Measure web traffic and your audience reach. See and compare lead volume and sales revenue dynamics.</p>
                 </div>
                 <div class="col-lg-3 mb-lg-0 mb-4 pb-lg-0 pb-2">
                     <icon class="icon-finance"></icon>
-                    <h4 class="mb-3 mt-1">Finance</h4>
+                    <h4 class="mb-lg-3 mb-3 mt-lg-2 mt-3">Finance</h4>
                     <p>Visualize economic data. Get a clear look at stock exchange indices, capital ratios, and transaction volumes.</p>
                 </div>
                 <div class="col-lg-3 mb-lg-0 mb-4 pb-lg-0 pb-2">
                     <icon class="icon-logistics"></icon>
-                    <h4 class="mb-3 mt-1">Logistics</h4>
+                    <h4 class="mb-lg-3 mb-4 mt-lg-2 mt-3">Logistics</h4>
                     <p>Monitor inventory movement and turnover, keep a track on loading time. Gauge out fleet maintenance costs.</p>
                 </div>
-                <div class="col-lg-3 mb-lg-0 mb-4 pb-lg-0 pb-2">
+                <div class="col-lg-3 mb-lg-0 mb-4 pb-lg-0 pb-0">
                     <icon class="icon-manufacturing"></icon>
-                    <h4 class="mb-3 mt-1">Manufacturing</h4>
+                    <h4 class="mb-lg-3 mb-4 mt-2">Manufacturing</h4>
                     <p>Oversee and analyze quality metrics. Keep up with uptime and downtime, production output and cost.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="keys py-90px">
+    <section class="keys pt-102px pb-90px">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center pb-lg-3 pb-1">
-                    <h2 class="mb-lg-5 mb-4">Key features</h2>
+                <div class="col-lg-12 text-center pb-lg-4 pb-1">
+                    <h2 class="mb-lg-5 mb-4 pb-lg-0 pb-2">Key features</h2>
                 </div>
             </div>
-            <div class="row pb-90px">
-                <div class="col-lg-5 align-self-center">
-                    <h3 class="mb-3">DAX Calculated Measure support</h3>
+            <div class="row pb-95px">
+                <div class="col-lg-5 align-self-center px-lg-5 px-3">
+                    <h3 class="mb-lg-3 mb-4">DAX Calculated Measure support</h3>
                     <p class="mb-lg-0 mb-3 pb-lg-0 pb-1">Experience on-chart interactions and cross-chart filtering. Explore data joyfully on both mouse and touch input devices. Different devices – same experience.</p>
                 </div>
                 <div class="col-lg-6 offset-lg-1">
                     <img src="img/key-img.png" alt="DAX Calculated Measure support" class="rounded-2 w-100">
                 </div>
             </div>
-            <div class="row pb-90px">
+            <div class="row pb-95px">
                 <div class="col-lg-6 order-lg-0 order-1">
                     <img src="img/key-img.png" alt="Customization" class="rounded-2 w-100">
                 </div>
-                <div class="col-lg-5 order-lg-1 order-0 offset-lg-1 align-self-center">
-                    <h3 class="mb-3">Customization</h3>
+                <div class="col-lg-5 order-lg-1 order-0 offset-lg-1 align-self-center px-lg-0 px-3">
+                    <h3 class="mb-lg-3 mb-4">Customization</h3>
                     <p class="mb-lg-0 mb-3 pb-lg-0 pb-1">Ensure compelling data storytelling and maximum user friendliness through vast customization options. Add navigation arrows. Switch the start day of the week (Monday/Sunday). Use line and column charts.</p>
                 </div>
             </div>
-            <div class="row pb-90px">
-                <div class="col-lg-5 align-self-center">
-                    <h3 class="mb-3">Customize up to 25 series</h3>
+            <div class="row pb-95px">
+                <div class="col-lg-5 align-self-center px-lg-5 px-3">
+                    <h3 class="mb-lg-3 mb-4">Customize up to 25 series</h3>
                     <p class="mb-lg-0 mb-3 pb-lg-0 pb-1">Don’t worry about constrictions. Input up to 25 series and explore large amounts of data. Default series configurator lets you efficiently customize all series at once.</p>
                 </div>
                 <div class="col-lg-6 offset-lg-1">
                     <img src="img/key-img.png" alt="Customize up to 25 series" class="rounded-2 w-100">
                 </div>
             </div>
-            <div class="row pb-90px">
+            <div class="row pb-95px">
                 <div class="col-lg-6 order-lg-0 order-1">
                     <img src="img/key-img.png" alt="Conditional formatting" class="rounded-2 w-100">
                 </div>
-                <div class="col-lg-5 order-lg-1 order-0 offset-lg-1 align-self-center">
-                    <h3 class="mb-3">Conditional formatting</h3>
+                <div class="col-lg-5 order-lg-1 order-0 offset-lg-1 align-self-center px-lg-0 px-3">
+                    <h3 class="mb-lg-3 mb-4">Conditional formatting</h3>
                     <p class="mb-lg-0 mb-3 pb-lg-0 pb-1">Use color-based formatting to better compare and analyze your data. Make the chart automatically highlight certain values that are out of bounds. Use different formatting modes – gradients, stepped values, and more.</p>
                 </div>
             </div>
-            <div class="row pb-90px">
-                <div class="col-lg-5 align-self-center">
-                    <h3 class="mb-3">Thresholds</h3>
+            <div class="row pb-95px">
+                <div class="col-lg-5 align-self-center px-lg-5 px-3">
+                    <h3 class="mb-lg-3 mb-4">Thresholds</h3>
                     <p class="mb-lg-0 mb-3 pb-lg-0 pb-1">Demonstrate milestones or targets using thresholds. Add line and area thresholds, customize their every aspect.</p>
                 </div>
                 <div class="col-lg-6 offset-lg-1">
                     <img src="img/key-img.png" alt="Thresholds" class="rounded-2 w-100">
                 </div>
             </div>
-            <div class="row pb-90px">
+            <div class="row pb-95px">
                 <div class="col-lg-6 order-lg-0 order-1">
                     <img src="img/key-img.png" alt="Legends field" class="rounded-2 w-100">
                 </div>
-                <div class="col-lg-5 order-lg-1 order-0 offset-lg-1 align-self-center">
-                    <h3 class="mb-3">Legends field</h3>
+                <div class="col-lg-5 order-lg-1 order-0 offset-lg-1 align-self-center px-lg-0 px-3">
+                    <h3 class="mb-lg-3 mb-4">Legends field</h3>
                     <p class="mb-lg-0 mb-3 pb-lg-0 pb-1">Add and customize the legends field. Pick different markers, customize the fonts and colors to help your users follow and read your report.</p>
                 </div>
             </div>
-            <div class="row pb-90px">
-                <div class="col-lg-5 align-self-center">
-                    <h3 class="mb-3">Tooltip customization and field support</h3>
+            <div class="row pb-95px">
+                <div class="col-lg-5 align-self-center px-lg-5 px-3">
+                    <h3 class="mb-lg-3 mb-4">Tooltip customization and field support</h3>
                     <p class="mb-lg-0 mb-3 pb-lg-0 pb-1">Make your reports more user-friendly than ever before by customizing tooltips. Hide series with no data in the tooltip. Customize displayed text for empty tooltips. Use both native and custom ZoomCharts tooltips.</p>
                 </div>
                 <div class="col-lg-6 offset-lg-1">
                     <img src="img/key-img.png" alt="Tooltip customization and field support" class="rounded-2 w-100">
                 </div>
             </div>
-            <div class="row pb-90px">
+            <div class="row pb-95px">
                 <div class="col-lg-6 order-lg-0 order-1">
                     <img src="img/key-img.png" alt="Value aggregation" class="rounded-2 w-100">
                 </div>
-                <div class="col-lg-5 order-lg-1 order- offset-lg-1 align-self-center">
-                    <h3 class="mb-3">Value aggregation</h3>
+                <div class="col-lg-5 order-lg-1 order- offset-lg-1 align-self-center px-lg-0 px-3">
+                    <h3 class="mb-lg-3 mb-4">Value aggregation</h3>
                     <p class="mb-lg-0 mb-3 pb-lg-0 pb-1">Upon selecting multiple units for certain series, choose how the visual aggregates the values – sum, average, max, min, first, last, count.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-5 align-self-center">
-                    <h3 class="mb-3">Multi-touch device friendly</h3>
+                <div class="col-lg-5 align-self-center px-lg-5 px-3">
+                    <h3 class="mb-lg-3 mb-4">Multi-touch device friendly</h3>
                     <p class="mb-lg-0 mb-3 pb-lg-0 pb-1">Experience on-chart interactions and cross-chart filtering. Explore data joyfully on both mouse and touch input devices. Different devices – same experience.</p>
                 </div>
                 <div class="col-lg-6 offset-lg-1">
@@ -298,7 +529,7 @@
         </div>
     </section>
 
-    <section class="bg-light pt-60px pb-90px">
+    <section class="visuals bg-light pt-65px pb-90px">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-lg-start text-center">
@@ -309,30 +540,30 @@
                 <div class="col-lg-4 mb-lg-0 mb-3">
                     <div class="rounded-1 border border-secondary d-flex px-3 py-lg-4 py-3 align-items-center">
                         <img src="img/drill-down-timeseries-pro.svg" alt="Drill Down TimeSeries PRO" class="img-size">
-                        <h4 class="mb-0 ps-3">Drill Down TimeSeries PRO</h4>
+                        <a href="#" class="link mb-0 ps-3">Drill Down TimeSeries PRO</a>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-lg-0 mb-3">
                     <div class="rounded-1 border border-secondary d-flex px-3 py-lg-4 py-3 align-items-center">
                         <img src="img/drill-down-map-pro.svg" alt="Drill Down Map PRO" class="img-size">
-                        <h4 class="mb-0 ps-3">Drill Down Map PRO</h4>
+                        <a href="#" class="link mb-0 ps-3">Drill Down Map PRO</a>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-lg-0 mb-3">
                     <div class="rounded-1 border border-secondary d-flex px-3 py-lg-4 py-3 align-items-center">
                         <img src="img/drill-down-waterfall-pro.svg" alt="Drill Down Waterfall PRO" class="img-size">
-                        <h4 class="mb-0 ps-3">Drill Down Waterfall PRO</h4>
+                        <a href="#" class="link mb-0 ps-3">Drill Down Waterfall PRO</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-dark py-70px">
+    <section class="bg-dark py-60px">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 text-center">
-                    <h2 class="text-white mb-3">Try it yourself</h2>
+                    <h2 class="text-white mb-lg-3 mb-2">Try it yourself</h2>
                     <p class="text-white mb-4 pb-1">We have prepared some free interactive examples for you. See what your reports might be missing.</p>
                     <a href="#" class="btn btn-outline-light">Go to Power BI Dashboard and Report examples</a>
                 </div>
@@ -340,15 +571,15 @@
         </div>
     </section>
 
-    <section class="py-90px">
-        <div class="container">
-            <div class="row pb-5 mb-2">
+    <section class="visuals-bundle py-105px">
+        <div class="container px-4">
+            <div class="row pb-5 mb-lg-2 mb-0">
                 <div class="col-lg-12 text-center">
-                    <h1 class="mb-3">ZoomCharts Drill Down Visuals bundle </h1>
-                    <p class="fs-3">Note, that when you get one of our visuals, you automatically get the full bundle.</p>
+                    <h2 class="mb-3">ZoomCharts Drill Down Visuals bundle</h2>
+                    <p class="subtitle">Note, that when you get one of our visuals, you automatically get the full bundle.</p>
                 </div>
             </div>
-            <div class="row pb-5 mb-2">
+            <div class="row pb-lg-5 mb-lg-4 pb-4 mb-0">
                 <div class="col-lg-12">
                     <div class="bundle-carousel">
                         <div><img src="img/drill-down-waterfall-pro.svg" alt="Microsoft" class="bundle-size"></div>
@@ -367,7 +598,7 @@
 
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <a href="#" class="btn btn-warning me-4">Get it now</a>
+                    <a href="#" class="btn btn-warning d-lg-inline d-block">Get it now</a>
                 </div>
             </div>
         </div>
@@ -377,11 +608,11 @@
         <div class="container">
             <div class="row pt-120px pb-140px">
                 <div class="col-lg-6">
-                    <h1 class="mb-3">ZoomCharts Assistance</h1>
-                    <p class="fs-3 mb-5 pb-2">Contact our experts with any question about Power BI and ZoomCharts for Free NOW!</p>
+                    <h1 class="mb-4">ZoomCharts Assistance</h1>
+                    <p class="fs-3 mb-5 pb-4">Contact our experts with any question about Power BI and ZoomCharts for Free NOW!</p>
                     <div class="d-inline">
-                        <a href="#" class="btn btn-warning me-4">Open chat</a>
-                        <a href="#" class="btn btn-outline-dark">Schedule a meeting</a>
+                        <a href="#" class="btn btn-warning me-lg-4 me-0 d-lg-inline d-block mb-lg-0 mb-4">Open chat</a>
+                        <a href="#" class="btn btn-outline-dark d-lg-inline d-block">Schedule a meeting</a>
                     </div>
                 </div>
             </div>
@@ -391,28 +622,30 @@
     <section class="bg-light position-relative d-lg-none d-block py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="mb-2">ZoomCharts Assistance</h1>
-                    <p class="subtitle mb-4">Contact our experts with any question about Power BI and ZoomCharts for Free NOW!</p>
-                    <img src="img/assistance-mobile.png" alt="ZoomCharts Assistance" class="w-100 mb-4">
+                <div class="col-12 text-center px-0">
+                    <h1 class="mb-2 px-3">ZoomCharts Assistance</h1>
+                    <p class="subtitle mb-4 px-3">Contact our experts with any question about Power BI and ZoomCharts for Free NOW!</p>
+                    <img src="img/assistance-img-mobile.png" alt="ZoomCharts Assistance" class="w-100">
 
-                    <a href="#" class="btn btn-warning d-block mb-4">Open chat</a>
-                    <a href="#" class="btn btn-outline-dark d-block">Schedule a meeting</a>
+                    <div class="px-3 position-relative mt-15px">
+                        <a href="#" class="btn btn-warning d-block mb-3">Open chat</a>
+                        <a href="#" class="btn btn-outline-dark d-block">Schedule a meeting</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-90px">
+    <section class="find pt-110px pb-90px">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="mb-2">Find out more about ZoomCharts </h2>
-                    <p class="mb-5 pb-1">We frequently release informational materials to help our clients </p>
+                    <h2 class="mb-lg-3 mb-2">Find out more about ZoomCharts</h2>
+                    <p class="mb-lg-5 mb-4 pb-lg-3 pb-3">We frequently release informational materials to help our clients </p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 mb-lg-0 mb-4 pb-lg-0 pb-3">
+                <div class="col-lg-4 mb-lg-0 mb-4 pb-lg-0 pb-0">
                     <div class="d-flex justify-content-between pb-2">
                         <p class="text-secondary">Feb 14, 2022</p>
                         <p class="text-secondary">Blog post</p>
@@ -420,15 +653,15 @@
                     <div class="card">
                         <img src="img/smartworks-coworking.png" class="card-img-top rounded-1" alt="Attention-Grabbing Headline">
                         <div class="card-body">
-                            <h4 class="mb-2">Attention-Grabbing Headline</h4>
+                            <h4 class="mb-lg-2 mb-3">Attention-Grabbing Headline</h4>
                             <p class="card-text">Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio.</p>
-                            <div class="pt-3 mt-1">
+                            <div class="pt-lg-3 pt-0 mt-4">
                                 <a href="#" class="btn btn-outline-dark d-lg-inline d-block">Learn More</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-lg-0 mb-4 pb-lg-0 pb-3">
+                <div class="col-lg-4 mb-lg-0 mb-4 pb-lg-0 pb-0">
                     <div class="d-flex justify-content-between pb-2">
                         <p class="text-secondary">Jan 14, 2022</p>
                         <p class="text-secondary">Blog post</p>
@@ -436,9 +669,9 @@
                     <div class="card">
                         <img src="img/blog.png" class="card-img-top rounded-1" alt="Attention-Grabbing Headline">
                         <div class="card-body">
-                            <h4 class="mb-2">Attention-Grabbing Headline</h4>
+                            <h4 class="mb-lg-2 mb-3">Attention-Grabbing Headline</h4>
                             <p class="card-text">Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio.</p>
-                            <div class="pt-3 mt-1">
+                            <div class="pt-lg-3 pt-0 mt-lg-4 mt-3">
                                 <a href="#" class="btn btn-outline-dark d-lg-inline d-block">Learn More</a>
                             </div>
                         </div>
@@ -452,9 +685,9 @@
                     <div class="card">
                         <img src="img/sales-report.png" class="card-img-top rounded-1" alt="Attention-Grabbing Headline">
                         <div class="card-body">
-                            <h4 class="mb-2">Attention-Grabbing Headline</h4>
+                            <h4 class="mb-lg-2 mb-3">Attention-Grabbing Headline</h4>
                             <p class="card-text">Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio.</p>
-                            <div class="pt-3 mt-1">
+                            <div class="pt-lg-3 pt-0 mt-lg-4 mt-3">
                                 <a href="#" class="btn btn-outline-dark d-lg-inline d-block">Watch the recording</a>
                             </div>
                         </div>
@@ -464,9 +697,9 @@
         </div>
     </section>
 
-    <section class="bg-dark">
+    <section class="banner bg-dark">
         <div class="container">
-            <div class="row pt-120px pb-140px">
+            <div class="row">
                 <div class="col-lg-12 position-relative h-500">
                     <p class="fs-4 text-white placeholder-banner">Placeholder for banner</p>
                 </div>
@@ -474,15 +707,15 @@
         </div>
     </section>
 
-    <section class="py-90px">
+    <section class="py-100px mb-lg-0 mb-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="mb-2">Frequently asked questions</h2>
+                    <h2 class="mb-lg-3 mb-1">Frequently asked questions</h2>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-12 pb-90px">
+            <div class="row justify-content-center pb-lg-0 pb-3">
+                <div class="col-lg-12 pb-60px">
                     <div class="accordion accordion-flush pt-lg-4 pt-0" id="accordionFlush">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingOne">
@@ -510,11 +743,11 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="true" aria-controls="flush-collapseThree">
                                     Eu metus, at orci dui sapien. Semper fames est ut gravida. Neque pellentesque risus ut odio?
                                 </button>
                             </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
+                            <div id="flush-collapseThree" class="accordion-collapse collapse show" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
                                 <div class="accordion-body">Maecenas in nibh lobortis, ultrices turpis quis, gravida leo. Phasellus mollis mauris arcu, in euismod massa consequat venenatis. Curabitur ullamcorper elementum pretium. Duis vestibulum lacus eget massa euismod imperdiet.
                                     Praesent vitae magna quis purus facilisis pellentesque. Vestibulum et ante urna. Aenean finibus, justo vitae feugiat tempor, urna ligula pellentesque eros, id pretium mauris sem in neque. Sed at semper enim, sit amet
                                     vulputate leo.</div>
@@ -535,12 +768,12 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center pb-lg-0 pb-2">
                 <div class="col-lg-4 text-center d-flex flex-lg-row flex-column justify-content-between align-items-center">
-                    <p class="mb-lg-0 mb-3">Was this helpful?</p>
-                    <div>
-                        <a href="#" class="btn btn-outline-dark">Yes<icon class="icon-thumb-up ps-2"></icon></a>
-                        <a href="#" class="btn btn-outline-dark">No<icon class="icon-thumb-down ps-2"></icon></a>
+                    <p class="mb-lg-0 mb-4">Was this helpful?</p>
+                    <div class="d-flex">
+                        <a href="#" class="btn btn-outline-dark btn-padding me-4">Yes<icon class="icon-thumb-up fs-1 ps-2"></icon></a>
+                        <a href="#" class="btn btn-outline-dark btn-padding">No<icon class="icon-thumb-down fs-1 ps-2"></icon></a>
                     </div>
                 </div>
             </div>
@@ -548,12 +781,12 @@
     </section>
 
     <!-- footer -->
-    <footer>
-        <div class="bg-light pt-60px pb-5">
+    <footer class="footer">
+        <div class="bg-light pt-60px pb-lg-5 pb-4">
             <div class="container">
-                <div class="d-flex flex-lg-row flex-column justify-content-between">
+                <div class="d-flex flex-lg-row flex-column justify-content-between pt-lg-0 pt-2">
                     <div class="mb-lg-0 mb-4">
-                        <h4 class="mb-4 pb-1">Products</h4>
+                        <h4 class="mb-4 pb-lg-1 pb-0">Products</h4>
                         <ul>
                             <li><a href="#">Drill Down Network Pro</a></li>
                             <li><a href="#">Drill Down Waterfall Pro</a></li>
@@ -569,8 +802,8 @@
                             <li><a href="#">Buy Now</a></li>
                         </ul>
                     </div>
-                    <div class="mb-lg-0 mb-4">
-                        <h4 class="mb-4 pb-1">Services</h4>
+                    <div class="mb-lg-0 mb-4 pb-lg-0 pb-0">
+                        <h4 class="mb-lg-4 mb-3 pb-lg-1 pb-1">Services</h4>
                         <ul>
                             <li><a href="#">Report Overhaul</a></li>
                             <li><a href="#">Features Development</a></li>
@@ -579,7 +812,7 @@
                         </ul>
                     </div>
                     <div class="mb-lg-0 mb-4">
-                        <h4 class="mb-4 pb-1">Resources</h4>
+                        <h4 class="mb-lg-4 mb-3 pb-lg-1 pb-1">Resources</h4>
                         <ul>
                             <li><a href="#">Report Examples</a></li>
                             <li><a href="#">Blog</a></li>
@@ -590,7 +823,7 @@
                         </ul>
                     </div>
                     <div class="mb-lg-0 mb-4">
-                        <h4 class="mb-4 pb-1">Help</h4>
+                        <h4 class="mb-4 pb-lg-1 pb-0">Help</h4>
                         <ul>
                             <li><a href="#">ZoomCharts Assistance</a></li>
                             <li><a href="#">Contact Sales</a></li>
@@ -600,7 +833,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h4 class="mb-4 pb-1">Company</h4>
+                        <h4 class="mb-4 pb-lg-1 pb-0">Company</h4>
                         <ul>
                             <li><a href="#">Pricing</a></li>
                             <li><a href="#">Partners</a></li>
@@ -615,39 +848,39 @@
                 </div>
             </div>
         </div>
-        <div class="py-4">
+        <div class="pt-lg-4 pb-lg-0 py-2">
             <div class="container">
-                <div class="row pb-4 d-lg-block d-none">
-                    <div class="col-lg-4">
+                <div class="row pb-4 d-lg-flex d-none">
+                    <div class="col-lg-4 align-self-center">
                         <p class="text-capitalize">Contact our experts with any question about Power BI and ZoomCharts for Free NOW!</p>
                     </div>
                     <div class="col-lg-3">
                         <a href="#" class="btn btn-warning">Go to Assistance Page</a>
                     </div>
                 </div>
-                <div class="row d-lg-block d-none">
+                <div class="row d-lg-flex d-none">
                     <div class="col-lg-12">
                         <div class="separator"></div>
                     </div>
                 </div>
-                <div class="row pt-4">
+                <div class="row py-4">
                     <div class="col-lg-6">
                         <div class="d-flex flex-lg-row flex-column justify-content-between align-items-center">
                             <div class="d-flex mb-lg-0 mb-3">
                                 <a href="#" class="pe-3 text-decoration-none text-dark">
-                                    <icon class="icon-linkedin fs-1"></icon>
+                                    <icon class="icon-linkedin social-icon"></icon>
                                 </a>
                                 <a href="#" class="pe-3 text-decoration-none text-dark">
-                                    <icon class="icon-facebook fs-1"></icon>
+                                    <icon class="icon-facebook social-icon"></icon>
                                 </a>
                                 <a href="#" class="pe-3 text-decoration-none text-dark">
-                                    <icon class="icon-twitter fs-1"></icon>
+                                    <icon class="icon-twitter social-icon"></icon>
                                 </a>
                                 <a href="#" class="pe-3 text-decoration-none text-dark">
-                                    <icon class="icon-youtube fs-1"></icon>
+                                    <icon class="icon-youtube social-icon"></icon>
                                 </a>
                                 <a href="#" class="text-decoration-none text-dark">
-                                    <icon class="icon-instagram fs-1"></icon>
+                                    <icon class="icon-instagram social-icon"></icon>
                                 </a>
                             </div>
                             <p class="mb-lg-0 mb-3">info@zoomcharts.com</p>
@@ -664,10 +897,10 @@
                         <p class="text-white">© 2022, Data Visualization Software Lab</p>
                     </div>
                     <div class="col-lg-6 text-lg-end text-center order-lg-1 order-0 mb-lg-0 mb-4">
-                        <ul class="d-flex justify-content-center mb-0">
-                            <li class="mb-0 pe-3"><a href="#" class="text-white">Global</a></li>
-                            <li class="mb-0 px-3"><a href="#" class="text-white">EULA</a></li>
-                            <li class="mb-0 ps-3"><a href="#" class="text-white">Privacy Policy</a></li>
+                        <ul class="d-flex justify-content-lg-end justify-content-center mb-0">
+                            <li class="mb-0 pe-3"><a href="#" class="link-white">Global</a></li>
+                            <li class="mb-0 px-3"><a href="#" class="link-white">EULA</a></li>
+                            <li class="mb-0 ps-3"><a href="#" class="link-white">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
