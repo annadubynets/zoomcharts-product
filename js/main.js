@@ -3082,4 +3082,27 @@ $('.bundle-carousel').slick({
         }
     ]
 });
+
+function setupGetItNowBanner() {
+    const banner = document.querySelector('.get-it-now-banner');
+    const targetSection = document.querySelector('.get-it-now-section');
+    if (!banner || !targetSection) return;
+
+    const targetSectionPosOnScreen = targetSection.getBoundingClientRect();
+
+    const updateBannerState = function() {
+        const bottomOfTargetSection = $(targetSection).offset().top + targetSectionPosOnScreen.height;
+        banner.classList.toggle("d-none", $(window).scrollTop() < bottomOfTargetSection);
+    }
+
+    $(window).on("scroll", function() {
+        updateBannerState();
+    });
+
+    updateBannerState();
+}
+
+$(function() {
+    setupGetItNowBanner();
+});
 //# sourceMappingURL=main.js.map
