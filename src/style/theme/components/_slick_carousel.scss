@@ -2,21 +2,23 @@
 $slick-font-path: "../fonts/" !default;
 $slick-loader-path: "../img/" !default;
 @import 'slick-carousel/slick/slick-theme';
-// .slide-wrapper {
-//     padding: 16px;
-// }
-// @media (max-width: 576px) {
-//     .slick-list {
-//         padding: 0 20% 0 0 !important;
-//     }
-// }
+.slide-wrapper {
+    padding: 16px;
+}
+
+@media (max-width: 576px) {
+    .slick-list {
+        padding: 0 20% 0 0 !important;
+    }
+}
+
 .slick-next.slick-disabled:before,
 .slick-prev.slick-disabled:before {
     opacity: 1;
 }
 
 .slick-slide {
-    margin-right: 20px;
+    margin: 0 10px;
 }
 
 .slick-prev,
@@ -26,8 +28,6 @@ $slick-loader-path: "../img/" !default;
         content: ' ';
         display: block;
         position: relative;
-        width: 40px;
-        height: 40px;
     }
 }
 
@@ -37,7 +37,7 @@ $slick-loader-path: "../img/" !default;
         display: inline;
         @include icon-styles;
         content: icon-char(prev);
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: $black;
         background-image: none;
     }
@@ -49,7 +49,7 @@ $slick-loader-path: "../img/" !default;
         display: inline;
         @include icon-styles;
         content: icon-char(next);
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: $black;
         background-image: none;
     }
