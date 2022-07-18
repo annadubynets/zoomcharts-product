@@ -10,7 +10,7 @@
 <body class="index">
     <!-- header -->
     <header>
-        <nav class="navbar navbar-expand-xl navbar-light fixed-top d-block">
+        <nav class="navbar navbar-expand-xl navbar-light fixed-top d-flex flex-column">
             <div class="container-fluid nav-wrapper">
                 <a class="navbar-brand pt-0 align-self-center" href="./index.html">
                     <img src="img/logo.svg" alt="logo" class="navbar-brand-img d-lg-block d-none">
@@ -26,7 +26,7 @@
                 </button>
                 <div class="navbar-collapse collapse" id="navbarCollapse">
                     <!-- Navigation -->
-                    <ul class="navbar-nav me-auto">
+                    <ul class="navbar-nav">
                         <li class="nav-item full-screen-dropdown dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="label">Products</span>
@@ -243,13 +243,12 @@
                             </div>
                         </li>
     
-                        <li class="menu-divider">&nbsp;</li>
-    
-                        <form class="align-self-center d-xl-block d-none search-form">
-                            <input type="search" placeholder="Search">
-                            <button class="btn cancel">Cancel</button>
-                        </form>
+                        <li class="menu-divider d-lg-block d-none">&nbsp;</li>
                     </ul>
+                    <form class="align-self-center d-xl-block d-none search-form me-auto">
+                        <input type="search" placeholder="Search">
+                        <button class="btn cancel">Cancel</button>
+                    </form>
     
                     <div class="d-xl-block d-none align-items-center ms-xl-auto ms-0">
                         <a href="#" title="ZoomCharts Buy now" class="fw-600 text-decoration-none text-dark pe-lg-4">Buy now</a>
@@ -267,7 +266,7 @@
                         <button type="button" class="btn btn-warning">
                             Try for Free
                         </button>
-                        <button type="button" class="btn btn-light">Sign in</button>
+                        <button type="button" class="btn btn-light"><span class="pe-2"><icon class="icon-user"></icon></span>Sign in</button>
                     </div>
                 </div>
             </div>
@@ -279,7 +278,7 @@
                                 <img src="../img/drill-down-timeline-pro.svg" alt="Drill Down Timeline Pro" class="img-size me-2">
                                 <span class="align-middle">Drill Down Timeline Pro</span>
                             </a>
-                            <a href="#" class="btn btn-warning ms-4">Get it now</a>
+                            <a href="#" class="btn btn-warning ms-lg-4 ms-0 mt-lg-0 mt-3 d-block d-lg-inline">Get it now</a>
                         </div>
                     </div>
                 </div>
@@ -291,7 +290,7 @@
     <section class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 py-4">
+                <div class="col-xl-7 py-4">
                     <div class="d-flex">
                         <img src="img/drill-down-timeline-pro.svg" alt="drill down timeline pro" class="hero-img">
                         <h1 class="fw-600 ps-3 pt-0 mb-lg-0 mb-1">Drill Down <span class="d-lg-inline d-block">Timeline PRO</span>
@@ -301,12 +300,12 @@
                         </h1>
                     </div>
                 </div>
-                <div class="col-lg-5 d-lg-none d-block mb-lg-0 mb-3">
+                <div class="col-xl-5 d-xl-none d-block mb-xl-0 mb-3">
                     <img src="img/hero-img.png" alt="Explore time-based data using columns or measures." class="rounded-2 w-100">
                 </div>
             </div>
             <div class="row get-it-now-section">
-                <div class="col-lg-5">
+                <div class="col-xl-5">
                     <p class="fw-bold fs-5">Explore time-based data using columns or measures.</p>
                     <ul class="list-items">
                         <li>Choose between multiple chart types and customize them fully to your liking.</li>
@@ -316,7 +315,7 @@
                     <a href="#" class="btn btn-warning me-lg-3 me-0 d-lg-inline d-block mb-lg-0 mb-3">Get it now</a>
                     <a href="#" class="btn btn-outline-dark d-lg-inline d-block">ZoomCharts Assistance</a>
                 </div>
-                <div class="col-lg-6 offset-lg-1 d-lg-block d-none">
+                <div class="col-xl-6 offset-xl-1 d-xl-block d-none">
                     <img src="img/hero-img.png" alt="Explore time-based data using columns or measures." class="rounded-2 w-100">
                 </div>
             </div>
