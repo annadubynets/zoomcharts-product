@@ -2,16 +2,14 @@
 $slick-font-path: "../fonts/" !default;
 $slick-loader-path: "../img/" !default;
 @import 'slick-carousel/slick/slick-theme';
-.slide-wrapper {
-    padding: 16px;
-}
-
-@media (max-width: 576px) {
-    .slick-list {
-        padding: 0 20% 0 0 !important;
-    }
-}
-
+// .slide-wrapper {
+//     padding: 16px;
+// }
+// @media (max-width: 576px) {
+//     .slick-list {
+//         padding: 0 20% 0 0 !important;
+//     }
+// }
 .slick-next.slick-disabled:before,
 .slick-prev.slick-disabled:before {
     opacity: 1;
@@ -23,7 +21,7 @@ $slick-loader-path: "../img/" !default;
 
 .slick-prev,
 .slick-next {
-    top: 46%;
+    top: 60%;
     &:before {
         content: ' ';
         display: block;
@@ -32,7 +30,7 @@ $slick-loader-path: "../img/" !default;
 }
 
 .slick-prev {
-    left: -40px;
+    left: 0;
     &::before {
         display: inline;
         @include icon-styles;
@@ -44,7 +42,7 @@ $slick-loader-path: "../img/" !default;
 }
 
 .slick-next {
-    right: -25px;
+    right: 0;
     &::before {
         display: inline;
         @include icon-styles;
@@ -52,5 +50,39 @@ $slick-loader-path: "../img/" !default;
         font-size: 1rem;
         color: $black;
         background-image: none;
+    }
+}
+
+.bundle-carousel {
+    .slick-prev,
+    .slick-next {
+        top: 50%;
+        &:before {
+            content: ' ';
+            display: block;
+            position: relative;
+        }
+    }
+    .slick-prev {
+        left: 0;
+        &::before {
+            display: inline;
+            @include icon-styles;
+            content: icon-char(prev);
+            font-size: 1rem;
+            color: $black;
+            background-image: none;
+        }
+    }
+    .slick-next {
+        right: 0;
+        &::before {
+            display: inline;
+            @include icon-styles;
+            content: icon-char(next);
+            font-size: 1rem;
+            color: $black;
+            background-image: none;
+        }
     }
 }
