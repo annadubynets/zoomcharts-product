@@ -3022,7 +3022,7 @@
 $('.objects-carousel').slick({
     dots: false,
     arrows: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -3030,9 +3030,7 @@ $('.objects-carousel').slick({
             breakpoint: 1024,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
-                infinite: true,
-                arrows: true
+                slidesToScroll: 2
             }
         },
         {
