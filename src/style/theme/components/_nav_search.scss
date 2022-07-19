@@ -4,7 +4,7 @@
             width: 100%;
             padding: 10px 15px;
             outline: none;
-            border: 1px solid #DFE3EC;
+            border: 1px solid $light-gray;
             border-radius: 3px;
         }
         input::-webkit-search-decoration,
@@ -56,7 +56,7 @@
                 border-radius: 3px;
                 color: #808C9A;
                 background-color: #FCFCFC;
-                border: 1px solid #DFE3EC;
+                border: 1px solid $light-gray;
                 cursor: auto;
                 font-weight: normal;
                 font-size: .938rem;

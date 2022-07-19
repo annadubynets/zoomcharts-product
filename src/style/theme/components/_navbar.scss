@@ -60,7 +60,7 @@
                 }
             }
             &.menu-divider {
-                border-left: 1px solid #DFE3EC;
+                border-left: 1px solid $light-gray;
                 margin-left: 10px;
                 margin-right: 10px;
             }
@@ -194,7 +194,7 @@
                 &.show {
                     visibility: visible;
                     top: 60px;
-                    border-top: 1px solid #DFE3EC;
+                    border: 1px solid $light-gray;
                     z-index: 1;
                     border-bottom-left-radius: 3px;
                     border-bottom-right-radius: 3px;
