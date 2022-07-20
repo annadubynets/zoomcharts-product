@@ -1,3 +1,48 @@
 .dropdown-item {
     padding: 10px 0;
 }
+
+.btn-group {
+    .dropdown-toggle {
+        background-color: transparent;
+        border: none;
+        &::before {
+            border: none;
+        }
+        &.show {
+            color: $black;
+            background-color: transparent;
+            .label {
+                position: relative;
+                &::before {
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    width: 100%;
+                    background-color: $yellow;
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    @media (max-width: 1199px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .dropdown-menu {
+        padding: 20px 40px 0 40px;
+        .dropdown-item {
+            &:hover {
+                background-color: transparent;
+            }
+            &:active {
+                color: $yellow;
+            }
+        }
+    }
+    &.dropstart .dropdown-menu[data-bs-popper] {
+        margin-top: 60px;
+        margin-right: -35px;
+    }
+}

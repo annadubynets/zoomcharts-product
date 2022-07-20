@@ -32,17 +32,19 @@ $icon-name-finance: "\E004";
 $icon-name-instagram: "\E005"; 
 $icon-name-linkedin: "\E006"; 
 $icon-name-logistics: "\E007"; 
-$icon-name-manufacturing: "\E008"; 
-$icon-name-navbar-arrow: "\E009"; 
-$icon-name-next: "\E00A"; 
-$icon-name-prev: "\E00B"; 
-$icon-name-sales: "\E00C"; 
-$icon-name-search: "\E00D"; 
-$icon-name-thumb-down: "\E00E"; 
-$icon-name-thumb-up: "\E00F"; 
-$icon-name-twitter: "\E010"; 
-$icon-name-user: "\E011"; 
-$icon-name-youtube: "\E012"; 
+$icon-name-logout: "\E008"; 
+$icon-name-manufacturing: "\E009"; 
+$icon-name-navbar-arrow: "\E00A"; 
+$icon-name-next: "\E00B"; 
+$icon-name-prev: "\E00C"; 
+$icon-name-profile: "\E00D"; 
+$icon-name-sales: "\E00E"; 
+$icon-name-search: "\E00F"; 
+$icon-name-thumb-down: "\E010"; 
+$icon-name-thumb-up: "\E011"; 
+$icon-name-twitter: "\E012"; 
+$icon-name-user: "\E013"; 
+$icon-name-youtube: "\E014"; 
 
 
 @function icon-char($filename) {
@@ -69,38 +71,44 @@ $icon-name-youtube: "\E012";
 	@if $filename == logistics {
 		$char: "\E007";
 	}
-	@if $filename == manufacturing {
+	@if $filename == logout {
 		$char: "\E008";
 	}
-	@if $filename == navbar-arrow {
+	@if $filename == manufacturing {
 		$char: "\E009";
 	}
-	@if $filename == next {
+	@if $filename == navbar-arrow {
 		$char: "\E00A";
 	}
-	@if $filename == prev {
+	@if $filename == next {
 		$char: "\E00B";
 	}
-	@if $filename == sales {
+	@if $filename == prev {
 		$char: "\E00C";
 	}
-	@if $filename == search {
+	@if $filename == profile {
 		$char: "\E00D";
 	}
-	@if $filename == thumb-down {
+	@if $filename == sales {
 		$char: "\E00E";
 	}
-	@if $filename == thumb-up {
+	@if $filename == search {
 		$char: "\E00F";
 	}
-	@if $filename == twitter {
+	@if $filename == thumb-down {
 		$char: "\E010";
 	}
-	@if $filename == user {
+	@if $filename == thumb-up {
 		$char: "\E011";
 	}
-	@if $filename == youtube {
+	@if $filename == twitter {
 		$char: "\E012";
+	}
+	@if $filename == user {
+		$char: "\E013";
+	}
+	@if $filename == youtube {
+		$char: "\E014";
 	}
 
 	@return $char;
@@ -138,6 +146,9 @@ $icon-name-youtube: "\E012";
 .icon-logistics {
 	@include icon(logistics);
 }
+.icon-logout {
+	@include icon(logout);
+}
 .icon-manufacturing {
 	@include icon(manufacturing);
 }
@@ -149,6 +160,9 @@ $icon-name-youtube: "\E012";
 }
 .icon-prev {
 	@include icon(prev);
+}
+.icon-profile {
+	@include icon(profile);
 }
 .icon-sales {
 	@include icon(sales);
