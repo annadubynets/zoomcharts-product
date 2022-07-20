@@ -3088,6 +3088,9 @@ function setupGetItNowBanner() {
 
     const targetSectionPosOnScreen = targetSection.getBoundingClientRect();
 
+    /**
+     * Shows the banner when a page scrolled to the target section
+     */
     const updateBannerState = function() {
         const bottomOfTargetSection = $(targetSection).offset().top + targetSectionPosOnScreen.height;
         banner.classList.toggle("d-none", $(window).scrollTop() < bottomOfTargetSection);
@@ -3098,6 +3101,15 @@ function setupGetItNowBanner() {
     });
 
     updateBannerState();
+
+    // we also need to hide a banner when navbar menu gets opened on mobile
+    $('#navbarCollapse').on('hidden.bs.collapse', function () {
+        $('.top-navbar').removeClass('menu-opened');
+    })
+
+    $('#navbarCollapse').on('shown.bs.collapse', function () {
+        $('.top-navbar').addClass('menu-opened');
+    })
 }
 
 $(function() {
