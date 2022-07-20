@@ -31,10 +31,11 @@ h2 {
     color: $black;
     font-weight: 600;
     font-size: 1.25rem;
+    line-height: 1.25rem;
     text-decoration: none;
     &:hover {
         color: $black;
-        text-decoration: underline;
+        border-bottom: 0.5px solid $black;
     }
 }
 
