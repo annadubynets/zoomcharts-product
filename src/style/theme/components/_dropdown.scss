@@ -36,6 +36,11 @@
             &:hover {
                 background-color: transparent;
             }
+            span {
+                &:hover {
+                    border-bottom: 1px solid $black;
+                }
+            }
             &:active {
                 color: $yellow;
             }

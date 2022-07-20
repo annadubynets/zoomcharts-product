@@ -10,7 +10,7 @@
         @media (max-width: 1199px) {
             width: 100%;
         }
-        &.top-navbar{
+        &.top-navbar {
             @media (max-width: 1199px) {
                 max-height: 100vh;
                 overflow-y: auto;
@@ -36,6 +36,7 @@
                     background-color: $light-blue;
                     border-radius: 3px;
                 }
+                &:hover,
                 &.show {
                     color: $black;
                     background-color: transparent;
@@ -195,6 +196,16 @@
                 top: 0px;
                 padding: 0;
                 min-width: 34rem;
+                .all-link {
+                    &:hover {
+                        color: $black;
+                    }
+                    span {
+                        &:hover {
+                            border-bottom: 1px solid $black;
+                        }
+                    }
+                }
                 &.menu-products {
                     min-width: 52rem;
                     @media (max-width: 1199px) {
@@ -234,6 +245,16 @@
                 ul {
                     li {
                         margin-bottom: 0;
+                        .dropdown-item {
+                            &:hover {
+                                background-color: transparent;
+                            }
+                            span {
+                                &:hover {
+                                    border-bottom: 1px solid $black;
+                                }
+                            }
+                        }
                     }
                 }
                 .dropdown-link {
