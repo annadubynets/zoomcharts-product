@@ -10,6 +10,11 @@
         @media (max-width: 1200px) {
             width: 100%;
         }
+        &.top-navbar.menu-opened {
+            .get-it-now-banner {
+                display: none !important;
+            }
+        }
         .navbar-nav>li {
             margin-left: 1px;
             margin-right: 1px;
@@ -101,6 +106,11 @@
             }
         }
         .navbar-collapse {
+            &.disable-animation.collapsing {
+                -webkit-transition: none;
+                transition: none;
+                display: none;
+            }
             @media (max-width: 1200px) {
                 background-color: whitesmoke;
                 &.show,
