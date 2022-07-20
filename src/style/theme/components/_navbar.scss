@@ -7,26 +7,32 @@
             padding-bottom: 15px;
         }
         background: white;
-        @media (max-width: 1200px) {
+        @media (max-width: 1199px) {
             width: 100%;
         }
-        &.top-navbar.menu-opened {
-            .get-it-now-banner {
-                display: none !important;
+        &.top-navbar{
+            @media (max-width: 1199px) {
+                max-height: 100vh;
+                overflow-y: auto;
+            }
+            .menu-opened {
+                .get-it-now-banner {
+                    display: none !important;
+                }
             }
         }
         .navbar-nav>li {
             margin-left: 1px;
             margin-right: 1px;
             margin-bottom: 0;
-            @media (max-width: 1200px) {
+            @media (max-width: 1199px) {
                 margin-bottom: 10px;
             }
             &>.nav-link {
                 padding: 10px 15px;
                 color: rgb(85, 85, 85);
                 font-weight: normal;
-                @media (max-width: 1200px) {
+                @media (max-width: 1199px) {
                     background-color: $light-blue;
                     border-radius: 3px;
                 }
@@ -44,13 +50,13 @@
                             position: absolute;
                             bottom: -5px;
                             left: 0;
-                            @media (max-width: 1200px) {
+                            @media (max-width: 1199px) {
                                 display: none;
                             }
                         }
                     }
                 }
-                @media (max-width: 1200px) {
+                @media (max-width: 1199px) {
                     padding: 30px 0;
                 }
                 @media (min-width: 1200px) {
@@ -111,7 +117,7 @@
                 transition: none;
                 display: none;
             }
-            @media (max-width: 1200px) {
+            @media (max-width: 1199px) {
                 background-color: whitesmoke;
                 &.show,
                 &.collapsing {
@@ -160,7 +166,7 @@
                 }
                 .navbar-nav {
                     margin-right: initial !important;
-                    @media (max-width: 1200px) {
+                    @media (max-width: 1199px) {
                         width: 100%;
                     }
                 }
@@ -191,14 +197,14 @@
                 min-width: 34rem;
                 &.menu-products {
                     min-width: 52rem;
-                    @media (max-width: 1200px) {
+                    @media (max-width: 1199px) {
                         min-width: 100%;
                     }
                 }
                 @media (min-width: 1200px) {
                     display: block;
                 }
-                @media (max-width: 1200px) {
+                @media (max-width: 1199px) {
                     min-width: 100%;
                 }
                 visibility: hidden;
@@ -209,7 +215,7 @@
                     z-index: 1;
                     border-bottom-left-radius: 3px;
                     border-bottom-right-radius: 3px;
-                    @media (max-width: 1200px) {
+                    @media (max-width: 1199px) {
                         top: 0!important;
                         background-color: $light-blue!important;
                     }
@@ -219,7 +225,7 @@
                 z-index: -1;
                 border: 0;
                 border-radius: 0;
-                @media (max-width: 1200px) {
+                @media (max-width: 1199px) {
                     position: relative;
                     top: 0;
                     padding-top: 0;
@@ -279,7 +285,7 @@
             }
         }
         .navbar-nav {
-            @media (max-width: 1200px) {
+            @media (max-width: 1199px) {
                 padding-top: 10px;
             }
         }
@@ -329,7 +335,7 @@
         }
     }
     
-    @media (max-width: 1200px) {
+    @media (max-width: 1199px) {
         .navbar .navbar-collapse.collapsing .navbar-nav>li .nav-link,
         .navbar .navbar-collapse.show .navbar-nav>li .nav-link {
             background-color: $light-blue;
