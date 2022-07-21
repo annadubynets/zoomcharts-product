@@ -3,6 +3,25 @@
     font-size: .938rem;
     color: $black;
     padding: 14px 35px;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.btn-check:active+.btn-outline-dark:focus,
+.btn-check:checked+.btn-outline-dark:focus,
+.btn-outline-dark.active:focus,
+.btn-outline-dark.dropdown-toggle.show:focus,
+.btn-outline-dark:active:focus {
+    box-shadow: none;
+}
+
+.btn-check:active+.btn-warning:focus,
+.btn-check:checked+.btn-warning:focus,
+.btn-warning.active:focus,
+.btn-warning:active:focus,
+.show>.btn-warning.dropdown-toggle:focus {
+    box-shadow: none;
 }
 
 .btn-warning {
