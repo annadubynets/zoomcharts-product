@@ -1,16 +1,26 @@
-.btn-warning {
+.btn {
+    font-weight: 600;
+    font-size: .938rem;
+    color: $black;
     padding: 14px 35px;
+}
+
+.btn-warning {
+    border: none;
     &:hover {
         text-decoration: underline;
         background-color: $yellow;
-        border-color: $yellow;
     }
 }
 
 .btn-outline-dark {
-    padding: 14px 35px;
+    padding: 13px 35px;
+    span {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
     &:hover {
-        text-decoration: underline;
         background-color: $white;
         border-color: $black-100;
         color: $black;
@@ -24,7 +34,8 @@
 }
 
 .btn-outline-light {
-    padding: 14px 35px;
+    padding: 13px 35px;
+    color: $white;
     &:hover {
         text-decoration: underline;
         color: $white;
@@ -45,4 +56,8 @@
     font-weight: normal;
     font-size: .938rem;
     color: $black;
+    &:hover {
+        text-decoration: underline;
+        color: $black;
+    }
 }
