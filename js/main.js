@@ -3053,7 +3053,7 @@ $('.objects-carousel').slick({
 $('.bundle-carousel').slick({
     dots: false,
     arrows: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 9,
     slidesToScroll: 9,
@@ -3103,11 +3103,11 @@ function setupGetItNowBanner() {
     updateBannerState();
 
     // we also need to hide a banner when navbar menu gets opened on mobile
-    $('#navbarCollapse').on('hidden.bs.collapse', function () {
+    $('#navbarCollapse').on('hidden.bs.collapse', function() {
         $('.top-navbar').removeClass('menu-opened');
     })
 
-    $('#navbarCollapse').on('shown.bs.collapse', function () {
+    $('#navbarCollapse').on('shown.bs.collapse', function() {
         $('.top-navbar').addClass('menu-opened');
     })
 }
