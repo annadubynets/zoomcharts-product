@@ -15,7 +15,7 @@
                 max-height: 100vh;
                 overflow-y: auto;
             }
-            .menu-opened {
+            &.menu-opened {
                 .get-it-now-banner {
                     display: none !important;
                 }
