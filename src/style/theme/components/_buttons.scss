@@ -1,6 +1,7 @@
 .btn {
     font-weight: 600;
     font-size: .938rem;
+    line-height: 1.25rem;
     color: $black;
     padding: 15px 35px;
     &:focus {
@@ -52,7 +53,7 @@
 }
 
 .btn-outline-light {
-    padding: 13px 35px;
+    padding: 14px 35px;
     color: $white;
     &:hover {
         text-decoration: underline;
@@ -67,6 +68,9 @@
         text-decoration: underline;
         color: $black;
         background-color: $light-blue;
+    }
+    &.sign {
+        padding: 13px 35px;
     }
 }
 
