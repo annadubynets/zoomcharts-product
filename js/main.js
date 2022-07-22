@@ -3074,8 +3074,8 @@ $('.bundle-carousel').slick({
         {
             breakpoint: 480,
             settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3
+                slidesToShow: 4,
+                slidesToScroll: 4
             }
         }
     ]
