@@ -15,11 +15,6 @@
                 max-height: 100vh;
                 overflow-y: auto;
             }
-            &.menu-opened {
-                .get-it-now-banner {
-                    display: none !important;
-                }
-            }
         }
         .navbar-nav>li {
             margin-left: 1px;
@@ -431,4 +426,10 @@
     
     .dropdown-menu[data-bs-popper] {
         margin-top: 0;
+    }
+
+    .menu-opened {
+        .get-it-now-banner {
+            display: none !important;
+        }
     }
