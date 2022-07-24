@@ -95,6 +95,32 @@ function setupGetItNowBanner() {
     })
 }
 
+function setupNavSearchForm() {
+    const navMenuWrapper = document.querySelector(".nav-menu-wrapper");
+    if (!navMenuWrapper) return;
+
+    const togglerButton = navMenuWrapper.querySelector('.search-form-toggler');
+    if (!togglerButton) return;
+
+    const btnSearchCancel = navMenuWrapper.querySelector('.btn-search-cancel');
+    if (!btnSearchCancel) return;
+
+    const searchInput = navMenuWrapper.querySelector('input[type="search"]');
+    if (!searchInput) return;
+
+    togglerButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        navMenuWrapper.classList.toggle('search-active');
+    });
+
+    btnSearchCancel.addEventListener('click', function(e) {
+        e.preventDefault();
+        searchInput.value = "";
+        navMenuWrapper.classList.toggle('search-active');
+    })
+}
+
 $(function() {
     setupGetItNowBanner();
+    setupNavSearchForm();
 });
