@@ -184,6 +184,11 @@
                         display: inline-block;
                         transform: rotate(180deg);
                     }
+                    .label {
+                        &:hover {
+                            border-bottom: 1px solid red;
+                        }
+                    }
                 }
             }
             .dropdown-menu {
@@ -387,7 +392,7 @@
             }
         }
     }
-
+    
     .navbar-light .navbar-nav .nav-link {
         font-weight: normal;
         font-size: 15px;
@@ -427,7 +432,7 @@
     .dropdown-menu[data-bs-popper] {
         margin-top: 0;
     }
-
+    
     .menu-opened {
         .get-it-now-banner {
             display: none !important;
