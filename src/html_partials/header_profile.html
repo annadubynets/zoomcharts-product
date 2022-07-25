@@ -13,9 +13,9 @@
                     <img src="img/close.svg" alt="Close" class="me-1">
                 </span>
             </button>
-            <div class="navbar-collapse collapse" id="navbarCollapse">
+            <div class="navbar-collapse collapse nav-menu-wrapper" id="navbarCollapse">
                 <!-- Navigation -->
-                <ul class="navbar-nav">
+                <ul class="navbar-nav navigation-menu">
                     <li class="nav-item full-screen-dropdown dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="label">Products</span>
@@ -243,11 +243,17 @@
                     </li>
 
                     <li class="menu-divider d-lg-block d-none">&nbsp;</li>
+                    <li class="nav-item d-xl-block d-none ">
+                        <a href="#" class="nav-link search-form-toggler"><img src="img/search.svg" loading="lazy" alt="Search"></a>
+                    </li>
+
+                    <li class="nav-item search-form">
+                        <form class="flex-grow-1 d-flex ms-lg-4 ms-0">
+                            <input type="search" class="flex-grow-1 align-self-center" placeholder="Search">
+                            <button class="btn btn-search-cancel align-self-center d-none d-xl-inline-block">Cancel</button>
+                        </form>
+                    </li>
                 </ul>
-                <form class="align-self-center d-xl-block d-none search-form me-auto">
-                    <input type="search" placeholder="Search">
-                    <button class="btn cancel">Cancel</button>
-                </form>
 
                 <div class="d-xl-block d-none align-items-center ms-xl-auto ms-0">
                     <a href="#" title="ZoomCharts Buy now" class="fw-600 text-decoration-none text-dark pe-lg-4">Buy now</a>
@@ -286,9 +292,6 @@
                 </div>
 
                 <div class="d-grid d-xl-none gap-2 w-100">
-                    <form class="search-form">
-                        <input type="search" placeholder="Search">
-                    </form>
                     <button type="button" class="btn btn-outline-dark">Buy now</button>
                     <button type="button" class="btn btn-warning">
                         Try for Free
