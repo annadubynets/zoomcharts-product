@@ -33,7 +33,7 @@
     .dropdown-menu {
         padding: 20px 40px 0 40px;
         .dropdown-item {
-            &:active,
+            &::active,
             &:hover {
                 color: $black!important;
                 background-color: transparent!important;
@@ -52,4 +52,15 @@
         margin-top: 60px;
         margin-right: -35px;
     }
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: $black!important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: $black;
+    background-color: transparent;
 }
