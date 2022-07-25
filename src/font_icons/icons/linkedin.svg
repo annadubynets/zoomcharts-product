@@ -1,5 +1,47 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="12" cy="12" r="12" fill="black"/>
-<path d="M7.32201 8.79795C8.12761 8.79795 8.78068 8.14488 8.78068 7.33928C8.78068 6.53368 8.12761 5.88062 7.32201 5.88062C6.51641 5.88062 5.86334 6.53368 5.86334 7.33928C5.86334 8.14488 6.51641 8.79795 7.32201 8.79795Z" fill="white"/>
-<path d="M10.158 9.90337V17.996H12.6707V13.994C12.6707 12.938 12.8694 11.9154 14.1787 11.9154C15.47 11.9154 15.486 13.1227 15.486 14.0607V17.9967H18V13.5587C18 11.3787 17.5307 9.70337 14.9827 9.70337C13.7594 9.70337 12.9394 10.3747 12.604 11.01H12.57V9.90337H10.158V9.90337ZM6.06335 9.90337H8.58002V17.996H6.06335V9.90337Z" fill="white"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   fill="none"
+   version="1.1"
+   id="svg281"
+   sodipodi:docname="linkedin.svg"
+   inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs285" />
+  <sodipodi:namedview
+     id="namedview283"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="14.080067"
+     inkscape:cx="14.311011"
+     inkscape:cy="15.802481"
+     inkscape:window-width="1296"
+     inkscape:window-height="809"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg281" />
+  <path
+     style="color:#000000;fill:#000000;-inkscape-stroke:none"
+     d="M 24,12 A 12,12 0 0 1 12,24 12,12 0 0 1 0,12 12,12 0 0 1 12,0 12,12 0 0 1 24,12 Z"
+     id="circle275" />
+  <path
+     style="color:#000000;fill:#ffffff;-inkscape-stroke:none"
+     d="m 7.32201,8.79795 c 0.8056,0 1.45867,-0.65307 1.45867,-1.45867 0,-0.8056 -0.65307,-1.45866 -1.45867,-1.45866 -0.8056,0 -1.45867,0.65306 -1.45867,1.45866 0,0.8056 0.65307,1.45867 1.45867,1.45867 z"
+     id="path277" />
+  <path
+     style="color:#000000;fill:#ffffff;-inkscape-stroke:none"
+     d="M 10.158,9.90337 V 17.996 h 2.5127 v -4.002 c 0,-1.056 0.1987,-2.0786 1.508,-2.0786 1.2913,0 1.3073,1.2073 1.3073,2.1453 v 3.936 H 18 v -4.438 c 0,-2.18 -0.4693,-3.85533 -3.0173,-3.85533 -1.2233,0 -2.0433,0.67133 -2.3787,1.30663 H 12.57 V 9.90337 h -2.412 z m -4.09465,0 H 8.58002 V 17.996 H 6.06335 Z"
+     id="path279" />
 </svg>
