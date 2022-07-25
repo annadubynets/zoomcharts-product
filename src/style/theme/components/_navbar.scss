@@ -164,6 +164,7 @@
                 &.collapse.show {
                     opacity: 1;
                     pointer-events: auto;
+                    height: calc(100vh - 60px);
                 }
                 .navbar-nav {
                     margin-right: initial !important;
