@@ -33,8 +33,10 @@
     .dropdown-menu {
         padding: 20px 40px 0 40px;
         .dropdown-item {
+            &:active,
             &:hover {
-                background-color: transparent;
+                color: $black!important;
+                background-color: transparent!important;
             }
             span {
                 &:hover {

@@ -196,7 +196,6 @@
             .dropdown-menu {
                 top: 0px;
                 padding: 0;
-                min-width: 34rem;
                 .all-link {
                     &:hover {
                         color: $black;
@@ -207,8 +206,20 @@
                         }
                     }
                 }
-                &.menu-products {
+                &.menu-large {
                     min-width: 52rem;
+                    @media (max-width: 1199px) {
+                        min-width: 100%;
+                    }
+                }
+                &.menu-middle {
+                    min-width: 34rem;
+                    @media (max-width: 1199px) {
+                        min-width: 100%;
+                    }
+                }
+                &.menu-small {
+                    min-width: 17rem;
                     @media (max-width: 1199px) {
                         min-width: 100%;
                     }
@@ -216,9 +227,9 @@
                 @media (min-width: 1200px) {
                     display: block;
                 }
-                @media (max-width: 1199px) {
-                    min-width: 100%;
-                }
+                // @media (max-width: 1199px) {
+                //     min-width: 100%;
+                // }
                 visibility: hidden;
                 &.show {
                     visibility: visible;
