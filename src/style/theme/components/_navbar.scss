@@ -1,5 +1,11 @@
     $scrolled-navbar-height: 52px;
     $scrolled-navbar-sm-height: 42px;
+    .menu-opened {
+        .navbar-brand .navbar-brand-img {
+            display: none!important;
+        }
+    }
+    
     .navbar {
         padding: 0;
         &>.nav-wrapper {
