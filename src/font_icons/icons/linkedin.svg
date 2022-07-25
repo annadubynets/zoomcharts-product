@@ -5,7 +5,7 @@
    viewBox="0 0 24 24"
    fill="none"
    version="1.1"
-   id="svg281"
+   id="svg349"
    sodipodi:docname="linkedin.svg"
    inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -13,9 +13,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs285" />
+     id="defs353" />
   <sodipodi:namedview
-     id="namedview283"
+     id="namedview351"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
@@ -23,25 +23,21 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="14.080067"
-     inkscape:cx="14.311011"
-     inkscape:cy="15.802481"
-     inkscape:window-width="1296"
+     inkscape:zoom="13.761088"
+     inkscape:cx="15.078749"
+     inkscape:cy="15.224087"
+     inkscape:window-width="1312"
      inkscape:window-height="809"
      inkscape:window-x="0"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg281" />
+     inkscape:current-layer="svg349" />
   <path
      style="color:#000000;fill:#000000;-inkscape-stroke:none"
      d="M 24,12 A 12,12 0 0 1 12,24 12,12 0 0 1 0,12 12,12 0 0 1 12,0 12,12 0 0 1 24,12 Z"
-     id="circle275" />
+     id="circle345" />
   <path
      style="color:#000000;fill:#ffffff;-inkscape-stroke:none"
-     d="m 7.32201,8.79795 c 0.8056,0 1.45867,-0.65307 1.45867,-1.45867 0,-0.8056 -0.65307,-1.45866 -1.45867,-1.45866 -0.8056,0 -1.45867,0.65306 -1.45867,1.45866 0,0.8056 0.65307,1.45867 1.45867,1.45867 z"
-     id="path277" />
-  <path
-     style="color:#000000;fill:#ffffff;-inkscape-stroke:none"
-     d="M 10.158,9.90337 V 17.996 h 2.5127 v -4.002 c 0,-1.056 0.1987,-2.0786 1.508,-2.0786 1.2913,0 1.3073,1.2073 1.3073,2.1453 v 3.936 H 18 v -4.438 c 0,-2.18 -0.4693,-3.85533 -3.0173,-3.85533 -1.2233,0 -2.0433,0.67133 -2.3787,1.30663 H 12.57 V 9.90337 h -2.412 z m -4.09465,0 H 8.58002 V 17.996 H 6.06335 Z"
-     id="path279" />
+     d="M 9.22447,17.4541 V 9.42726 H 6.7334 V 17.4541 Z M 7.96554,8.35343 c 0.80357,0 1.44643,-0.67114 1.44643,-1.47651 0,-0.77852 -0.64286,-1.42282 -1.44643,-1.42282 -0.77678,0 -1.41964,0.6443 -1.41964,1.42282 0,0.80537 0.64286,1.47651 1.41964,1.47651 z M 18.5191,17.4541 h 0.0268 v -4.4027 c 0,-2.1476 -0.4821,-3.81206 -3,-3.81206 -1.2054,0 -2.0089,0.67114 -2.3571,1.28856 H 13.162 V 9.42726 h -2.384 v 8.02684 h 2.4911 v -3.9732 c 0,-1.0469 0.1875,-2.0402 1.4732,-2.0402 1.2857,0 1.3125,1.1812 1.3125,2.1208 v 3.8926 z"
+     id="path347" />
 </svg>
