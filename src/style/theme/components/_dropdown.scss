@@ -1,5 +1,6 @@
 .dropdown-item {
     padding: 10px 0;
+    white-space: initial;
 }
 
 .btn-group {
@@ -33,6 +34,7 @@
     .dropdown-menu {
         padding: 20px 40px 0 40px;
         .dropdown-item {
+            white-space: initial!important;
             &::active,
             &:hover {
                 color: $black!important;
@@ -62,5 +64,10 @@
 .dropdown-item:focus,
 .dropdown-item:hover {
     color: $black;
+    background-color: transparent;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
     background-color: transparent;
 }
