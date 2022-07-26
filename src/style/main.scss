@@ -99,6 +99,29 @@
     }
 }
 
+.assistance-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 254px;
+    @media (max-width: 991px) {
+        background-image: url(../img/assistance-img-991px.png);
+    }
+    @media (max-width: 767px) {
+        background-image: url(../img/assistance-img-767px.png);
+    }
+    @media (max-width: 576px) {
+        background-image: url(../img/assistance-img-576px.png);
+    }
+    @media (max-width: 414px) {
+        background-image: url(../img/assistance-img-mobile.png);
+        height: 397px;
+    }
+}
+
 .divider-left {
     position: relative;
     &::before {
