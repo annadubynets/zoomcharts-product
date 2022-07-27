@@ -1,6 +1,7 @@
 body.menu-opened {
     @media (max-width: 1199px) {
         overflow: hidden;
+        position: fixed;
     }
     @media (max-width: 1199px) {
         .navbar-brand .navbar-brand-img {
