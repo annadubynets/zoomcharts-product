@@ -35,14 +35,12 @@
 
 .btn-outline-dark {
     padding: 14px 35px;
-    span {
-        &:hover {
-            text-decoration: underline;
-        }
-    }
     &:hover {
         background-color: transparent;
         color: $black;
+        .btn-hover-style {
+            text-decoration: underline;
+        }
     }
     &.btn-padding {
         padding: 14px 20px;
