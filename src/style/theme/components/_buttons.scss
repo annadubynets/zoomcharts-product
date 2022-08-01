@@ -29,15 +29,16 @@
     border: none;
     &:hover {
         text-decoration: underline;
-        background-color: $yellow;
+        background-color: $black-100;
+        color: $white;
     }
 }
 
 .btn-outline-dark {
     padding: 14px 35px;
     &:hover {
-        background-color: transparent;
-        color: $black;
+        background-color: $black-100;
+        color: $white;
         .btn-hover-style {
             text-decoration: underline;
         }
@@ -55,8 +56,8 @@
     color: $white;
     &:hover {
         text-decoration: underline;
-        color: $white;
-        background-color: $black-100;
+        color: $black-100;
+        background-color: $white;
         border-color: $white;
     }
 }
