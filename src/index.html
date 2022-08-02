@@ -89,7 +89,7 @@
                 </div>
                 <div class="col-xl-12 px-0">
                     <div class="d-flex flex-xl-row flex-column justify-content-between align-items-xl-start align-items-center">
-                        <div class="nav flex-column text-center nav-pills mb-xl-0 mb-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <div class="nav flex-column text-center nav-pills mb-xl-0 mb-4 d-lg-block d-none" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <button class="nav-link active text-xl-start text-center" id="v-pills-drill-down-tab" data-bs-toggle="pill" data-bs-target="#v-pills-drill-down" type="button" role="tab" aria-controls="v-pills-drill-down" aria-selected="true"><span class="label">Drill down</span></button>
                             <button class="nav-link text-xl-start text-center" id="v-pills-down-to-timespan-tab" data-bs-toggle="pill" data-bs-target="#v-pills-down-to-timespan" type="button" role="tab" aria-controls="v-pills-down-to-timespan" aria-selected="false"><span class="label">Drill down to timespan</span></button>
                             <button class="nav-link text-xl-start text-center" id="v-pills-zoom-out-tab" data-bs-toggle="pill" data-bs-target="#v-pills-zoom-out" type="button" role="tab" aria-controls="v-pills-zoom-out" aria-selected="false"><span class="label">Zoom out</span></button>
@@ -102,6 +102,13 @@
                             <button class="nav-link text-xl-start text-center" id="v-pills-remove-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-remove-selection" type="button" role="tab" aria-controls="v-pills-remove-selection" aria-selected="false"><span class="label">Remove selection</span></button>
                             <button class="nav-link text-xl-start text-center" id="v-pills-drill-down-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-drill-down-selection" type="button" role="tab" aria-controls="v-pills-drill-down-selection" aria-selected="false"><span class="label">Drill down to selection</span></button>
                             <button class="nav-link text-xl-start text-center" id="v-pills-change-time-tab" data-bs-toggle="pill" data-bs-target="#v-pills-change-time" type="button" role="tab" aria-controls="v-pills-change-time" aria-selected="false"><span class="label">Change time grain</span></button>
+                        </div>
+                        <div class="d-lg-none d-block">
+                            <select id="inputPosition" class="selectpicker d-block" placeholder="Position in the company" required>
+                                <option>Drill down</option>
+                                <option>Drill down to timespan</option>
+                                <option>Zoom out</option>
+                        </select>
                         </div>
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-down-to-timespan" role="tabpanel" aria-labelledby="v-pills-down-to-timespan-tab">
@@ -142,6 +149,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

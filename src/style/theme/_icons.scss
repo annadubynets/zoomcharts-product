@@ -26,25 +26,33 @@ $font-icons-family-name: "IconsFont";
 }
 
 $icon-name-arrow-down: "\E001"; 
-$icon-name-check: "\E002"; 
-$icon-name-facebook: "\E003"; 
-$icon-name-finance: "\E004"; 
-$icon-name-instagram: "\E005"; 
-$icon-name-linkedin: "\E006"; 
-$icon-name-logistics: "\E007"; 
-$icon-name-logout: "\E008"; 
-$icon-name-manufacturing: "\E009"; 
-$icon-name-navbar-arrow: "\E00A"; 
-$icon-name-next: "\E00B"; 
-$icon-name-prev: "\E00C"; 
-$icon-name-profile: "\E00D"; 
-$icon-name-sales: "\E00E"; 
-$icon-name-search: "\E00F"; 
-$icon-name-thumb-down: "\E010"; 
-$icon-name-thumb-up: "\E011"; 
-$icon-name-twitter: "\E012"; 
-$icon-name-user: "\E013"; 
-$icon-name-youtube: "\E014"; 
+$icon-name-chat: "\E002"; 
+$icon-name-check: "\E003"; 
+$icon-name-data-driven: "\E004"; 
+$icon-name-data-storytelling: "\E005"; 
+$icon-name-facebook: "\E006"; 
+$icon-name-finance: "\E007"; 
+$icon-name-full-customization: "\E008"; 
+$icon-name-improve: "\E009"; 
+$icon-name-instagram: "\E00A"; 
+$icon-name-linkedin: "\E00B"; 
+$icon-name-logistics: "\E00C"; 
+$icon-name-logout: "\E00D"; 
+$icon-name-manufacturing: "\E00E"; 
+$icon-name-navbar-arrow: "\E00F"; 
+$icon-name-next: "\E010"; 
+$icon-name-phone: "\E011"; 
+$icon-name-prev: "\E012"; 
+$icon-name-profile: "\E013"; 
+$icon-name-request: "\E014"; 
+$icon-name-rocket-launch: "\E015"; 
+$icon-name-sales: "\E016"; 
+$icon-name-search: "\E017"; 
+$icon-name-thumb-down: "\E018"; 
+$icon-name-thumb-up: "\E019"; 
+$icon-name-twitter: "\E01A"; 
+$icon-name-user: "\E01B"; 
+$icon-name-youtube: "\E01C"; 
 
 
 @function icon-char($filename) {
@@ -53,62 +61,86 @@ $icon-name-youtube: "\E014";
 	@if $filename == arrow-down {
 		$char: "\E001";
 	}
-	@if $filename == check {
+	@if $filename == chat {
 		$char: "\E002";
 	}
-	@if $filename == facebook {
+	@if $filename == check {
 		$char: "\E003";
 	}
-	@if $filename == finance {
+	@if $filename == data-driven {
 		$char: "\E004";
 	}
-	@if $filename == instagram {
+	@if $filename == data-storytelling {
 		$char: "\E005";
 	}
-	@if $filename == linkedin {
+	@if $filename == facebook {
 		$char: "\E006";
 	}
-	@if $filename == logistics {
+	@if $filename == finance {
 		$char: "\E007";
 	}
-	@if $filename == logout {
+	@if $filename == full-customization {
 		$char: "\E008";
 	}
-	@if $filename == manufacturing {
+	@if $filename == improve {
 		$char: "\E009";
 	}
-	@if $filename == navbar-arrow {
+	@if $filename == instagram {
 		$char: "\E00A";
 	}
-	@if $filename == next {
+	@if $filename == linkedin {
 		$char: "\E00B";
 	}
-	@if $filename == prev {
+	@if $filename == logistics {
 		$char: "\E00C";
 	}
-	@if $filename == profile {
+	@if $filename == logout {
 		$char: "\E00D";
 	}
-	@if $filename == sales {
+	@if $filename == manufacturing {
 		$char: "\E00E";
 	}
-	@if $filename == search {
+	@if $filename == navbar-arrow {
 		$char: "\E00F";
 	}
-	@if $filename == thumb-down {
+	@if $filename == next {
 		$char: "\E010";
 	}
-	@if $filename == thumb-up {
+	@if $filename == phone {
 		$char: "\E011";
 	}
-	@if $filename == twitter {
+	@if $filename == prev {
 		$char: "\E012";
 	}
-	@if $filename == user {
+	@if $filename == profile {
 		$char: "\E013";
 	}
-	@if $filename == youtube {
+	@if $filename == request {
 		$char: "\E014";
+	}
+	@if $filename == rocket-launch {
+		$char: "\E015";
+	}
+	@if $filename == sales {
+		$char: "\E016";
+	}
+	@if $filename == search {
+		$char: "\E017";
+	}
+	@if $filename == thumb-down {
+		$char: "\E018";
+	}
+	@if $filename == thumb-up {
+		$char: "\E019";
+	}
+	@if $filename == twitter {
+		$char: "\E01A";
+	}
+	@if $filename == user {
+		$char: "\E01B";
+	}
+	@if $filename == youtube {
+		$char: "\E01C";
 	}
 
 	@return $char;
@@ -128,14 +160,29 @@ $icon-name-youtube: "\E014";
 .icon-arrow-down {
 	@include icon(arrow-down);
 }
+.icon-chat {
+	@include icon(chat);
+}
 .icon-check {
 	@include icon(check);
+}
+.icon-data-driven {
+	@include icon(data-driven);
+}
+.icon-data-storytelling {
+	@include icon(data-storytelling);
 }
 .icon-facebook {
 	@include icon(facebook);
 }
 .icon-finance {
 	@include icon(finance);
+}
+.icon-full-customization {
+	@include icon(full-customization);
+}
+.icon-improve {
+	@include icon(improve);
 }
 .icon-instagram {
 	@include icon(instagram);
@@ -158,11 +205,20 @@ $icon-name-youtube: "\E014";
 .icon-next {
 	@include icon(next);
 }
+.icon-phone {
+	@include icon(phone);
+}
 .icon-prev {
 	@include icon(prev);
 }
 .icon-profile {
 	@include icon(profile);
+}
+.icon-request {
+	@include icon(request);
+}
+.icon-rocket-launch {
+	@include icon(rocket-launch);
 }
 .icon-sales {
 	@include icon(sales);
