@@ -1,6 +1,7 @@
 //= ../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
 //= ../../node_modules/jquery/dist/jquery.min.js
 //= ../../node_modules/slick-carousel/slick/slick.js
+//= ../../node_modules/bootstrap-select/dist/js/bootstrap-select.min.js
 
 $('.objects-carousel').slick({
     dots: false,
