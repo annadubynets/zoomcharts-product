@@ -2,14 +2,7 @@
 $slick-font-path: "../fonts/" !default;
 $slick-loader-path: "../img/" !default;
 @import 'slick-carousel/slick/slick-theme';
-// .slide-wrapper {
-//     padding: 16px;
-// }
-// @media (max-width: 576px) {
-//     .slick-list {
-//         padding: 0 20% 0 0 !important;
-//     }
-// }
+
 .slick-next.slick-disabled:before,
 .slick-prev.slick-disabled:before {
     opacity: 1;
