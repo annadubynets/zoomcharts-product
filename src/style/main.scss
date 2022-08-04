@@ -192,6 +192,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
+    @media (min-width: 414px) and (max-width: 576px) {
+        height: 600px;
+    }
+    @media (min-width: 577px) and (max-width: 767px) {
+        height: 700px;
+    }
+    @media (min-width: 768px) and (max-width: 992px) {
+        height: 900px;
+    }
 }
 
 .report-block {
