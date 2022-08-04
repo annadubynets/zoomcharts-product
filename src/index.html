@@ -103,21 +103,19 @@
                             <button class="nav-link text-xl-start text-center" id="v-pills-drill-down-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-drill-down-selection" type="button" role="tab" aria-controls="v-pills-drill-down-selection" aria-selected="false"><span class="label">Drill down to selection</span></button>
                             <button class="nav-link text-xl-start text-center" id="v-pills-change-time-tab" data-bs-toggle="pill" data-bs-target="#v-pills-change-time" type="button" role="tab" aria-controls="v-pills-change-time" aria-selected="false"><span class="label">Change time grain</span></button>
                         </div>
-                        <div class="d-lg-none d-block pb-4">
-                            <select id="inputPosition" class="selectpicker d-block" placeholder="Drill down" required>
-                                <option>Drill down to timespan</option>
-                                <option>Zoom out</option>
-                                <option>Go back</option>
-                                <option>Scroll back (time)</option>
-                                <option>Scroll forward (time)</option>
-                                <option>Finetune zoom</option>
-                                <option>Select time period</option>
-                                <option>Change selection</option>
-                                <option>Remove selection</option>
-                                <option>Drill down to selection</option>
-                                <option>Change time grain</option>
-                        </select>
-                        </div>
+                        <select id="inputInteraction" class="selectpicker d-block d-lg-none pb-4 w-100" placeholder="Drill down" required>
+                            <option>Drill down to timespan</option>
+                            <option>Zoom out</option>
+                            <option>Go back</option>
+                            <option>Scroll back (time)</option>
+                            <option>Scroll forward (time)</option>
+                            <option>Finetune zoom</option>
+                            <option>Select time period</option>
+                            <option>Change selection</option>
+                            <option>Remove selection</option>
+                            <option>Drill down to selection</option>
+                            <option>Change time grain</option>
+                    </select>
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-down-to-timespan" role="tabpanel" aria-labelledby="v-pills-down-to-timespan-tab">
                                 <img src="img/zoom_out.gif" alt="Drill down" class="rounded-2 img-style" loading="lazy">

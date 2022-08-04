@@ -1,1 +1,79 @@
 @import "bootstrap-select/sass/bootstrap-select.scss";
+.bootstrap-select {
+    width: 100%;
+    display: block;
+    .btn-light {
+        background-color: $white;
+        border: 1px solid #DFE3EC;
+        border-radius: 3px;
+        text-decoration: none!important;
+        &:hover {
+            background-color: $white;
+            border: 1px solid #DFE3EC;
+        }
+    }
+    .btn {
+        font-weight: normal;
+        font-size: 16px;
+        color: $black;
+        padding: 11px;
+        &:focus,
+        &:hover {
+            padding: 10px;
+        }
+    }
+    .bs-placeholder {
+        font-weight: normal;
+        font-size: 16px;
+        color: #CDCFD0;
+    }
+    .dropdown-toggle {
+        &::after {
+            display: block;
+            border-top: 0;
+            border-bottom: 0;
+            @include icon-styles;
+            content: icon-char(arrow-down);
+            color: $black;
+            font-size: 8px;
+        }
+        &.show {
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .dropdown-menu {
+        background-color: $white;
+        border: 1px solid #DFE3EC;
+        border-radius: 3px;
+        .dropdown-item {
+            color: $dark-gray;
+            padding: .5rem 1rem;
+            &:active {
+                color: $black;
+                background-color: #F4F6FA!important;
+            }
+        }
+    }
+}
+
+.bootstrap-select>select.mobile-device:focus+.dropdown-toggle,
+.bootstrap-select .dropdown-toggle:focus {
+    outline: 0!important;
+}
+
+.bootstrap-select>.dropdown-toggle.bs-placeholder,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:active,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+    color: $black;
+}
+
+.btn-check:active+.btn-light:focus,
+.btn-check:checked+.btn-light:focus,
+.btn-light.active:focus,
+.btn-light:active:focus,
+.show>.btn-light.dropdown-toggle:focus {
+    box-shadow: none;
+}
