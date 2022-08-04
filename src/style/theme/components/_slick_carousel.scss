@@ -48,12 +48,31 @@ $slick-loader-path: "../img/" !default;
 
 .customer-carousel {
     .slick-slide {
+        margin-bottom: 16px;
         img {
             width: 100%;
             max-height: 32px;
             height: 32px;
-            margin-left: 20px;
-            margin-right: 20px;
+        }
+        &.slick-current {
+            img {
+                filter: initial;
+                opacity: initial;
+                display: block;
+            }
+            a {
+                position: relative;
+                &::after {
+                    content: "";
+                    display: block;
+                    height: 3px;
+                    width: 100%;
+                    background-color: $yellow;
+                    transition: 0.5s;
+                    position: absolute;
+                    bottom: -9px;
+                }
+            }
         }
     }
 }
@@ -91,6 +110,7 @@ $slick-loader-path: "../img/" !default;
         }
     }
     .slick-slide {
+        margin-bottom: 16px;
         img {
             filter: grayscale(100%);
             opacity: 0.5;
@@ -99,22 +119,18 @@ $slick-loader-path: "../img/" !default;
             img {
                 filter: initial;
                 opacity: initial;
-                position: relative;
+                display: block;
+            }
+            a {
                 &::after {
                     content: "";
                     display: block;
                     height: 3px;
-                    width: 0;
+                    width: 100%;
                     background-color: $yellow;
                     transition: 0.5s;
                     position: absolute;
                     bottom: -9px;
-                }
-                &:active,
-                &:hover {
-                    &::after {
-                        width: 100%;
-                    }
                 }
             }
         }
