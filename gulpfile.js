@@ -7,6 +7,7 @@ var path = {
         js: "./dist/js/",
         css: "./dist/css/",
         img: "./dist/img/",
+        videos: "./dist/videos/",
         fonts: "./dist/fonts/",
         fontIcons: "./dist/fonts/",
     },
@@ -19,6 +20,9 @@ var path = {
             "./src/img/**/*.*",
             "node_modules/slick-carousel/slick/ajax-loader.gif",
         ],
+        videos: [
+            "./src/videos/**/*.*",
+        ],
         fonts: [
             "./src/fonts/**/*.*",
             "node_modules/slick-carousel/slick/fonts/**/*.*",
@@ -29,6 +33,7 @@ var path = {
         js: "./src/js/**/*.js",
         css: "./src/style/**/*.scss",
         img: "./src/img/**/*.*",
+        videos: "./src/videos/**/*.*",
         fonts: "./srs/fonts/**/*.*",
         fontIcons: "./src/font_icons/icons/*.svg",
     },
@@ -183,6 +188,15 @@ gulp.task("image:build", function() {
 });
 
 /**
+ * Copy videos
+ */
+ gulp.task("videos:build", function() {
+    return gulp
+        .src(path.src.videos)
+        .pipe(gulp.dest(path.build.videos));
+});
+
+/**
  * Clean build
  */
 gulp.task("clean:build", function() {
@@ -210,6 +224,7 @@ gulp.task(
             "fonts:build",
             "image:build",
             "fonticons:build",
+            "videos:build"
         )
     )
 );
@@ -223,6 +238,7 @@ gulp.task("watch", function() {
     gulp.watch(path.watch.js, gulp.series("js:build"));
     gulp.watch(path.watch.img, gulp.series("image:build"));
     gulp.watch(path.watch.fonts, gulp.series("fonts:build"));
+    gulp.watch(path.watch.videos, gulp.series("videos:build"));
     gulp.watch(path.watch.fontIcons, gulp.series("fonticons:build"));
 });
 
