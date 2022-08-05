@@ -187,19 +187,21 @@
     position: absolute;
     top: 0;
     width: 100%;
-    background-image: url(../img/report-hero-bg-mobile.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
-    @media (min-width: 414px) and (max-width: 576px) {
-        height: 600px;
+    @media (max-width: 991px) {
+        background-image: url(../img/report-hero-991px.png);
     }
-    @media (min-width: 577px) and (max-width: 767px) {
-        height: 700px;
+    @media (max-width: 767px) {
+        background-image: url(../img/report-hero-767px.png);
     }
-    @media (min-width: 768px) and (max-width: 992px) {
-        height: 900px;
+    @media (max-width: 576px) {
+        background-image: url(../img/report-hero-576px.png);
+    }
+    @media (max-width: 414px) {
+        background-image: url(../img/report-hero-bg-mobile.png);
     }
 }
 
