@@ -3176,8 +3176,24 @@ function setupNavSearchForm() {
     })
 }
 
+function setupTimelineInteractionsSwitcher() {
+    $('.timeline-interactions-switcher').on('changed.bs.select', function(e, clickedIndex, isSelected) {
+        const selectorInput = document.querySelector('select.timeline-interactions-switcher');
+        if (!isSelected) return;
+
+        const option = selectorInput.options[clickedIndex];
+        if (option) {
+            const targetTabSelector = option.dataset.bsTarget;
+            if (!targetTabSelector) return;
+            const targetTabEl = document.querySelector('button[data-bs-target="' + targetTabSelector + '"]');
+            (new bootstrap.Tab(targetTabEl)).show();
+        }
+    })
+}
+
 $(function() {
     setupGetItNowBanner();
     setupNavSearchForm();
+    setupTimelineInteractionsSwitcher();
 });
 //# sourceMappingURL=main.js.map

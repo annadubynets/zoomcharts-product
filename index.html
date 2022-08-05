@@ -51,17 +51,17 @@
                                                         <li>
                                                             <a class="dropdown-item" href="#">
                                                                 <img src="img/drill-down-timeseries-pro.svg" alt="Drill TimeSeries Pro" class="w-30 h-30 me-2">
-                                                                <span>Drill TimeSeries Pro</span></a>
+                                                                <span>Drill Down TimeSeries Pro</span></a>
                                                         </li>
                                                         <li>
                                                             <a class="dropdown-item" href="#">
                                                                 <img src="img/drill-down-combo-pro.svg" alt="Drill Combo Pro" class="w-30 h-30 me-2">
-                                                                <span>Drill Combo Pro</span></a>
+                                                                <span>Drill Down Combo Pro</span></a>
                                                         </li>
                                                         <li>
                                                             <a class="dropdown-item" href="#">
                                                                 <img src="img/drill-down-map-pro.svg" alt="Drill Map Pro" class="w-30 h-30 me-2">
-                                                                <span>Drill Map Pro</span></a>
+                                                                <span>Drill Down Map Pro</span></a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -401,21 +401,22 @@
                             <button class="nav-link text-xl-start text-center" id="v-pills-drill-down-selection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-drill-down-selection" type="button" role="tab" aria-controls="v-pills-drill-down-selection" aria-selected="false"><span class="label">Drill down to selection</span></button>
                             <button class="nav-link text-xl-start text-center" id="v-pills-change-time-tab" data-bs-toggle="pill" data-bs-target="#v-pills-change-time" type="button" role="tab" aria-controls="v-pills-change-time" aria-selected="false"><span class="label">Change time grain</span></button>
                         </div>
-                        <select id="inputInteraction" class="selectpicker d-block d-xl-none pb-4 w-100" placeholder="Drill down" required>
-                            <option>Drill down to timespan</option>
-                            <option>Zoom out</option>
-                            <option>Go back</option>
-                            <option>Scroll back (time)</option>
-                            <option>Scroll forward (time)</option>
-                            <option>Finetune zoom</option>
-                            <option>Select time period</option>
-                            <option>Change selection</option>
-                            <option>Remove selection</option>
-                            <option>Drill down to selection</option>
-                            <option>Change time grain</option>
-                    </select>
+                        <select class="selectpicker d-block d-xl-none pb-4 w-100 timeline-interactions-switcher">
+                            <option selected data-bs-target="#v-pills-drill-down">Drill down</option>
+                            <option data-bs-target="#v-pills-down-to-timespan">Drill down to timespan</option>
+                            <option data-bs-target="#v-pills-zoom-out">Zoom out</option>
+                            <option data-bs-target="#v-pills-go-back">Go back</option>
+                            <option data-bs-target="#v-pills-scroll-back">Scroll back (time)</option>
+                            <option data-bs-target="#v-pills-scroll-forward">Scroll forward (time)</option>
+                            <option data-bs-target="#v-pills-finetune-zoom">Finetune zoom</option>
+                            <option data-bs-target="#v-pills-select-time-period">Select time period</option>
+                            <option data-bs-target="#v-pills-change-selection">Change selection</option>
+                            <option data-bs-target="#v-pills-remove-selection">Remove selection</option>
+                            <option data-bs-target="#v-pills-drill-down-selection">Drill down to selection</option>
+                            <option data-bs-target="#v-pills-change-time">Change time grain</option>
+                        </select>
                         <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-down-to-timespan" role="tabpanel" aria-labelledby="v-pills-down-to-timespan-tab">
+                            <div class="tab-pane fade show active" id="v-pills-drill-down" role="tabpanel" aria-labelledby="v-pills-down-to-timespan-tab">
                                 <img src="img/zoom_out.gif" alt="Drill down" class="rounded-2 img-style" loading="lazy">
                             </div>
                             <div class="tab-pane fade" id="v-pills-down-to-timespan" role="tabpanel" aria-labelledby="v-pills-down-to-timespan-tab">
