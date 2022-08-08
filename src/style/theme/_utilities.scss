@@ -150,6 +150,10 @@
     height: 30px;
 }
 
+.title {
+    font-size: 1.875rem!important;
+}
+
 .subtitle {
     font-size: 1.25rem;
 }
@@ -208,6 +212,9 @@
     }
     .pb-124px {
         padding-bottom: 60px;
+    }
+    .title {
+        font-size: 1.25rem!important;
     }
     .subtitle {
         font-size: .938rem;
