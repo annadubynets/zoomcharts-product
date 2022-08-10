@@ -126,7 +126,7 @@ $slick-loader-path: "../img/" !default;
                 opacity: initial;
                 display: block;
             }
-            a {
+            div {
                 &::after {
                     content: "";
                     display: block;
