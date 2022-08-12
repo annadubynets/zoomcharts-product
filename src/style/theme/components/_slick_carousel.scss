@@ -58,14 +58,32 @@ $slick-loader-path: "../img/" !default;
             width: 100%;
             max-height: 32px;
             height: 32px;
+            display: block;
+        }
+        .customer-hover {
+            &:hover {
+                img {
+                    filter: initial;
+                    opacity: initial;
+                }
+                &::after {
+                    content: "";
+                    display: block;
+                    height: 3px;
+                    width: 100%;
+                    background-color: $yellow;
+                    transition: 0.5s;
+                    position: absolute;
+                    bottom: -9px;
+                }
+            }
         }
         &.slick-current {
             img {
                 filter: initial;
                 opacity: initial;
-                display: block;
             }
-            a {
+            .customer-hover {
                 position: relative;
                 &::after {
                     content: "";
@@ -119,10 +137,13 @@ $slick-loader-path: "../img/" !default;
         img {
             filter: grayscale(100%);
             opacity: 0.5;
-            display: block;
         }
         .bundle-hover {
             &:hover {
+                img {
+                    filter: initial;
+                    opacity: initial;
+                }
                 &::after {
                     content: "";
                     display: block;
@@ -139,7 +160,6 @@ $slick-loader-path: "../img/" !default;
             img {
                 filter: initial;
                 opacity: initial;
-                display: block;
             }
             div {
                 &::after {

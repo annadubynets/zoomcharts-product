@@ -66,14 +66,14 @@ $('.bundle-carousel').slick({
     ]
 });
 
-setupCarouselWithDetails('.bundle-carousel', '.visual-details');
+setupCarouselWithDetails('.bundle-carousel', '.visual-details', '.visual-detail');
 
-function setupCarouselWithDetails(carouselSelector, detailsSelector) {
+function setupCarouselWithDetails(carouselSelector, detailsSelector, detailSelector) {
 
     function showSlideDetails(type) {
-        $(detailsSelector + ' .visual-detail').addClass('d-none').removeClass('fade-in-animation');
+        $(detailsSelector + ' ' + detailSelector).addClass('d-none').removeClass('fade-in-animation');
 
-        $(detailsSelector + ' .visual-detail[data-type="' + type + '"]').removeClass('d-none').addClass('fade-in-animation');
+        $(detailsSelector + ' ' + detailSelector + '[data-type="' + type + '"]').removeClass('d-none').addClass('fade-in-animation');
     }
 
     $(carouselSelector).on('afterChange', function(e, slider, currentSlide) {
@@ -96,6 +96,7 @@ $('.customer-carousel').slick({
     slidesToShow: 9,
     slidesToScroll: 9,
     variableWidth: true,
+    focusOnSelect: true,
     responsive: [{
             breakpoint: 1024,
             settings: {
@@ -119,6 +120,8 @@ $('.customer-carousel').slick({
         }
     ]
 });
+
+setupCarouselWithDetails('.customer-carousel', '.customer-story-details', '.story-detail');
 
 function setupGetItNowBanner() {
     const banner = document.querySelector('.get-it-now-banner');
