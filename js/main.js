@@ -3065,6 +3065,7 @@ $('.bundle-carousel').slick({
     speed: 300,
     slidesToShow: 9,
     slidesToScroll: 1,
+    focusOnSelect: true,
     responsive: [{
             breakpoint: 1024,
             settings: {
@@ -3088,6 +3089,28 @@ $('.bundle-carousel').slick({
         }
     ]
 });
+
+setupCarouselWithDetails('.bundle-carousel', '.visual-details');
+
+function setupCarouselWithDetails(carouselSelector, detailsSelector) {
+
+    function showSlideDetails(type) {
+        $(detailsSelector + ' .visual-detail').addClass('d-none').removeClass('fade-in-animation');
+
+        $(detailsSelector + ' .visual-detail[data-type="' + type + '"]').removeClass('d-none').addClass('fade-in-animation');
+    }
+
+    $(carouselSelector).on('afterChange', function(e, slider, currentSlide) {
+        const type = $(slider.$slides.get(currentSlide)).find('.data-slide').data('type');
+        showSlideDetails(type);
+    })
+
+    $(carouselSelector).on('init,reInit,breakpoint', function(e, slick) {
+        const slideIndex = $(carouselSelector).slick('slickCurrentSlide');
+        const type = $(slider.$slides.get(slideIndex)).find('.data-slide').data('type');
+        showSlideDetails(type);
+    });
+}
 
 $('.customer-carousel').slick({
     dots: false,
