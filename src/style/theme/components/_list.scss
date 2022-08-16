@@ -4,39 +4,39 @@ ul {
     li {
         a {
             color: $black;
-            font-size: 15px;
+            font-size: .938rem;
         }
     }
 }
 
 .list-items {
     padding-left: 2.5rem;
-    margin-top: 30px;
-    margin-bottom: 50px!important;
+    margin-top: 1.875rem;
+    margin-bottom: 3.125rem!important;
     li {
         font-weight: normal;
         font-size: .938rem;
         color: $black;
         list-style-type: none;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
         &::before {
             display: inline;
             @include icon-styles;
             content: icon-char(check);
             font-size: .75rem;
             color: $black;
-            margin-left: -35px;
-            padding-right: 20px;
+            margin-left: -2.188rem;
+            padding-right: 1.25rem;
         }
     }
 }
 
 @media (max-width: 992px) {
     .list-items {
-        margin-top: 24px!important;
-        margin-bottom: 30px!important;
+        margin-top: 1.5rem!important;
+        margin-bottom: 1.875rem!important;
         li {
-            margin-bottom: 10px;
+            margin-bottom: .625rem;
         }
     }
 }

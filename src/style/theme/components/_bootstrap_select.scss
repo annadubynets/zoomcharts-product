@@ -4,23 +4,23 @@
     display: block;
     .btn-light {
         background-color: $white;
-        border: 1px solid #DFE3EC;
-        border-radius: 3px;
+        border: .063rem solid #DFE3EC;
+        border-radius: .188rem;
         text-decoration: none!important;
         &:hover {
             background-color: $white;
-            border: 1px solid #DFE3EC;
+            border: .063rem solid #DFE3EC;
         }
     }
     .btn {
         font-weight: normal;
-        font-size: 16px;
+        font-size: 1rem;
         color: $black;
-        padding: 11px;
+        padding: .8rem .938rem;
     }
     .bs-placeholder {
         font-weight: normal;
-        font-size: 16px;
+        font-size: 1rem;
         color: #CDCFD0;
     }
     .dropdown-toggle {
@@ -31,7 +31,7 @@
             @include icon-styles;
             content: icon-char(arrow-down);
             color: $black;
-            font-size: 8px;
+            font-size: .5rem;
         }
         &.show {
             &:after {
@@ -41,8 +41,8 @@
     }
     .dropdown-menu {
         background-color: $white;
-        border: 1px solid #DFE3EC;
-        border-radius: 3px;
+        border: .063rem solid #DFE3EC;
+        border-radius: .188rem;
         .dropdown-item {
             color: $dark-gray;
             padding: .5rem 1rem;
@@ -63,7 +63,7 @@
 .bootstrap-select>.dropdown-toggle.bs-placeholder:active,
 .bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
 .bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
-    color: $black;
+    color: $dark-gray;
 }
 
 .btn-check:active+.btn-light:focus,

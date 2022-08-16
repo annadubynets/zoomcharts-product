@@ -4,20 +4,23 @@ $font-family-sans-serif: "Open Sans" !default;
 $light-blue: #F4F6FA;
 $light-gray: #DFE3EC;
 $yellow: #F2C811;
+$green: #0BD474;
 $blue: #0B57D0;
 $gray: #808C9A;
 $dark-gray:#6B7785;
 $black-100: #000000;
 $black: #001935;
 // font sizes
-$h1-font-size: 45px;
-$h2-font-size: 35px;
-$h3-font-size: 24px;
-$h4-font-size: 20px;
+$h1-font-size: 2.813rem;
+$h2-font-size: 2.188rem;
+$h3-font-size: 1.5rem;
+$h4-font-size: 1.25rem;
 $headings-line-height: 1.1;
 $headings-font-family: "Open Sans";
 $headings-font-weight: 600;
-$font-sizes: ( 1: 24px, 2: 20px, 3: 18px, 4: 16px, 5: 15px, 6: 14px, 7: 9px, 8: 44px);
+$font-sizes: ( 1: 1.5rem, 2: 1.25rem, 3: 1.125rem, 4: 1rem, 5: .938rem, 6: .875rem, 7: .563rem, 8: 2.75rem);
+$spacer: 1rem;
+$spacers: ( 0: 0, 1: $spacer * .25, 2: $spacer * .5, 3: $spacer, 4: $spacer * 1.5, 5: $spacer * 3, 6: $spacer * 3.25, 7: $spacer * 3.75, 8: $spacer * 4, 9: $spacer * 5, 10: $spacer * 5.625, 11: $spacer * 5.9375, 12: $spacer * 6.25, 13: $spacer * 6.875, 14: $spacer * 6.875, 15: $spacer * 7.75, 16: $spacer * 8.75, 17: $spacer * 17.5, );
 //buttons 
 $btn-font-size: .938rem;
 $btn-font-weight: 600;
@@ -33,3 +36,19 @@ $link-hover-decoration: underline;
 // accordion 
 $accordion-button-color: $black;
 $container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1140px);
+$input-group-addon-bg: transparent;
+// progress 
+$progress-bar-color: $green;
+$progress-bar-bg: $light-blue !default;
+$progress-border-radius: 6.25rem;
+$progress-height: .375rem;
+// labels
+$form-label-color: $dark-gray;
+// form-control
+$input-border-color: $light-gray;
+$input-placeholder-color: $dark-gray;
+$input-color: $black-100;
+$input-font-size: .938rem;
+$input-focus-border-color: none;
+$input-padding-y: .8rem;
+$input-padding-x: .938rem;

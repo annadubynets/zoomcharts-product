@@ -1,5 +1,5 @@
 .dropdown-item {
-    padding: 10px 0;
+    padding: .625rem 0;
 }
 
 .btn-group {
@@ -17,11 +17,11 @@
                 &::before {
                     content: "";
                     display: block;
-                    height: 2px;
+                    height: .125rem;
                     width: 100%;
                     background-color: $yellow;
                     position: absolute;
-                    bottom: -5px;
+                    bottom: -.313rem;
                     left: 0;
                     @media (max-width: 1199px) {
                         display: none;
@@ -31,7 +31,7 @@
         }
     }
     .dropdown-menu {
-        padding: 20px 40px 0 40px;
+        padding: 1.25rem 2.5rem 0 2.5rem;
         .dropdown-item {
             &::active,
             &:hover {
@@ -40,7 +40,7 @@
             }
             span {
                 &:hover {
-                    border-bottom: 1px solid $black;
+                    border-bottom: .063rem solid $black;
                 }
             }
             &:active {
@@ -49,8 +49,8 @@
         }
     }
     &.dropstart .dropdown-menu[data-bs-popper] {
-        margin-top: 60px;
-        margin-right: -35px;
+        margin-top: 3.75rem;
+        margin-right: -2.188rem;
     }
 }
 

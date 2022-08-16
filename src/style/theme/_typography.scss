@@ -9,11 +9,11 @@ p {
 }
 
 .subtitle {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 h2 {
-    line-height: 32px;
+    line-height: 2rem;
 }
 
 @media (min-width: 1400px) {
@@ -60,6 +60,6 @@ h2 {
         font-size: 1.125rem!important;
     }
     .subtitle {
-        font-size: 15px;
+        font-size: .938rem;
     }
 }

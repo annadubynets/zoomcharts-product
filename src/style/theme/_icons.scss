@@ -26,33 +26,37 @@ $font-icons-family-name: "IconsFont";
 }
 
 $icon-name-arrow-down: "\E001"; 
-$icon-name-chat: "\E002"; 
-$icon-name-check: "\E003"; 
-$icon-name-data-driven: "\E004"; 
-$icon-name-data-storytelling: "\E005"; 
-$icon-name-facebook: "\E006"; 
-$icon-name-finance: "\E007"; 
-$icon-name-full-customization: "\E008"; 
-$icon-name-improve: "\E009"; 
-$icon-name-instagram: "\E00A"; 
-$icon-name-linkedin: "\E00B"; 
-$icon-name-logistics: "\E00C"; 
-$icon-name-logout: "\E00D"; 
-$icon-name-manufacturing: "\E00E"; 
-$icon-name-navbar-arrow: "\E00F"; 
-$icon-name-next: "\E010"; 
-$icon-name-phone: "\E011"; 
-$icon-name-prev: "\E012"; 
-$icon-name-profile: "\E013"; 
-$icon-name-request: "\E014"; 
-$icon-name-rocket-launch: "\E015"; 
-$icon-name-sales: "\E016"; 
-$icon-name-search: "\E017"; 
-$icon-name-thumb-down: "\E018"; 
-$icon-name-thumb-up: "\E019"; 
-$icon-name-twitter: "\E01A"; 
-$icon-name-user: "\E01B"; 
-$icon-name-youtube: "\E01C"; 
+$icon-name-attach-cancel: "\E002"; 
+$icon-name-attach-check: "\E003"; 
+$icon-name-attach-close: "\E004"; 
+$icon-name-attach-file: "\E005"; 
+$icon-name-chat: "\E006"; 
+$icon-name-check: "\E007"; 
+$icon-name-data-driven: "\E008"; 
+$icon-name-data-storytelling: "\E009"; 
+$icon-name-facebook: "\E00A"; 
+$icon-name-finance: "\E00B"; 
+$icon-name-full-customization: "\E00C"; 
+$icon-name-improve: "\E00D"; 
+$icon-name-instagram: "\E00E"; 
+$icon-name-linkedin: "\E00F"; 
+$icon-name-logistics: "\E010"; 
+$icon-name-logout: "\E011"; 
+$icon-name-manufacturing: "\E012"; 
+$icon-name-navbar-arrow: "\E013"; 
+$icon-name-next: "\E014"; 
+$icon-name-phone: "\E015"; 
+$icon-name-prev: "\E016"; 
+$icon-name-profile: "\E017"; 
+$icon-name-request: "\E018"; 
+$icon-name-rocket-launch: "\E019"; 
+$icon-name-sales: "\E01A"; 
+$icon-name-search: "\E01B"; 
+$icon-name-thumb-down: "\E01C"; 
+$icon-name-thumb-up: "\E01D"; 
+$icon-name-twitter: "\E01E"; 
+$icon-name-user: "\E01F"; 
+$icon-name-youtube: "\E020"; 
 
 
 @function icon-char($filename) {
@@ -61,86 +65,98 @@ $icon-name-youtube: "\E01C";
 	@if $filename == arrow-down {
 		$char: "\E001";
 	}
-	@if $filename == chat {
+	@if $filename == attach-cancel {
 		$char: "\E002";
 	}
-	@if $filename == check {
+	@if $filename == attach-check {
 		$char: "\E003";
 	}
-	@if $filename == data-driven {
+	@if $filename == attach-close {
 		$char: "\E004";
 	}
-	@if $filename == data-storytelling {
+	@if $filename == attach-file {
 		$char: "\E005";
 	}
-	@if $filename == facebook {
+	@if $filename == chat {
 		$char: "\E006";
 	}
-	@if $filename == finance {
+	@if $filename == check {
 		$char: "\E007";
 	}
-	@if $filename == full-customization {
+	@if $filename == data-driven {
 		$char: "\E008";
 	}
-	@if $filename == improve {
+	@if $filename == data-storytelling {
 		$char: "\E009";
 	}
-	@if $filename == instagram {
+	@if $filename == facebook {
 		$char: "\E00A";
 	}
-	@if $filename == linkedin {
+	@if $filename == finance {
 		$char: "\E00B";
 	}
-	@if $filename == logistics {
+	@if $filename == full-customization {
 		$char: "\E00C";
 	}
-	@if $filename == logout {
+	@if $filename == improve {
 		$char: "\E00D";
 	}
-	@if $filename == manufacturing {
+	@if $filename == instagram {
 		$char: "\E00E";
 	}
-	@if $filename == navbar-arrow {
+	@if $filename == linkedin {
 		$char: "\E00F";
 	}
-	@if $filename == next {
+	@if $filename == logistics {
 		$char: "\E010";
 	}
-	@if $filename == phone {
+	@if $filename == logout {
 		$char: "\E011";
 	}
-	@if $filename == prev {
+	@if $filename == manufacturing {
 		$char: "\E012";
 	}
-	@if $filename == profile {
+	@if $filename == navbar-arrow {
 		$char: "\E013";
 	}
-	@if $filename == request {
+	@if $filename == next {
 		$char: "\E014";
 	}
-	@if $filename == rocket-launch {
+	@if $filename == phone {
 		$char: "\E015";
 	}
-	@if $filename == sales {
+	@if $filename == prev {
 		$char: "\E016";
 	}
-	@if $filename == search {
+	@if $filename == profile {
 		$char: "\E017";
 	}
-	@if $filename == thumb-down {
+	@if $filename == request {
 		$char: "\E018";
 	}
-	@if $filename == thumb-up {
+	@if $filename == rocket-launch {
 		$char: "\E019";
 	}
-	@if $filename == twitter {
+	@if $filename == sales {
 		$char: "\E01A";
 	}
-	@if $filename == user {
+	@if $filename == search {
 		$char: "\E01B";
 	}
-	@if $filename == youtube {
+	@if $filename == thumb-down {
 		$char: "\E01C";
+	}
+	@if $filename == thumb-up {
+		$char: "\E01D";
+	}
+	@if $filename == twitter {
+		$char: "\E01E";
+	}
+	@if $filename == user {
+		$char: "\E01F";
+	}
+	@if $filename == youtube {
+		$char: "\E020";
 	}
 
 	@return $char;
@@ -159,6 +175,18 @@ $icon-name-youtube: "\E01C";
 
 .icon-arrow-down {
 	@include icon(arrow-down);
+}
+.icon-attach-cancel {
+	@include icon(attach-cancel);
+}
+.icon-attach-check {
+	@include icon(attach-check);
+}
+.icon-attach-close {
+	@include icon(attach-close);
+}
+.icon-attach-file {
+	@include icon(attach-file);
 }
 .icon-chat {
 	@include icon(chat);
