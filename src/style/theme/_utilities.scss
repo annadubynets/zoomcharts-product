@@ -110,8 +110,8 @@
     border-bottom: .063rem solid $light-gray!important;
 }
 
-.h-100vh {
-    height: 100vh;
+.mh-35 {
+    min-height: 35rem;
 }
 
 .h-500 {
@@ -192,5 +192,8 @@
     }
     .fs-1 {
         font-size: 1rem!important;
+    }
+    .mh-35 {
+        min-height: 20rem;
     }
 }
