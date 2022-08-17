@@ -29,7 +29,7 @@
         input[type=search]::-webkit-search-cancel-button {
             display: none;
         }
-        @media (min-width: 1200px) {
+        @include media-breakpoint-up(xl) {
             .navigation-menu {
                 position: relative;
             }

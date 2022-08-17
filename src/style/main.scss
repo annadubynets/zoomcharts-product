@@ -41,6 +41,15 @@
     height: 1.875rem;
 }
 
+.icon-style {
+    width: 2.813rem;
+    height: 2.813rem;
+    @include media-breakpoint-down(lg) {
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+}
+
 textarea {
     resize: none;
 }
@@ -49,7 +58,7 @@ textarea {
     .img-style {
         width: 52.813rem;
         height: 29.375rem;
-        @media (max-width: 992px) {
+        @include media-breakpoint-down(lg) {
             width: 100%;
             height: 100%;
         }
@@ -60,7 +69,7 @@ textarea {
     .bundle-size {
         width: 4.125rem;
         height: 4.125rem;
-        @media (max-width: 992px) {
+        @include media-breakpoint-down(lg) {
             width: 2.5rem;
             height: 2.5rem;
         }
@@ -71,7 +80,7 @@ textarea {
     .card {
         .card-body {
             padding: 2.5rem;
-            @media (max-width: 992px) {
+            @include media-breakpoint-down(lg) {
                 padding: 1.875rem .938rem;
             }
         }
@@ -89,17 +98,6 @@ textarea {
         background-color: transparent;
         .card-body {
             padding: 1rem 0;
-        }
-    }
-}
-
-.achieve-more {
-    .icon-style {
-        width: 2.75rem;
-        height: 3rem;
-        @media (max-width: 992px) {
-            width: 2.125rem;
-            height: 2.375rem;
         }
     }
 }
@@ -126,7 +124,7 @@ textarea {
         width: 100%;
         height: 100%;
         z-index: -1;
-        @media (max-width: 992px) {
+        @include media-breakpoint-down(lg) {
             background-image: none;
         }
     }
@@ -140,13 +138,13 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
     height: 15.875rem;
-    @media (max-width: 991px) {
+    @include media-breakpoint-down(lg) {
         background-image: url(../img/assistance-img-991px.png);
     }
-    @media (max-width: 767px) {
+    @include media-breakpoint-down(md) {
         background-image: url(../img/assistance-img-767px.png);
     }
-    @media (max-width: 576px) {
+    @include media-breakpoint-down(sm) {
         background-image: url(../img/assistance-img-576px.png);
     }
     @media (max-width: 414px) {
@@ -210,7 +208,7 @@ textarea {
         height: 100%;
         max-height: 42.938rem;
         z-index: -1;
-        @media (max-width: 992px) {
+        @include media-breakpoint-down(lg) {
             background-image: none;
         }
     }
@@ -230,7 +228,7 @@ textarea {
         height: 100%;
         max-height: 42.938rem;
         z-index: -1;
-        @media (max-width: 992px) {
+        @include media-breakpoint-down(lg) {
             background-image: none;
         }
     }
@@ -244,13 +242,13 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
     height: 25rem;
-    @media (max-width: 991px) {
+    @include media-breakpoint-down(lg) {
         background-image: url(../img/report-hero-991px.png);
     }
-    @media (max-width: 767px) {
+    @include media-breakpoint-down(md) {
         background-image: url(../img/report-hero-767px.png);
     }
-    @media (max-width: 576px) {
+    @include media-breakpoint-down(sm) {
         background-image: url(../img/report-hero-576px.png);
     }
     @media (max-width: 414px) {
@@ -263,7 +261,7 @@ textarea {
     right: 0;
     div {
         padding: 2.5rem;
-        @media (max-width: 992px) {
+        @include media-breakpoint-down(lg) {
             padding: 1.563rem .938rem;
         }
     }
@@ -273,7 +271,7 @@ textarea {
     font-size: 1.5rem;
 }
 
-@media (max-width: 992px) {
+@include media-breakpoint-down(lg) {
     .hero {
         padding-top: 4.063rem;
         padding-bottom: 2.813rem;

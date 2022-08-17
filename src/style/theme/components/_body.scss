@@ -1,9 +1,9 @@
 body.menu-opened {
-    @media (max-width: 1199px) {
+    @include media-breakpoint-down(xl) {
         overflow: hidden;
         position: fixed;
     }
-    @media (max-width: 1199px) {
+    @include media-breakpoint-down(xl) {
         .navbar-brand .navbar-brand-img {
             display: none!important;
         }

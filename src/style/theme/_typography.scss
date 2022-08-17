@@ -16,7 +16,7 @@ h2 {
     line-height: 2rem;
 }
 
-@media (min-width: 1400px) {
+@include media-breakpoint-up(xxl) {
     .container,
     .container-lg,
     .container-md,
@@ -39,11 +39,11 @@ h2 {
     }
 }
 
-@media (max-width: 992px) {
+@include media-breakpoint-down(lg) {
     h1 {
         &.title {
             font-size: 2.5rem!important;
-            line-height: 3.375rem;
+            line-height: 3.125rem;
         }
         font-size: 1.563rem!important;
     }

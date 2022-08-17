@@ -23,7 +23,7 @@
                     position: absolute;
                     bottom: -.313rem;
                     left: 0;
-                    @media (max-width: 1199px) {
+                    @include media-breakpoint-down(xl) {
                         display: none;
                     }
                 }
