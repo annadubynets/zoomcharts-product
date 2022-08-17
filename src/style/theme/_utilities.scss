@@ -110,6 +110,10 @@
     border-bottom: .063rem solid $light-gray!important;
 }
 
+.h-100vh {
+    height: 100vh;
+}
+
 .h-500 {
     height: 31.25rem;
 }
@@ -136,46 +140,49 @@
 
 @media (max-width: 992px) {
     .py-7 {
-        padding: 40px 0;
+        padding: 40px 0!important;
     }
     .py-12 {
-        padding: 50px 0 30px 0;
+        padding: 50px 0 30px 0!important;
     }
     .pt-6 {
-        padding-top: 25px;
+        padding-top: 25px!important;
     }
     .pt-7 {
-        padding-top: 40px;
+        padding-top: 40px!important;
     }
     .pt-8 {
-        padding-top: 45px;
+        padding-top: 45px!important;
+    }
+    .pt-9 {
+        padding-top: 40px!important;
     }
     .pt-10 {
-        padding-top: 30px;
+        padding-top: 40px!important;
     }
     .pt-12 {
-        padding-top: 45px;
+        padding-top: 45px!important;
     }
     .pt-13 {
-        padding-top: 40px;
+        padding-top: 40px!important;
     }
     .pt-14 {
-        padding-top: 100px;
+        padding-top: 100px!important;
     }
     .pb-7 {
-        padding-bottom: 35px;
+        padding-bottom: 35px!important;
     }
     .pb-10 {
-        padding-bottom: 35px;
+        padding-bottom: 35px!important;
     }
     .pb-11 {
-        padding-bottom: 30px;
+        padding-bottom: 30px!important;
     }
     .pb-12 {
-        padding-bottom: 60px;
+        padding-bottom: 60px!important;
     }
     .pb-15 {
-        padding-bottom: 60px;
+        padding-bottom: 40px!important;
     }
     .title {
         font-size: 1.25rem!important;
