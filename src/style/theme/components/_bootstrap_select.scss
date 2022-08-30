@@ -14,13 +14,13 @@
     }
     .btn {
         font-weight: normal;
-        font-size: 1rem;
+        font-size: .938rem;
         color: $black;
         padding: .878rem .938rem;
     }
     .bs-placeholder {
         font-weight: normal;
-        font-size: 1rem;
+        font-size: .938rem;
         color: #CDCFD0;
     }
     .dropdown-toggle {
@@ -46,7 +46,9 @@
         .dropdown-item {
             color: $dark-gray;
             padding: .5rem 1rem;
-            &:active {
+            &:active,
+            &:hover,
+            &:focus {
                 color: $black;
                 background-color: #F4F6FA!important;
             }

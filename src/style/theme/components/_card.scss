@@ -1,0 +1,8 @@
+.card-link-wrapper {
+    text-decoration: none!important;
+    &:hover {
+        .label-like-link {
+            text-decoration: underline;
+        }
+    }
+}

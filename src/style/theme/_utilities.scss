@@ -134,10 +134,6 @@
     font-size: 1.875rem!important;
 }
 
-.subtitle {
-    font-size: 1.25rem;
-}
-
 @include media-breakpoint-down(lg) {
     .py-7 {
         padding: 40px 0!important;
@@ -186,9 +182,6 @@
     }
     .title {
         font-size: 1.25rem!important;
-    }
-    .subtitle {
-        font-size: .938rem;
     }
     .fs-1 {
         font-size: 1rem!important;

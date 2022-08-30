@@ -16,6 +16,10 @@ h2 {
     line-height: 2rem;
 }
 
+h4 {
+    line-height: 1.625rem;
+}
+
 @include media-breakpoint-up(xxl) {
     .container,
     .container-lg,
@@ -59,7 +63,7 @@ h2 {
     .link {
         font-size: 1.125rem!important;
     }
-    .subtitle {
-        font-size: .938rem;
-    }
+    // .subtitle {
+    //     font-size: .938rem;
+    // }
 }

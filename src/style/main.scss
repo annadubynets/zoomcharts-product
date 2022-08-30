@@ -10,6 +10,7 @@
 @import "theme/components/buttons";
 @import "theme/components/slick_carousel";
 @import "theme/components/modal";
+@import "theme/components/card";
 .cursor-pointer {
     cursor: pointer;
 }
@@ -39,6 +40,11 @@
 .img-size {
     width: 1.875rem;
     height: 1.875rem;
+}
+
+.img-size-large {
+    width: 3.125rem;
+    height: 3.125rem;
 }
 
 .icon-style {
@@ -177,9 +183,10 @@ textarea {
     ul {
         padding-left: 0;
         li {
-            margin-bottom: .0938rem;
+            margin-bottom: .938rem;
             a {
                 color: $black!important;
+                text-decoration: underline;
                 &.link-white {
                     color: $white!important;
                 }
@@ -269,6 +276,19 @@ textarea {
 
 .contact-icon {
     font-size: 1.5rem;
+}
+
+.attach-text {
+    font-size: .938rem;
+}
+
+.attach-close {
+    color: $light-gray;
+    &:hover {
+        text-decoration: none;
+        color: $red;
+        cursor: pointer;
+    }
 }
 
 @include media-breakpoint-down(lg) {

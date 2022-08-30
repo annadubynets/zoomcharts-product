@@ -6,6 +6,7 @@
 
 .accordion-button {
     font-weight: 600;
+    font-size: .938rem;
     line-height: 1.563rem;
     padding: 1.563rem 0;
     @include media-breakpoint-down(lg) {
@@ -33,5 +34,6 @@
 }
 
 .accordion-body {
+    font-size: .938rem;
     padding: 0 0 1.563rem 0;
 }
