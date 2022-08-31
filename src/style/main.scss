@@ -11,6 +11,7 @@
 @import "theme/components/slick_carousel";
 @import "theme/components/modal";
 @import "theme/components/card";
+@import "theme/components/input-group";
 .cursor-pointer {
     cursor: pointer;
 }
@@ -310,6 +311,11 @@ textarea {
     &:focus {
         box-shadow: none;
     }
+}
+
+.input-group {
+    border: 1px dashed #6B7785;
+    border-radius: 3px;
 }
 
 .input-group>.form-control,

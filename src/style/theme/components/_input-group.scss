@@ -1,0 +1,15 @@
+.input-group {
+    border: 1px dashed #6b7785;
+    .form-control {
+        border: none;
+        &::placeholder {
+            color: $blue;
+        }
+    }
+    .input-group-text {
+        border: none;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
