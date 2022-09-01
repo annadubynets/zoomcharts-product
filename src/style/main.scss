@@ -313,17 +313,13 @@ textarea {
     }
 }
 
-.input-group {
+#fakeDiv {
+    width: 100%;
     border: 1px dashed #6B7785;
     border-radius: 3px;
-}
-
-.input-group>.form-control,
-.input-group>.form-select {
-    border-right: 0;
-    &:focus {
-        box-shadow: none;
-    }
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
 
 input#fakeInput {
@@ -332,6 +328,7 @@ input#fakeInput {
     padding: 12px 15px;
     box-sizing: border-box;
     border: initial;
+    cursor: pointer;
     &::placeholder {
         font-size: .938rem;
         color: $blue;
@@ -355,14 +352,7 @@ input#fakeInput {
     padding: 10px;
     font-weight: bold;
     border-radius: 0px 3px 3px 0px;
-}
-
-#fakeDiv {
-    width: 100%;
-    border: 1px dashed #6B7785;
-    border-radius: 3px;
-    position: relative;
-    display: inline-block;
+    cursor: pointer;
 }
 
 #selectedFile {
@@ -370,4 +360,5 @@ input#fakeInput {
     position: absolute;
     left: 0;
     top: 0;
+    cursor: pointer;
 }
