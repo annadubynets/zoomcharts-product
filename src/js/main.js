@@ -232,6 +232,7 @@ $('.customer-carousel').slick({
     ]
 });
 
-<<
-<< << < HEAD
-setupCarouselWithDetails('.customer-carousel', '.customer-story-details', '.story-detail');
+$('#selectedFile').on("change", function() {
+    var a = $('#selectedFile').val().toString().split('\\');
+    $('#fakeInput').val(a[a.length - 1]);
+});
