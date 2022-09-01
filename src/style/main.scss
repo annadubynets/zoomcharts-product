@@ -325,3 +325,49 @@ textarea {
         box-shadow: none;
     }
 }
+
+input#fakeInput {
+    width: 100%;
+    display: block;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    border: initial;
+    &::placeholder {
+        font-size: .938rem;
+        color: $blue;
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+    &:hover {
+        &::placeholder {
+            text-decoration: underline;
+        }
+    }
+}
+
+#buttonImage {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 0px 3px 3px 0px;
+}
+
+#fakeDiv {
+    width: 100%;
+    border: 1px dashed #6B7785;
+    border-radius: 3px;
+    position: relative;
+    display: inline-block;
+}
+
+#selectedFile {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

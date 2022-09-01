@@ -481,10 +481,13 @@
                                     <span class="attach-text text-danger">Upload failed</span>
                                 </div>
 
-                                <div class="col-12">
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Attach file" aria-label="attachfile" aria-describedby="attach-file">
-                                        <span class="input-group-text py-0" id="attach-file"><icon class="icon-attach-file fs-3"></icon></span>
+                                <div class="col-12 mb-3">
+                                    <div id="fakeDiv">
+                                        <input type="file" id="selectedFile" />
+                                        <input type="text" id="fakeInput" placeholder="Attach file" />
+                                        <span onclick="document.getElementById('selectedFile').click();" id="buttonImage">
+                                            <icon class="icon-attach-file fs-3"></icon>
+                                        </span>
                                     </div>
                                 </div>
 
