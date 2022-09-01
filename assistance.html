@@ -645,11 +645,15 @@
     <section class="pb-15">
         <div class="container">
             <div class="row justify-content-center pb-lg-0 pb-2">
-                <div class="col-lg-5 text-center d-flex flex-lg-row flex-column justify-content-center align-items-center">
-                    <p class="mb-lg-0 mb-4 me-lg-4">Was this helpful?</p>
-                    <div class="d-flex">
-                        <a href="#" class="btn btn-outline-dark btn-padding me-4 d-flex align-items-center"><span class="btn-hover-style">Yes</span><icon class="icon-thumb-up fs-1 ps-2 d-grid"></icon></a>
-                        <a href="#" class="btn btn-outline-dark btn-padding d-flex align-items-center"><span class="btn-hover-style">No</span><icon class="icon-thumb-down fs-1 ps-2 d-grid"></icon></a>
+                <div class="col-lg-6 text-center d-flex flex-lg-row flex-column justify-content-center align-items-center feedback-section">
+                    <p class="mb-lg-0 mb-4 me-lg-4">
+                        Was this helpful? 
+                        <span class="d-none yes-feedback">You've submitted Yes. Thank you for your answer</span>
+                        <span class="d-none no-feedback">You've submitted No. Thank you for your answer</span>
+                    </p>
+                    <div class="d-flex feedback-buttons">
+                        <a href="#" class="btn-yes btn btn-outline-dark btn-padding me-4 d-flex align-items-center"><span class="btn-hover-style">Yes</span><icon class="icon-thumb-up fs-1 ps-2 d-grid"></icon></a>
+                        <a href="#" class="btn-no btn btn-outline-dark btn-padding d-flex align-items-center"><span class="btn-hover-style">No</span><icon class="icon-thumb-down fs-1 ps-2 d-grid"></icon></a>
                     </div>
                 </div>
             </div>
